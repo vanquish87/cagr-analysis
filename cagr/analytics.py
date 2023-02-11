@@ -10,7 +10,7 @@ def get_chart(scripts, start, end):
     five_years_start = start - timedelta(days=365*5 + 2)
     five_years_end= five_years_start + timedelta(days=5)
 
-    ten_years_start = start - timedelta(days=365*10)
+    ten_years_start = start - timedelta(days=365*13)
     ten_years_end= ten_years_start + timedelta(days=5)
 
     df_new = pd.DataFrame()
@@ -54,8 +54,8 @@ def get_chart(scripts, start, end):
 
 
 
-start = date(2022,12,31)
-end = date(2023,1,7)
+start = date(2023,2,9)
+end = date(2023,2,10)
 
 data = get_chart(scripts, start, end)
 print(data)

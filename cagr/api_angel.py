@@ -59,9 +59,12 @@ def getDataAPI(scriptid, fromdate, todate, jwtToken, instrument_list):
 
     # it will give:
     # {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': [['2023-01-02T00:00:00+05:30', 181.0, 189.3, 180.85, 187.7, 2692157], ['2023-01-03T00:00:00+05:30', 188.55, 194.35, 187.55, 190.2, 4258536], ['2023-01-04T00:00:00+05:30', 190.7, 192.6, 184.4, 186.65, 2161857], ['2023-01-05T00:00:00+05:30', 187.0, 188.65, 181.2, 188.1, 2510756]]}
-    closing_list = historical_angel(symboltoken, fromdate, todate, jwtToken)
+    candle_data = historical_angel(symboltoken, fromdate, todate, jwtToken)
+    closing_list = candle_data['data']
 
     return closing_list
+
+
 
 # --------------------------- TESTING PURPOSE ONLY------------------------
 fromdate = '2023-01-01'
@@ -78,8 +81,5 @@ for i in scripts:
   print(type(yo))
   print(i)
   print(yo)
-  if yo['data'] != None:
-    for d in yo['data']:
-        print(d)
   print('-------')
   time.sleep(0.15)
