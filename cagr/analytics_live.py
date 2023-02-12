@@ -42,7 +42,7 @@ def get_excel(scripts, start, end):
             data = getDataAPI(scriptid, start, end, obj, instrument_list)
             df = pd.DataFrame(data)
             cmp = df.iloc[0, 4]
-            time.sleep(0.25)
+            time.sleep(0.35)
         except:
             print('No Data')
             pass
@@ -53,7 +53,7 @@ def get_excel(scripts, start, end):
             df_5 = pd.DataFrame(data_5)
             mp_5yr_back = df_5.iloc[0, 4]
             return_5_yrs_back = round((((cmp / mp_5yr_back)**(1/5)) -1) * 100, 1)
-            time.sleep(0.25)
+            time.sleep(0.35)
         except:
             print('No Data')
             mp_5yr_back = 'No Data'
@@ -65,7 +65,7 @@ def get_excel(scripts, start, end):
             df_1 = pd.DataFrame(data_1)
             mp_1yr_ahead = df_1.iloc[0, 4]
             return_1yr_ahead = round((((mp_1yr_ahead / cmp)) -1) * 100, 1)
-            time.sleep(0.25)
+            time.sleep(0.35)
         except:
             print('No Data')
             mp_1yr_ahead = 'No Data'
@@ -77,7 +77,7 @@ def get_excel(scripts, start, end):
             df_1_5 = pd.DataFrame(data_1_5)
             mp_5yr_back_from_1yr_ahead = df_1_5.iloc[0, 4]
             return_5yr_back_from_1yr_ahead = round((((mp_1yr_ahead / mp_5yr_back_from_1yr_ahead)**(1/5)) -1) * 100, 1)
-            time.sleep(0.25)
+            time.sleep(0.35)
         except:
             print('No Data')
             mp_5yr_back_from_1yr_ahead = 'No Data'
@@ -108,8 +108,8 @@ def get_excel(scripts, start, end):
 
 
 
-start = date(2023,2,9)
-end = date(2023,2,11)
+start = date(2023,1,30)
+end = date(2023,1,31)
 
 data = get_excel(scripts, start, end)
 print(data)
