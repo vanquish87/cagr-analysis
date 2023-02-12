@@ -67,19 +67,19 @@ def getDataAPI(scriptid, fromdate, todate, jwtToken, instrument_list):
 
 
 # --------------------------- TESTING PURPOSE ONLY------------------------
-fromdate = '2023-01-01'
-todate = '2023-01-05'
+# fromdate = '2023-01-01'
+# todate = '2023-01-05'
 
-# need jwtToken & instrument_list first
-obj = loginAngel()
-instrument_list = instrumentList()
+# # need jwtToken & instrument_list first
+# obj = loginAngel()
+# instrument_list = instrumentList()
 
-scripts = ['JINDALPOLY', 'SCI', 'MUTHOOTFIN', 'REDINGTON']
-for i in scripts:
-  print(f'Fetching {scripts.index(i) + 1} of {len(scripts)}.')
-  yo = getDataAPI(i, fromdate, todate, obj, instrument_list)
-  print(type(yo))
-  print(i)
-  print(yo)
-  print('-------')
-  time.sleep(0.15)
+# scripts = ['JINDALPOLY', 'SCI', 'MUTHOOTFIN', 'REDINGTON']
+# for i in scripts:
+#     print(f'Fetching {scripts.index(i) + 1} of {len(scripts)}.')
+#     yo = getDataAPI(i, fromdate, todate, obj, instrument_list)
+#     print(type(yo))
+#     print(i)
+#     print(yo)
+#     print('-------')
+#     time.sleep(0.15)
