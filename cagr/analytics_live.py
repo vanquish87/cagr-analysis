@@ -24,13 +24,13 @@ def get_excel(scripts, start, end):
     instrument_list = instrumentList()
 
     # creating dates
-    date_5yr_back = start - timedelta(days=365*5 + 2)
+    date_5yr_back = start - timedelta(days=365*5 + 1)
     date_5yr_back_end= date_5yr_back + timedelta(days=5)
 
-    date_1yr_ahead = start + timedelta(days=365 + 3)
+    date_1yr_ahead = start + timedelta(days=365 + 1)
     date_1yr_ahead_end= date_1yr_ahead + timedelta(days=5)
 
-    date_5yr_back_from_1yr_ahead = date_1yr_ahead - timedelta(days=365*5 + 2)
+    date_5yr_back_from_1yr_ahead = date_1yr_ahead - timedelta(days=365*5 + 1)
     date_5yr_back_from_1yr_ahead_end= date_5yr_back_from_1yr_ahead + timedelta(days=5)
 
     df_new = pd.DataFrame()
@@ -103,13 +103,29 @@ def get_excel(scripts, start, end):
         # Concatenate the two DataFrames along the rows (axis=0)
         df_new = pd.concat([df_new, new_row], axis=0, ignore_index=True)
 
-    df_new.to_excel("research/stock_returns-live.xlsx")
+    df_new.to_excel(f"research/stock-returns-3yr-{start}.xlsx")
     return df_new
 
 
 
-start = date(2023,1,30)
-end = date(2023,1,31)
+def get_dates(start):
+    start = date(2010,1,5)
+    today = date.today()
 
-data = get_excel(scripts, start, end)
-print(data)
+    dates = [start]
+
+    while start <= today:
+        start += timedelta(days=365 + 1)
+        if start <= today:
+            dates.append(start)
+        else:
+            dates.append(today)
+
+    return dates
+
+dates = get_dates(date(2010,1,5))
+
+for i in dates:
+    end = i + timedelta(days=3)
+    data = get_excel(scripts, i, end)
+    print(data)
