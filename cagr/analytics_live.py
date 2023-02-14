@@ -24,13 +24,13 @@ def get_excel(scripts, start, end):
     instrument_list = instrumentList()
 
     # creating dates
-    date_5yr_back = start - timedelta(days=365*2 + 1)
+    date_5yr_back = start - timedelta(days=365*4 + 1)
     date_5yr_back_end= date_5yr_back + timedelta(days=5)
 
     date_1yr_ahead = start + timedelta(days=365 + 1)
     date_1yr_ahead_end= date_1yr_ahead + timedelta(days=5)
 
-    date_5yr_back_from_1yr_ahead = date_1yr_ahead - timedelta(days=365*2 + 1)
+    date_5yr_back_from_1yr_ahead = date_1yr_ahead - timedelta(days=365*4 + 1)
     date_5yr_back_from_1yr_ahead_end= date_5yr_back_from_1yr_ahead + timedelta(days=5)
 
     df_new = pd.DataFrame()
@@ -52,7 +52,7 @@ def get_excel(scripts, start, end):
             data_5 = getDataAPI(scriptid, date_5yr_back, date_5yr_back_end, obj, instrument_list)
             df_5 = pd.DataFrame(data_5)
             mp_5yr_back = df_5.iloc[0, 4]
-            return_5_yrs_back = round((((cmp / mp_5yr_back)**(1/2)) -1) * 100, 1)
+            return_5_yrs_back = round((((cmp / mp_5yr_back)**(1/4)) -1) * 100, 1)
             time.sleep(0.35)
         except:
             print('No Data')
@@ -76,7 +76,7 @@ def get_excel(scripts, start, end):
             data_1_5 = getDataAPI(scriptid, date_5yr_back_from_1yr_ahead, date_5yr_back_from_1yr_ahead_end, obj, instrument_list)
             df_1_5 = pd.DataFrame(data_1_5)
             mp_5yr_back_from_1yr_ahead = df_1_5.iloc[0, 4]
-            return_5yr_back_from_1yr_ahead = round((((mp_1yr_ahead / mp_5yr_back_from_1yr_ahead)**(1/2)) -1) * 100, 1)
+            return_5yr_back_from_1yr_ahead = round((((mp_1yr_ahead / mp_5yr_back_from_1yr_ahead)**(1/4)) -1) * 100, 1)
             time.sleep(0.35)
         except:
             print('No Data')
@@ -89,21 +89,21 @@ def get_excel(scripts, start, end):
                         "Script": [scriptid],
                         "CMP": [cmp],
                         "Date": [start],
-                        "mp_2yr_back": [mp_5yr_back],
-                        "date_2yr_back": [date_5yr_back],
-                        "return_2_yrs_back": [return_5_yrs_back],
+                        "mp_4yr_back": [mp_5yr_back],
+                        "date_4yr_back": [date_5yr_back],
+                        "return_4_yrs_back": [return_5_yrs_back],
                         "mp_1yr_ahead": [mp_1yr_ahead],
                         "date_1yr_ahead": [date_1yr_ahead],
                         "return_1yr_ahead": [return_1yr_ahead],
-                        "mp_2yr_back_from_1yr_ahead": [mp_5yr_back_from_1yr_ahead],
-                        "date_2yr_back_from_1yr_ahead": [date_5yr_back_from_1yr_ahead],
-                        "return_2yr_back_from_1yr_ahead": [return_5yr_back_from_1yr_ahead],
+                        "mp_4yr_back_from_1yr_ahead": [mp_5yr_back_from_1yr_ahead],
+                        "date_4yr_back_from_1yr_ahead": [date_5yr_back_from_1yr_ahead],
+                        "return_4yr_back_from_1yr_ahead": [return_5yr_back_from_1yr_ahead],
                     })
 
         # Concatenate the two DataFrames along the rows (axis=0)
         df_new = pd.concat([df_new, new_row], axis=0, ignore_index=True)
 
-    df_new.to_excel(f"research/stock-returns-2yr-{start}.xlsx")
+    df_new.to_excel(f"research/4yrs/stock-returns-4yr-{start}.xlsx")
     return df_new
 
 
@@ -120,7 +120,7 @@ def get_dates(start):
     return dates
 
 
-dates = get_dates(date(2016,1,10))
+dates = get_dates(date(2010,1,5))
 
 for i in dates:
     end = i + timedelta(days=3)
