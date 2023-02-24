@@ -2,6 +2,7 @@
 from smartapi import SmartConnect
 from decouple import config
 import pyotp, requests, time
+from datetime import date
 
 def loginAngel():
     obj = SmartConnect(api_key=config('API_KEY'))
@@ -44,7 +45,7 @@ def historical_angel(symboltoken, fromdate, todate, obj):
         "exchange": "NSE",
         "symboltoken": symboltoken,
         "interval": "ONE_DAY",
-        "fromdate": f"{fromdate} 09:00",
+        "fromdate": f"{fromdate} 00:00",
         "todate": f"{todate} 15:30"
         }
         return obj.getCandleData(historicParam)
@@ -65,16 +66,15 @@ def getDataAPI(scriptid, fromdate, todate, jwtToken, instrument_list):
     return closing_list
 
 
-
 # --------------------------- TESTING PURPOSE ONLY------------------------
-# fromdate = '2023-01-01'
-# todate = '2023-01-05'
+# fromdate = date(2023,1,4)
+# todate = date(2023,1,6)
 
 # # need jwtToken & instrument_list first
 # obj = loginAngel()
 # instrument_list = instrumentList()
 
-# scripts = ['JINDALPOLY', 'SCI', 'MUTHOOTFIN', 'REDINGTON']
+# scripts = ['JINDALPOLY', 'ITC']
 # for i in scripts:
 #     print(f'Fetching {scripts.index(i) + 1} of {len(scripts)}.')
 #     yo = getDataAPI(i, fromdate, todate, obj, instrument_list)

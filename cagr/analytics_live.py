@@ -120,13 +120,7 @@ def get_dates(start):
     return dates
 
 
-# dates = get_dates(date(2007,1,3))
-
-import datetime
-
-# print(dates)
-
-dates = [datetime.date(2007, 1, 3), datetime.date(2008, 1, 4), datetime.date(2009, 1, 4)]
+dates = get_dates(date(2010,1,5))
 
 for i in dates:
     end = i + timedelta(days=3)
