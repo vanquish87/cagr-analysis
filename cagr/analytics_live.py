@@ -120,9 +120,9 @@ def get_dates(start):
     return dates
 
 
-dates = get_dates(date(2023,3,29))
+dates = get_dates(date(2023,4,6))
 
 for i in dates:
-    end = i + timedelta(days=3)
+    end = i + timedelta(days=0)
     data = get_excel(scripts, i, end)
     print(data)
