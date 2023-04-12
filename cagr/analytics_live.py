@@ -16,6 +16,33 @@ from scripts import scripts
 import time
 
 
+# Create a new DataFrame with the new row and same column names
+def get_new_row(
+    scriptid,
+    cmp,
+    start,
+    mp_back,
+    date_back,
+    return_from_back,
+    mp_ahead,
+    date_ahead,
+    return_ahead,
+):
+    return pd.DataFrame(
+        {
+            "Script": [scriptid],
+            "CMP": [cmp],
+            "Date": [start],
+            "mp_1yr_back": [mp_back],
+            "date_1yr_back": [date_back],
+            "return_from_back": [return_from_back],
+            "mp_1yr_ahead": [mp_ahead],
+            "date_1yr_ahead": [date_ahead],
+            "return_ahead": [return_ahead],
+        }
+    )
+
+
 def get_excel(scripts, start):
     # need jwtToken & instrument_list first
     obj = loginAngel()
@@ -42,29 +69,27 @@ def get_excel(scripts, start):
             matching_rows = df[df_dates == start]
             cmp = df.iloc[matching_rows.index, 4].values[0]
 
-            return_from_back = round((((cmp / mp_back)**(1/1)) -1) * 100, 1)
-            return_ahead = round((((mp_ahead / cmp)) -1) * 100, 1)
+            return_from_back = round((((cmp / mp_back) ** (1 / 1)) - 1) * 100, 1)
+            return_ahead = round((((mp_ahead / cmp)) - 1) * 100, 1)
 
             time.sleep(0.15)
         except:
-            print("No Data")
+            print("API didn't fetch any data, please check the date.")
+            cmp = "No Data"
             mp_back = "No Data"
-            return_from_back = "Nothing"    
-            return_ahead = 'Nothing'
+            return_from_back = "Nothing"
+            return_ahead = "Nothing"
 
-        # Create a new DataFrame with the new row and same column names
-        new_row = pd.DataFrame(
-            {
-                "Script": [scriptid],
-                "CMP": [cmp],
-                "Date": [start],
-                "mp_1yr_back": [mp_back],
-                "date_1yr_back": [date_back],
-                "return_from_back": [return_from_back],
-                "mp_1yr_ahead": [mp_ahead],
-                "date_1yr_ahead": [date_ahead],
-                "return_ahead": [return_ahead],
-            }
+        new_row = get_new_row(
+            scriptid,
+            cmp,
+            start,
+            mp_back,
+            date_back,
+            return_from_back,
+            mp_ahead,
+            date_ahead,
+            return_ahead,
         )
 
         # Concatenate the two DataFrames along the rows (axis=0)
@@ -78,16 +103,16 @@ def get_dates(start):
     # because we can get EOD date only so select yesterday as latest
     today = date.today() - timedelta(days=1)
     dates = [start]
-    # while start <= today:
-    #     start += timedelta(days=365 * 1 + 1)
-    #     if start <= today:
-    #         dates.append(start)
-    #     else:
-    #         dates.append(today)
+    while start <= today:
+        start += timedelta(days=365 * 1 + 1)
+        if start <= today:
+            dates.append(start)
+        elif start - timedelta(days=365 * 1 + 1) != today:
+            dates.append(today)
     return dates
 
 
-dates = get_dates(date(2022, 4, 6))
+dates = get_dates(date(2023, 4, 12))
 
 for i in dates:
     data = get_excel(scripts, i)
