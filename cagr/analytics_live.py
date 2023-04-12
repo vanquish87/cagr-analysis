@@ -120,7 +120,7 @@ def get_dates(start):
     return dates
 
 
-dates = get_dates(date(2023,4,6))
+dates = get_dates(date(2023,4,12))
 
 for i in dates:
     end = i + timedelta(days=0)
