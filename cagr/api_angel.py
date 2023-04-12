@@ -37,7 +37,7 @@ def scriptToken(scriptid, instrument_list):
 
 
 # historical data
-# Max Days in one Request ONE_DAY = 2000, refer to smartapi docs
+# Max Days in one Request ONE_DAY = 500, refer to smartapi docs
 # scriptid = 'INFY', fromdate = '2022-05-05', todate = '2022-05-06'
 def historical_angel(symboltoken, fromdate, todate, obj):
     try:
