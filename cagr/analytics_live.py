@@ -112,7 +112,7 @@ def get_dates(start):
     return dates
 
 
-dates = get_dates(date(2023, 4, 12))
+dates = get_dates(date(2023, 4, 19))
 
 for i in dates:
     data = get_excel(scripts, i)
