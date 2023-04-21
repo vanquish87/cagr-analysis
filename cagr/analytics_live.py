@@ -9,6 +9,14 @@ start_time = time.perf_counter()
 
 
 def get_excel_1yr_back_1yr_ahead(scripts, start):
+    '''
+    Previously took 621.72 Seconds for 501 Scripts
+    after refactoring and hitting API only 1 time now
+    for same 501 Scripts takes 211.68 Seconds.
+    
+    Note: Can't use multiprocessing as API has rate limit
+    Further optimization would be welcomed :)
+    '''
     # need jwtToken & instrument_list first
     obj = loginAngel()
     instrument_list = instrumentList()
@@ -82,7 +90,7 @@ def get_dates(start):
     return dates
 
 
-dates = get_dates(date(2023, 4, 12))
+dates = get_dates(date(2023, 4, 21))
 
 for i in dates:
     data = get_excel_1yr_back_1yr_ahead(scripts, i)

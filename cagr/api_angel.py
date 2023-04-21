@@ -4,36 +4,38 @@ from decouple import config
 import pyotp, requests, time
 from datetime import date
 
+
 def loginAngel():
-    obj = SmartConnect(api_key=config('API_KEY'))
+    obj = SmartConnect(api_key=config("API_KEY"))
 
-    ENABLE_TOTP = config('ENABLE_TOTP')
+    ENABLE_TOTP = config("ENABLE_TOTP")
     totp = pyotp.TOTP(ENABLE_TOTP)
-    totp_now =totp.now()
+    totp_now = totp.now()
 
-    data = obj.generateSession(config('CLIENTCODE'),config('PASSWORD'),totp_now)
+    data = obj.generateSession(config("CLIENTCODE"), config("PASSWORD"), totp_now)
     return obj
 
 
-# json of all the instrumentList from Angel_API
+# json of all the instrumentList with '-EQ' from Angel_API
+# Initial were pulling around 93661 SCRIPTS now down to  1915 with '-EQ'
+# This will help in smaller list to iterate hance faster execution
 # we need instrument_list only once O(1) via requests
 def instrumentList():
-    instrument_list =  requests.get('https://margincalculator.angelbroking.com/OpenAPI_File/files/OpenAPIScripMaster.json').json()
-    return instrument_list
+    instrument_list = requests.get(
+        "https://margincalculator.angelbroking.com/OpenAPI_File/files/OpenAPIScripMaster.json"
+    ).json()
+    return [instrument for instrument in instrument_list if instrument["symbol"].endswith("-EQ")]
 
 
 # then we need a symboltoken with the help of scriptid
-# this is search from hash Table ie, JSON O(1)
+# This is a search in instrument_list with O(n)
+# but with 1915 SCRIPTS down from 93661 :)
 def scriptToken(scriptid, instrument_list):
     # get SCRIPTID from database of eq_stocks and convert them into stock_symbol
-    stock_symbol = str(scriptid) + str('-EQ')
+    stock_symbol = str(scriptid) + str("-EQ")
     for data in instrument_list:
-        if data['symbol'] == stock_symbol:
-            # print(data)
-            # print(data['token'])
-            # print(data['name'])
-            # print(data['exch_seg'])
-            return data['token']
+        if data["symbol"] == stock_symbol:
+            return data["token"]
 
 
 # historical data
@@ -41,12 +43,12 @@ def scriptToken(scriptid, instrument_list):
 # scriptid = 'INFY', fromdate = '2022-05-05', todate = '2022-05-06'
 def historical_angel(symboltoken, fromdate, todate, obj):
     try:
-        historicParam={
-        "exchange": "NSE",
-        "symboltoken": symboltoken,
-        "interval": "ONE_DAY",
-        "fromdate": f"{fromdate} 00:00",
-        "todate": f"{todate} 15:30"
+        historicParam = {
+            "exchange": "NSE",
+            "symboltoken": symboltoken,
+            "interval": "ONE_DAY",
+            "fromdate": f"{fromdate} 00:00",
+            "todate": f"{todate} 15:30",
         }
         return obj.getCandleData(historicParam)
     except Exception as e:
@@ -55,13 +57,11 @@ def historical_angel(symboltoken, fromdate, todate, obj):
 
 # this is the main function to be called
 def getDataAPI(scriptid, fromdate, todate, jwtToken, instrument_list):
-    # this is search from hash Table ie, JSON O(1)
     symboltoken = scriptToken(scriptid, instrument_list)
-
     # it will give:
     # {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': [['2023-01-02T00:00:00+05:30', 181.0, 189.3, 180.85, 187.7, 2692157]]}
     candle_data = historical_angel(symboltoken, fromdate, todate, jwtToken)
-    closing_list = candle_data['data']
+    closing_list = candle_data["data"]
 
     return closing_list
 
@@ -73,6 +73,8 @@ def getDataAPI(scriptid, fromdate, todate, jwtToken, instrument_list):
 # # need jwtToken & instrument_list first
 # obj = loginAngel()
 # instrument_list = instrumentList()
+# print(len(instrument_list))
+# print(type(instrument_list))
 
 # scripts = ['JINDALPOLY', 'ITC']
 # for i in scripts:
