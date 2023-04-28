@@ -90,7 +90,7 @@ def get_dates(start):
     return dates
 
 
-dates = get_dates(date(2023, 4, 21))
+dates = get_dates(date(2023, 4, 28))
 
 for i in dates:
     data = get_excel_1yr_back_1yr_ahead(scripts, i)
