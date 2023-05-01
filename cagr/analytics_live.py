@@ -2,10 +2,8 @@
 from datetime import timedelta, date
 from api_angel import loginAngel, instrumentList, getDataAPI
 import pandas as pd
-from scripts import scripts
 import time
 
-start_time = time.perf_counter()
 
 
 def get_excel_1yr_back_1yr_ahead(scripts, start):
@@ -89,13 +87,3 @@ def get_dates(start):
             dates.append(today)
     return dates
 
-
-dates = get_dates(date(2023, 4, 28))
-
-for i in dates:
-    data = get_excel_1yr_back_1yr_ahead(scripts, i)
-    print(data)
-
-finish_time = time.perf_counter()
-
-print(f'Finished in {round((finish_time - start_time), 2)} Seconds(s)')
