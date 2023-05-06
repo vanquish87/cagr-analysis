@@ -10,7 +10,7 @@ def get_excel_1yr_back_1yr_ahead(scripts, start):
     '''
     Previously took 621.72 Seconds for 501 Scripts
     after refactoring and hitting API only 1 time now
-    for same 501 Scripts takes 187.37 Seconds.
+    for same 501 Scripts takes 166.81 Seconds.
     
     Note: Can't use multiprocessing as API has rate limit
     Further optimization would be welcomed :)
