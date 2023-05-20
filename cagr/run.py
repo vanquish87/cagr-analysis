@@ -4,12 +4,13 @@ import time
 from datetime import date
 
 
-dates = get_dates(date(2023, 5, 5))
+dates = get_dates(date(2023, 5, 19))
+print(dates)
 
 start_time = time.perf_counter()
 
-for i in dates:
-    data = get_excel_1yr_back_1yr_ahead(scripts, i)
+for start_date in dates:
+    data = get_excel_1yr_back_1yr_ahead(scripts, start_date)
     print(data)
 
 finish_time = time.perf_counter()
