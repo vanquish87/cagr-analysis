@@ -29,7 +29,7 @@ def get_excel_1yr_back_1yr_ahead(scripts, start):
     len_scripts = len(scripts)
 
     for scriptid in scripts:
-        print(f"Fetching {scripts.index(scriptid) + 1} of {len_scripts}.")
+        print(f"Fetching {scripts.index(scriptid) + 1}: {scriptid} of {len_scripts}.")
         # for cmp
         try:
             data = getDataAPI(scriptid, date_back, date_ahead, obj, instrument_list)
@@ -48,7 +48,7 @@ def get_excel_1yr_back_1yr_ahead(scripts, start):
 
             time.sleep(0.05)
         except:
-            print("API didn't fetch any data, please check the date.")
+            print(f"API didn't fetch any data for {scriptid}, please check the date.")
             cmp = "No cmp Data"
             mp_back = "No mp_back Data"
             return_from_back = "return_from_back is None"
