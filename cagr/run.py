@@ -4,7 +4,7 @@ import time
 from datetime import date
 
 
-dates = get_dates(date(2023, 5, 30))
+dates = get_dates(date(2023, 6, 15))
 print(dates)
 
 start_time = time.perf_counter()
