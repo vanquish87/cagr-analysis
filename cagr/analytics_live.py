@@ -1,23 +1,20 @@
 # using this research model right now
 from datetime import timedelta, date
-from api_angel import loginAngel, instrumentList, getDataAPI
+from api_angel import getDataAPI
 import pandas as pd
 import time
+from smartapi import SmartConnect
 
 
-
-def get_excel_1yr_back_1yr_ahead(scripts, start):
-    '''
+def get_excel_1yr_back_1yr_ahead(scripts: list, start: date, obj: SmartConnect, instrument_list: list) -> pd.DataFrame:
+    """
     Previously took 621.72 Seconds for 501 Scripts
     after refactoring and hitting API only 1 time now
     for same 501 Scripts takes 166.81 Seconds.
-    
+
     Note: Can't use multiprocessing as API has rate limit
     Further optimization would be welcomed :)
-    '''
-    # need jwtToken & instrument_list first
-    obj = loginAngel()
-    instrument_list = instrumentList()
+    """
 
     # creating dates
     date_back = start - timedelta(days=365)
@@ -54,7 +51,7 @@ def get_excel_1yr_back_1yr_ahead(scripts, start):
             return_from_back = "return_from_back is None"
             return_ahead = "return_ahead is None"
 
-        new_row =  pd.DataFrame(
+        new_row = pd.DataFrame(
             {
                 "Script": [scriptid],
                 "CMP": [cmp],
@@ -75,7 +72,7 @@ def get_excel_1yr_back_1yr_ahead(scripts, start):
     return df_new
 
 
-def get_dates(start):
+def get_dates(start: date) -> list:
     # because we can get EOD date only so select yesterday as latest
     today = date.today() - timedelta(days=1)
     dates = [start]
@@ -86,4 +83,3 @@ def get_dates(start):
         elif start - timedelta(days=365 * 1) != today:
             dates.append(today)
     return dates
-
