@@ -13,7 +13,27 @@ I tried n fixed it... I am awesome :)
     clientPublicIp= " " + get('https://api.ipify.org').text
 """
 
-dates = get_dates(date(2023, 6, 30))
+# backtest dates list
+# dates = [
+#     datetime.date(2007, 1, 2),
+#     datetime.date(2008, 1, 3),
+#     datetime.date(2009, 1, 5),
+#     datetime.date(2010, 1, 5),
+#     datetime.date(2011, 1, 6),
+#     datetime.date(2012, 1, 7),
+#     datetime.date(2013, 1, 7),
+#     datetime.date(2014, 1, 8),
+#     datetime.date(2015, 1, 9),
+#     datetime.date(2016, 1, 11),
+#     datetime.date(2017, 1, 11),
+#     datetime.date(2018, 1, 12),
+#     datetime.date(2019, 1, 14),
+#     datetime.date(2020, 1, 15),
+#     datetime.date(2021, 1, 15),
+#     datetime.date(2022, 1, 17),
+# ]
+
+dates = get_dates(date(2023, 7, 14))
 print(dates)
 
 start_time = time.perf_counter()

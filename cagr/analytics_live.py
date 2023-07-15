@@ -6,6 +6,17 @@ import time
 from smartapi import SmartConnect
 
 
+def df_sort_n_index_reset(df_new: pd.DataFrame) -> pd.DataFrame:
+    # Sort the DataFrame in descending order based on the 'return_from_back' column
+    df_new = df_new.sort_values(by="return_from_back", ascending=False)
+    # Reset the index number
+    df_new = df_new.reset_index(drop=True)
+    # Reset the index number and start from 1
+    df_new.index = df_new.index + 1
+
+    return df_new
+
+
 def get_excel_1yr_back_1yr_ahead(scripts: list, start: date, obj: SmartConnect, instrument_list: list) -> pd.DataFrame:
     """
     Previously took 621.72 Seconds for 501 Scripts
@@ -26,7 +37,7 @@ def get_excel_1yr_back_1yr_ahead(scripts: list, start: date, obj: SmartConnect, 
     len_scripts = len(scripts)
 
     for scriptid in scripts:
-        print(f"Fetching {scripts.index(scriptid) + 1} of {len_scripts}: {scriptid}")
+        print(f"Neural analyzing {scripts.index(scriptid) + 1} of {len_scripts}: {scriptid}")
         # for cmp
         try:
             data = getDataAPI(scriptid, date_back, date_ahead, obj, instrument_list)
@@ -43,32 +54,30 @@ def get_excel_1yr_back_1yr_ahead(scripts: list, start: date, obj: SmartConnect, 
             return_from_back = round((((cmp / mp_back) ** (1 / 1)) - 1) * 100, 1)
             return_ahead = round((((mp_ahead / cmp)) - 1) * 100, 1)
 
+            new_row = pd.DataFrame(
+                {
+                    "Script": [scriptid],
+                    "CMP": [cmp],
+                    "Date": [start],
+                    "mp_1yr_back": [mp_back],
+                    "date_1yr_back": [date_back],
+                    "return_from_back": [return_from_back],
+                    "mp_1yr_ahead": [mp_ahead],
+                    "date_1yr_ahead": [date_ahead],
+                    "return_ahead": [return_ahead],
+                }
+            )
+
+            df_new = pd.concat([df_new, new_row], axis=0, ignore_index=True)
+
             time.sleep(0.05)
+
         except:
             print(f"API didn't fetch any data for {scriptid}, please check the date.")
-            cmp = "No cmp Data"
-            mp_back = "No mp_back Data"
-            return_from_back = "return_from_back is None"
-            return_ahead = "return_ahead is None"
 
-        new_row = pd.DataFrame(
-            {
-                "Script": [scriptid],
-                "CMP": [cmp],
-                "Date": [start],
-                "mp_1yr_back": [mp_back],
-                "date_1yr_back": [date_back],
-                "return_from_back": [return_from_back],
-                "mp_1yr_ahead": [mp_ahead],
-                "date_1yr_ahead": [date_ahead],
-                "return_ahead": [return_ahead],
-            }
-        )
-
-        # Concatenate the two DataFrames along the rows (axis=0)
-        df_new = pd.concat([df_new, new_row], axis=0, ignore_index=True)
-
+    df_new = df_sort_n_index_reset(df_new)
     df_new.to_excel(f"research/1yr/stock-returns-1yr-{start}.xlsx")
+
     return df_new
 
 
