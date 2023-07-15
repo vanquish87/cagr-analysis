@@ -1,7 +1,7 @@
-from analytics_live import get_excel_1yr_back_1yr_ahead, get_dates
+from analytics_live import get_excel_from_date_back_to_1yr_ahead, get_dates
 from scripts import scripts
 import time
-from datetime import date
+from datetime import date, timedelta
 from api_angel import loginAngel, instrumentList
 
 """
@@ -43,7 +43,8 @@ obj = loginAngel()
 instrument_list = instrumentList()
 
 for start_date in [dates[0]]:
-    data = get_excel_1yr_back_1yr_ahead(scripts, start_date, obj, instrument_list)
+    date_back = start_date - timedelta(days=30 * 9)
+    data = get_excel_from_date_back_to_1yr_ahead(scripts, start_date, date_back, obj, instrument_list)
     print(data)
 
 finish_time = time.perf_counter()

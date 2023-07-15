@@ -17,7 +17,9 @@ def df_sort_n_index_reset(df_new: pd.DataFrame) -> pd.DataFrame:
     return df_new
 
 
-def get_excel_1yr_back_1yr_ahead(scripts: list, start: date, obj: SmartConnect, instrument_list: list) -> pd.DataFrame:
+def get_excel_from_date_back_to_1yr_ahead(
+    scripts: list, start: date, date_back: date, obj: SmartConnect, instrument_list: list
+) -> pd.DataFrame:
     """
     Previously took 621.72 Seconds for 501 Scripts
     after refactoring and hitting API only 1 time now
@@ -26,9 +28,6 @@ def get_excel_1yr_back_1yr_ahead(scripts: list, start: date, obj: SmartConnect, 
     Note: Can't use multiprocessing as API has rate limit
     Further optimization would be welcomed :)
     """
-
-    # creating dates
-    date_back = start - timedelta(days=365)
     date_ahead = start + timedelta(days=365 * 1)
 
     df_new = pd.DataFrame()
@@ -59,8 +58,8 @@ def get_excel_1yr_back_1yr_ahead(scripts: list, start: date, obj: SmartConnect, 
                     "Script": [scriptid],
                     "CMP": [cmp],
                     "Date": [start],
-                    "mp_1yr_back": [mp_back],
-                    "date_1yr_back": [date_back],
+                    "mp_back": [mp_back],
+                    "date_back": [date_back],
                     "return_from_back": [return_from_back],
                     "mp_1yr_ahead": [mp_ahead],
                     "date_1yr_ahead": [date_ahead],
@@ -73,10 +72,11 @@ def get_excel_1yr_back_1yr_ahead(scripts: list, start: date, obj: SmartConnect, 
             time.sleep(0.05)
 
         except:
+            time.sleep(0.05)
             print(f"API didn't fetch any data for {scriptid}, please check the date.")
 
     df_new = df_sort_n_index_reset(df_new)
-    df_new.to_excel(f"research/1yr/stock-returns-1yr-{start}.xlsx")
+    df_new.to_excel(f"research/1yr-9mnth-back/stock-returns-1yr-{start}.xlsx")
 
     return df_new
 
