@@ -38,8 +38,8 @@ def get_excel_from_date_back_to_1yr_ahead(
     for scriptid in scripts:
         print(f"Neural analyzing {scripts.index(scriptid) + 1} of {len_scripts}: {scriptid}")
         # for cmp
+        data = getDataAPI(scriptid, date_back, date_ahead, obj, instrument_list)
         try:
-            data = getDataAPI(scriptid, date_back, date_ahead, obj, instrument_list)
             df = pd.DataFrame(data)
             mp_ahead = df.iloc[-1, 4]
             mp_back = df.iloc[0, 4]
@@ -69,14 +69,14 @@ def get_excel_from_date_back_to_1yr_ahead(
 
             df_new = pd.concat([df_new, new_row], axis=0, ignore_index=True)
 
-            time.sleep(0.05)
+            time.sleep(0.15)
 
-        except:
-            time.sleep(0.05)
-            print(f"API didn't fetch any data for {scriptid}, please check the date.")
+        except Exception as e:
+            print("API didn't fetch any data: {}".format(e))
+            time.sleep(0.15)
 
     df_new = df_sort_n_index_reset(df_new)
-    df_new.to_excel(f"research/1yr-9mnth-back/stock-returns-1yr-{start}.xlsx")
+    df_new.to_excel(f"research/6months/stock-returns-1yr-{start}.xlsx")
 
     return df_new
 

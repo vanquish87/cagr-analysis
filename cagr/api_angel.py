@@ -52,7 +52,8 @@ def historical_angel(symboltoken, fromdate, todate, obj):
         }
         return obj.getCandleData(historicParam)
     except Exception as e:
-        print("Historic Api failed: {}".format(e.message))
+        print("Historic Api failed: {}".format(e))
+        return {}
 
 
 # this is the main function to be called
@@ -61,9 +62,7 @@ def getDataAPI(scriptid, fromdate, todate, jwtToken, instrument_list):
     # it will give:
     # {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': [['2023-01-02T00:00:00+05:30', 181.0, 189.3, 180.85, 187.7, 2692157]]}
     candle_data = historical_angel(symboltoken, fromdate, todate, jwtToken)
-    closing_list = candle_data["data"]
-
-    return closing_list
+    return candle_data.get('data')
 
 
 # --------------------------- TESTING PURPOSE ONLY------------------------
