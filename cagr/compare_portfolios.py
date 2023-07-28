@@ -1,17 +1,14 @@
-aaa = """MAZDOCK
-FACT
+aaa = """FACT
+JBMA
+MAZDOCK
 RVNL
 JSL
-JBMA
-KALYANKJIL
 SUZLON
-TRITURBINE
-IDFCFIRSTB
-OLECTRA
-NCC
-RBLBANK
-EQUITASBNK
-RAINBOW"""
+PFC
+ZENSARTECH
+ENGINERSIN
+UCOBANK
+OLECTRA"""
 # print(set(aaa.split("\n")))
 # print(len(set(aaa.split("\n"))))
 
@@ -42,22 +39,7 @@ old = {
     "SUZLON",
 }
 
-new = {
-    "TRITURBINE",
-    "RBLBANK",
-    "RAINBOW",
-    "JBMA",
-    "FACT",
-    "RVNL",
-    "NCC",
-    "MAZDOCK",
-    "IDFCFIRSTB",
-    "OLECTRA",
-    "EQUITASBNK",
-    "JSL",
-    "KALYANKJIL",
-    "SUZLON",
-}
+new = {'MAZDOCK', 'ENGINERSIN', 'ZENSARTECH', 'RVNL', 'SUZLON', 'JBMA', 'FACT', 'UCOBANK', 'OLECTRA', 'PFC', 'JSL'}
 
 print(old.intersection(new))
 print(len(old.intersection(new)))
