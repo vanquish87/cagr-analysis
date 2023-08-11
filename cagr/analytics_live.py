@@ -1,20 +1,9 @@
-# using this research model right now
 from datetime import timedelta, date
 from api_angel import getDataAPI
 import pandas as pd
 import time
 from smartapi import SmartConnect
-
-
-def df_sort_n_index_reset(df_new: pd.DataFrame) -> pd.DataFrame:
-    # Sort the DataFrame in descending order based on the 'return_from_back' column
-    df_new = df_new.sort_values(by="return_from_back", ascending=False)
-    # Reset the index number
-    df_new = df_new.reset_index(drop=True)
-    # Reset the index number and start from 1
-    df_new.index = df_new.index + 1
-
-    return df_new
+from utils import df_sort_n_index_reset, get_price
 
 
 def get_excel_from_date_back_to_1yr_ahead(
@@ -81,14 +70,37 @@ def get_excel_from_date_back_to_1yr_ahead(
     return df_new
 
 
-def get_dates(start: date) -> list:
-    # because we can get EOD date only so select yesterday as latest
-    today = date.today() - timedelta(days=1)
-    dates = [start]
-    while start <= today:
-        start += timedelta(days=365 * 1)
-        if start <= today:
-            dates.append(start)
-        elif start - timedelta(days=365 * 1) != today:
-            dates.append(today)
-    return dates
+
+def get_excel_from_historical_date_to_current_ahead(
+    scripts: list, start: date, date_back: date, obj: SmartConnect, instrument_list: list
+) -> pd.DataFrame:
+    df_new = pd.DataFrame()
+
+    len_scripts = len(scripts)  # to avoid repeated computations
+
+    for scriptid in scripts:
+        print(f"Neural analyzing {scripts.index(scriptid) + 1} of {len_scripts}: {scriptid}")
+        mp_back = get_price(scriptid, date_back, obj, instrument_list)
+        cmp = get_price(scriptid, start, obj, instrument_list)
+
+        try:
+            return_from_back = round(((cmp / mp_back) - 1) * 100, 1)
+            new_row = pd.DataFrame(
+                {
+                    "Script": [scriptid],
+                    "CMP": [cmp],
+                    "Date": [start],
+                    "mp_back": [mp_back],
+                    "date_back": [date_back],
+                    "return_from_back": [return_from_back],
+                }
+            )
+
+            df_new = pd.concat([df_new, new_row], axis=0, ignore_index=True)
+        except Exception as e:
+            print("Error with cmp or mp_back: {}".format(e))
+
+    df_new = df_sort_n_index_reset(df_new)
+    df_new.to_excel(f"research/historical/stock-returns-{date_back}-to-{start}.xlsx")
+
+    return df_new

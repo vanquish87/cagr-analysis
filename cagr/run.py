@@ -1,4 +1,5 @@
-from analytics_live import get_excel_from_date_back_to_1yr_ahead, get_dates
+from analytics_live import get_excel_from_date_back_to_1yr_ahead
+from utils import get_dates
 from scripts import scripts
 import time
 from datetime import date, timedelta
@@ -33,7 +34,7 @@ I tried n fixed it... I am awesome :)
 #     datetime.date(2022, 1, 17),
 # ]
 
-dates = get_dates(date(2023, 7, 31))
+dates = get_dates(date(2023, 8, 11))
 print(dates)
 
 start_time = time.perf_counter()
