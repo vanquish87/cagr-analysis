@@ -5,7 +5,7 @@ import time
 from datetime import date, timedelta
 from api_angel import loginAngel, instrumentList
 
-dates = get_dates(date(2023, 8, 11))
+dates = get_dates(date(2023, 8, 16))
 print(dates)
 
 start_time = time.perf_counter()
@@ -18,7 +18,7 @@ instrument_list = instrumentList()
 print(time.perf_counter())
 
 for start_date in [dates[0]]:
-    date_back = start_date - timedelta(days=30 * 165)
+    date_back = date(2014, 6, 2)
     data = get_excel_from_historical_date_to_current_ahead(scripts, start_date, date_back, obj, instrument_list)
     print(data)
 
