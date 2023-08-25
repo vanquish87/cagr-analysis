@@ -7,7 +7,7 @@ from utils import df_sort_n_index_reset, get_price
 
 
 def get_excel_from_date_back_to_1yr_ahead(
-    scripts: list, start: date, date_back: date, obj: SmartConnect, instrument_list: list
+    scripts: list, start: date, date_back: date, date_ahead: date, obj: SmartConnect, instrument_list: list
 ) -> pd.DataFrame:
     """
     Previously took 621.72 Seconds for 501 Scripts
@@ -17,7 +17,6 @@ def get_excel_from_date_back_to_1yr_ahead(
     Note: Can't use multiprocessing as API has rate limit
     Further optimization would be welcomed :)
     """
-    date_ahead = start + timedelta(days=365 * 1)
 
     df_new = pd.DataFrame()
 
@@ -50,8 +49,8 @@ def get_excel_from_date_back_to_1yr_ahead(
                     "mp_back": [mp_back],
                     "date_back": [date_back],
                     "return_from_back": [return_from_back],
-                    "mp_1yr_ahead": [mp_ahead],
-                    "date_1yr_ahead": [date_ahead],
+                    "mp_date_ahead": [mp_ahead],
+                    "date_ahead": [date_ahead],
                     "return_ahead": [return_ahead],
                 }
             )

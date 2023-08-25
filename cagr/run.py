@@ -34,7 +34,7 @@ I tried n fixed it... I am awesome :)
 #     datetime.date(2022, 1, 17),
 # ]
 
-dates = get_dates(date(2023, 8, 11))
+dates = get_dates(start=date(2023, 8, 25), duration=0)
 print(dates)
 
 start_time = time.perf_counter()
@@ -43,9 +43,11 @@ start_time = time.perf_counter()
 obj = loginAngel()
 instrument_list = instrumentList()
 
-for start_date in [dates[0]]:
+for start_date in dates:
     date_back = start_date - timedelta(days=30 * 9)
-    data = get_excel_from_date_back_to_1yr_ahead(scripts, start_date, date_back, obj, instrument_list)
+    date_ahead = start_date + timedelta(days=183)
+
+    data = get_excel_from_date_back_to_1yr_ahead(scripts, start_date, date_back, date_ahead, obj, instrument_list)
     print(data)
 
 finish_time = time.perf_counter()

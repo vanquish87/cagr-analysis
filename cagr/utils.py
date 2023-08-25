@@ -31,14 +31,14 @@ def df_sort_n_index_reset(df_new: pd.DataFrame) -> pd.DataFrame:
     return df_new
 
 
-def get_dates(start: date) -> list:
+def get_dates(*, start: date, duration: int) -> list:
     # because we can get EOD date only so select yesterday as latest
     today = date.today() - timedelta(days=1)
     dates = [start]
     while start <= today:
-        start += timedelta(days=365 * 1)
+        start += timedelta(days=duration)
         if start <= today:
             dates.append(start)
-        elif start - timedelta(days=365 * 1) != today:
+        else:
             dates.append(today)
     return dates
