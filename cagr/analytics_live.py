@@ -41,6 +41,11 @@ def get_excel_from_date_back_to_1yr_ahead(
             return_from_back = round((((cmp / mp_back) ** (1 / 1)) - 1) * 100, 1)
             return_ahead = round((((mp_ahead / cmp)) - 1) * 100, 1)
 
+            # Calculate rolling average for the 'Volume' column
+            df["Volume"] = df[5].rolling(window=30, min_periods=1).mean()
+            avg_30_day_volume = df.iloc[matching_rows.index, df.columns.get_loc("Volume")].values[0]
+            avg_30_day_vol_in_crore = round((avg_30_day_volume * cmp / 10000000), 2)
+
             new_row = pd.DataFrame(
                 {
                     "Script": [scriptid],
@@ -52,6 +57,7 @@ def get_excel_from_date_back_to_1yr_ahead(
                     "mp_date_ahead": [mp_ahead],
                     "date_ahead": [date_ahead],
                     "return_ahead": [return_ahead],
+                    "avg_30_day_vol_in_crore": [avg_30_day_vol_in_crore],
                 }
             )
 
@@ -67,7 +73,6 @@ def get_excel_from_date_back_to_1yr_ahead(
     df_new.to_excel(f"research/1yr-9mnth-back/stock-returns-1yr-{start}.xlsx")
 
     return df_new
-
 
 
 def get_excel_from_historical_date_to_current_ahead(

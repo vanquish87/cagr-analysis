@@ -1,45 +1,20 @@
-aaa = """FACT
-JBMA
-RVNL
+aaa = """APARINDS
+FACT
 JSL
-MAZDOCK
 SUZLON
+OLECTRA
+RECLTD
 ZENSARTECH
-PFC
-ENGINERSIN
+KALYANKJIL
 NCC
-OLECTRA"""
+MAZDOCK
+LINDEINDIA"""
 # print(set(aaa.split("\n")))
 # print(len(set(aaa.split("\n"))))
 
-old = {
-    "FACT",
-    "FINCABLES",
-    "UNIONBANK",
-    "TRITURBINE",
-    "EQUITASBNK",
-    "CGPOWER",
-    "HAL",
-    "RAYMOND",
-    "RAINBOW",
-    "KARURVYSYA",
-    "RVNL",
-    "MAHINDCIE",
-    "VBL",
-    "NCC",
-    "GESHIP",
-    "INDIANB",
-    "MAZDOCK",
-    "KALYANKJIL",
-    "JSL",
-    "IDFCFIRSTB",
-    "JBMA",
-    "IDFC",
-    "UCOBANK",
-    "SUZLON",
-}
+old = {'NCC', 'TRITURBINE', 'VBL', 'FINCABLES', 'JBMA', 'SUZLON', 'IDFCFIRSTB', 'OLECTRA', 'PFC', 'ENGINERSIN', 'ZENSARTECH', 'UNIONBANK', 'JSL', 'EQUITASBNK', 'UCOBANK', 'KARURVYSYA', 'RAYMOND', 'INDIANB', 'FACT', 'RAINBOW', 'RVNL', 'GESHIP', 'IDFC', 'KALYANKJIL', 'CGPOWER', 'MAHINDCIE', 'MAZDOCK', 'HAL'}
 
-new = {"MAZDOCK", "ENGINERSIN", "ZENSARTECH", "RVNL", "SUZLON", "JBMA", "FACT", "UCOBANK", "OLECTRA", "PFC", "JSL"}
+new = {'MAZDOCK', 'SUZLON', 'KALYANKJIL', 'JSL', 'APARINDS', 'LINDEINDIA', 'OLECTRA', 'NCC', 'ZENSARTECH', 'FACT', 'RECLTD'}
 
 print(old.intersection(new))
 print(len(old.intersection(new)))
