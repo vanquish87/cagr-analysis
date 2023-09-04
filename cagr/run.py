@@ -34,7 +34,7 @@ I tried n fixed it... I am awesome :)
 #     datetime.date(2022, 1, 17),
 # ]
 
-dates = get_dates(start=date(2023, 8, 25), duration=0)
+dates = get_dates(start=date(2023, 9, 4), duration=0)
 print(dates)
 
 start_time = time.perf_counter()

@@ -43,8 +43,13 @@ def get_excel_from_date_back_to_1yr_ahead(
 
             # Calculate rolling average for the 'Volume' column
             df["Volume"] = df[5].rolling(window=30, min_periods=1).mean()
-            avg_30_day_volume = df.iloc[matching_rows.index, df.columns.get_loc("Volume")].values[0]
-            avg_30_day_vol_in_crore = round((avg_30_day_volume * cmp / 10000000), 2)
+            avg_30day_volume = df.iloc[matching_rows.index, df.columns.get_loc("Volume")].values[0]
+            avg_30day_vol_crore = round((avg_30day_volume * cmp / 10000000), 2)
+
+            # Calculate rolling median for the 'Volume' column
+            df["Volume_median"] = df[5].rolling(window=30, min_periods=1).median()
+            median_30day_volume = df.iloc[matching_rows.index, df.columns.get_loc("Volume_median")].values[0]
+            median_30day_vol_crore = round((median_30day_volume * cmp / 10000000), 2)
 
             new_row = pd.DataFrame(
                 {
@@ -57,7 +62,8 @@ def get_excel_from_date_back_to_1yr_ahead(
                     "mp_date_ahead": [mp_ahead],
                     "date_ahead": [date_ahead],
                     "return_ahead": [return_ahead],
-                    "avg_30_day_vol_in_crore": [avg_30_day_vol_in_crore],
+                    "avg_30day_vol_crore": [avg_30day_vol_crore],
+                    "median_30day_vol_crore": [median_30day_vol_crore],
                 }
             )
 
