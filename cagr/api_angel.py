@@ -1,8 +1,7 @@
 # package import statement
 from smartapi import SmartConnect
 from decouple import config
-import pyotp, requests, time
-from datetime import date
+import pyotp, requests, json, os
 
 
 def loginAngel():
@@ -19,12 +18,28 @@ def loginAngel():
 # json of all the instrumentList with '-EQ' from Angel_API
 # Initial were pulling around 93661 SCRIPTS now down to  1915 with '-EQ'
 # This will help in smaller list to iterate hance faster execution
+# URL was taking a long time to load.. so to speed up we load from local file if its there
 # we need instrument_list only once O(1) via requests
 def instrumentList():
+    instrument_data_file = "instrument_data.json"
+    
+    # Check if the file exists
+    if os.path.exists(instrument_data_file):
+        with open(instrument_data_file, "r") as file:
+            instrument_list = json.load(file)
+        return instrument_list
+
     instrument_list = requests.get(
         "https://margincalculator.angelbroking.com/OpenAPI_File/files/OpenAPIScripMaster.json"
     ).json()
-    return [instrument for instrument in instrument_list if instrument["symbol"].endswith("-EQ")]
+
+    # Filter instruments and save to the file
+    filtered_instruments = [instrument for instrument in instrument_list if instrument["symbol"].endswith("-EQ")]
+
+    with open(instrument_data_file, "w") as file:
+        json.dump(filtered_instruments, file)
+
+    return filtered_instruments
 
 
 # then we need a symboltoken with the help of scriptid
@@ -62,7 +77,7 @@ def getDataAPI(scriptid, fromdate, todate, jwtToken, instrument_list):
     # it will give:
     # {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': [['2023-01-02T00:00:00+05:30', 181.0, 189.3, 180.85, 187.7, 2692157]]}
     candle_data = historical_angel(symboltoken, fromdate, todate, jwtToken)
-    return candle_data.get('data')
+    return candle_data.get("data")
 
 
 # --------------------------- TESTING PURPOSE ONLY------------------------
