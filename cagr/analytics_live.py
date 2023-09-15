@@ -24,7 +24,7 @@ def get_excel_from_date_back_to_1yr_ahead(
     len_scripts = len(scripts)
 
     for scriptid in scripts:
-        print(f"Neural analyzing {scripts.index(scriptid) + 1} of {len_scripts}: {scriptid}")
+        print(f"AI analyzing {scripts.index(scriptid) + 1} of {len_scripts}: {scriptid}")
         # for cmp
         data = getDataAPI(scriptid, date_back, date_ahead, obj, instrument_list)
         try:
@@ -44,12 +44,12 @@ def get_excel_from_date_back_to_1yr_ahead(
             # Calculate rolling average for the 'Volume' column
             df["Volume"] = df[5].rolling(window=30, min_periods=1).mean()
             avg_30day_volume = df.iloc[matching_rows.index, df.columns.get_loc("Volume")].values[0]
-            avg_30day_vol_crore = round((avg_30day_volume * cmp / 10000000), 2)
+            avg_30day_vol_crore = int(avg_30day_volume * cmp / 10000000)
 
             # Calculate rolling median for the 'Volume' column
             df["Volume_median"] = df[5].rolling(window=30, min_periods=1).median()
             median_30day_volume = df.iloc[matching_rows.index, df.columns.get_loc("Volume_median")].values[0]
-            median_30day_vol_crore = round((median_30day_volume * cmp / 10000000), 2)
+            median_30day_vol_crore = int(median_30day_volume * cmp / 10000000)
 
             new_row = pd.DataFrame(
                 {
