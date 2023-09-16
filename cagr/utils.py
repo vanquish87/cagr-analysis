@@ -33,12 +33,24 @@ def df_sort_n_index_reset(df_new: pd.DataFrame) -> pd.DataFrame:
 
 def get_dates(*, start: date, duration: int) -> list:
     # because we can get EOD date only so select yesterday as latest
-    today = date.today() - timedelta(days=1)
+    yesterday = date.today() - timedelta(days=1)
     dates = [start]
-    while start <= today:
+    while start <= yesterday:
         start += timedelta(days=duration)
-        if start <= today:
+        if start <= yesterday:
             dates.append(start)
         else:
-            dates.append(today)
+            dates.append(yesterday)
     return dates
+
+
+# Define your decorator function
+def calculate_execution_time(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.perf_counter()
+        result = func(*args, **kwargs)
+        finish_time = time.perf_counter()
+        print(f"Finished in {int(finish_time - start_time)} seconds.")
+        return result
+
+    return wrapper

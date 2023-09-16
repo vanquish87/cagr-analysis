@@ -6,7 +6,7 @@ from smartapi import SmartConnect
 from utils import df_sort_n_index_reset, get_price
 
 
-def get_excel_from_date_back_to_1yr_ahead(
+def get_df_from_date_back_to_date_ahead(
     scripts: list, start: date, date_back: date, date_ahead: date, obj: SmartConnect, instrument_list: list
 ) -> pd.DataFrame:
     """
@@ -72,11 +72,8 @@ def get_excel_from_date_back_to_1yr_ahead(
             time.sleep(0.15)
 
         except Exception as e:
-            print("API didn't fetch any data: {}".format(e))
+            print(f"API didn't fetch any data for {scriptid}: {e}")
             time.sleep(0.15)
-
-    df_new = df_sort_n_index_reset(df_new)
-    df_new.to_excel(f"research/1yr-9mnth-back/stock-returns-1yr-{start}.xlsx")
 
     return df_new
 

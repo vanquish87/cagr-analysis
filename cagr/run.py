@@ -1,18 +1,33 @@
-from analytics_live import get_excel_from_date_back_to_1yr_ahead
+from analytics_live import get_df_from_date_back_to_date_ahead
 from utils import get_dates
 from scripts import scripts
-import time
 from datetime import date, timedelta
 from api_angel import loginAngel, instrumentList
+from utils import df_sort_n_index_reset, calculate_execution_time
 
-"""
-Some speed issues coming up because of Angel API
-which can be fixed if
-clientPublicIp can be set to None in below location n comment original value
-I tried n fixed it... I am awesome :)
- File "C:\jimmy\cagr-analysis\env\lib\site-packages\smartapi\smartConnect.py", line 58, in SmartConnect
-    clientPublicIp= " " + get('https://api.ipify.org').text
-"""
+
+@calculate_execution_time
+def main():
+    dates = get_dates(start=date(2023, 9, 15), duration=13)
+    print(dates)
+
+    obj = loginAngel()
+    instrument_list = instrumentList()
+
+    for start_date in [dates[0]]:
+        date_back = start_date - timedelta(days=30 * 9)
+        date_ahead = start_date + timedelta(days=183)
+
+        df = get_df_from_date_back_to_date_ahead(scripts, start_date, date_back, date_ahead, obj, instrument_list)
+
+        df = df_sort_n_index_reset(df)
+        df.to_excel(f"research/1yr-9mnth-back/stock-returns-1yr-{start_date}.xlsx")
+
+        print(df)
+
+
+main()
+
 
 # backtest dates list
 # dates = [
@@ -33,23 +48,3 @@ I tried n fixed it... I am awesome :)
 #     datetime.date(2021, 1, 15),
 #     datetime.date(2022, 1, 17),
 # ]
-
-dates = get_dates(start=date(2023, 9, 4), duration=0)
-print(dates)
-
-start_time = time.perf_counter()
-
-# need jwtToken & instrument_list first
-obj = loginAngel()
-instrument_list = instrumentList()
-
-for start_date in dates:
-    date_back = start_date - timedelta(days=30 * 9)
-    date_ahead = start_date + timedelta(days=183)
-
-    data = get_excel_from_date_back_to_1yr_ahead(scripts, start_date, date_back, date_ahead, obj, instrument_list)
-    print(data)
-
-finish_time = time.perf_counter()
-
-print(f"Finished in {round((finish_time - start_time), 2)} Seconds(s)")
