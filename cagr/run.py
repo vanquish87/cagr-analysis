@@ -3,7 +3,7 @@ from utils import get_dates
 from scripts import scripts
 from datetime import date, timedelta
 from api_angel import loginAngel, instrumentList
-from utils import df_sort_n_index_reset, calculate_execution_time
+from utils import df_sort_n_index_reset, calculate_execution_time, df_get_rolling_avg_of_return
 
 
 @calculate_execution_time
@@ -21,6 +21,9 @@ def main():
         df = get_df_from_date_back_to_date_ahead(scripts, start_date, date_back, date_ahead, obj, instrument_list)
 
         df = df_sort_n_index_reset(df)
+        
+        df = df_get_rolling_avg_of_return(df)
+
         df.to_excel(f"research/1yr-9mnth-back/stock-returns-1yr-{start_date}.xlsx")
 
         print(df)

@@ -50,7 +50,7 @@ def get_EOD_candles(instrument_key: str, interval: str, to_date: str, from_date:
         return None
 
 
-def main():
+def main() -> None:
     csv_file_path = r"NSE.csv"
     trading_symbol_map = csv_to_dict(csv_file_path)
 

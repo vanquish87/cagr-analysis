@@ -20,15 +20,20 @@ def get_price(scriptid: list, date_obj: date, obj: SmartConnect, instrument_list
         return None
 
 
-def df_sort_n_index_reset(df_new: pd.DataFrame) -> pd.DataFrame:
+def df_sort_n_index_reset(df: pd.DataFrame) -> pd.DataFrame:
     # Sort the DataFrame in descending order based on the 'return_from_back' column
-    df_new = df_new.sort_values(by="return_from_back", ascending=False)
+    df = df.sort_values(by="return_from_back", ascending=False)
     # Reset the index number
-    df_new = df_new.reset_index(drop=True)
+    df = df.reset_index(drop=True)
     # Reset the index number and start from 1
-    df_new.index = df_new.index + 1
+    df.index = df.index + 1
+    return df
 
-    return df_new
+
+# Add a new column for rolling average of 'return_from_back'
+def df_get_rolling_avg_of_return(df: pd.DataFrame) -> pd.DataFrame:
+    df["return_from_back_avg"] = df["return_from_back"].expanding().mean().round(1)
+    return df
 
 
 def get_dates(*, start: date, duration: int) -> list:
