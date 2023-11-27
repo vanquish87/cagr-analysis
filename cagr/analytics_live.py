@@ -55,7 +55,7 @@ def get_df_from_date_back_to_date_ahead(
                 {
                     "Script": [scriptid],
                     "CMP": [cmp],
-                    "Date": [start.strftime("%d-%m-%Y")],  # Format the date as 'dd-mm-yyyy'
+                    "date": [start.strftime("%d-%m-%Y")],  # Format the date as 'dd-mm-yyyy'
                     "mp_back": [mp_back],
                     "date_back": [date_back.strftime("%d-%m-%Y")],  # Format the date_back as 'dd-mm-yyyy'
                     "return_from_back": [return_from_back],
