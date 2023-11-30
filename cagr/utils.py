@@ -101,8 +101,3 @@ def get_analytics(*, folder_path: str, from_to: list) -> pd.DataFrame:
     result_df.index = result_df.index + 1
 
     return result_df
-
-
-# result_df = get_analytics(folder_path="research/test/", from_to=[5, 20])
-# result_df.to_excel(f"research/test/aaaa.xlsx")
-# print(result_df)

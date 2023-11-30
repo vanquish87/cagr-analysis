@@ -65,7 +65,10 @@ def historical_angel(symboltoken, fromdate, todate, obj):
             "fromdate": f"{fromdate} 00:00",
             "todate": f"{todate} 15:30",
         }
-        return obj.getCandleData(historicParam)
+        data = obj.getCandleData(historicParam)
+        if data['message'] != 'SUCCESS':
+            print(data)
+        return data
     except Exception as e:
         print("Historic Api failed: {}".format(e))
         return {}
