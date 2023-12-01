@@ -22,7 +22,6 @@ def loginAngel():
 # we need instrument_list only once O(1) via requests
 def instrumentList():
     instrument_data_file = "instrument_data.json"
-    
     # Check if the file exists
     if os.path.exists(instrument_data_file):
         with open(instrument_data_file, "r") as file:
@@ -35,6 +34,8 @@ def instrumentList():
 
     # Filter instruments and save to the file
     filtered_instruments = [instrument for instrument in instrument_list if instrument["symbol"].endswith("-EQ")]
+    filtered_instruments_be = [instrument for instrument in instrument_list if instrument["symbol"].endswith("-BE")]
+    filtered_instruments.extend(filtered_instruments_be)
 
     with open(instrument_data_file, "w") as file:
         json.dump(filtered_instruments, file)
@@ -46,10 +47,9 @@ def instrumentList():
 # This is a search in instrument_list with O(n)
 # but with 1915 SCRIPTS down from 93661 :)
 def scriptToken(scriptid, instrument_list):
-    # get SCRIPTID from database of eq_stocks and convert them into stock_symbol
-    stock_symbol = str(scriptid) + str("-EQ")
+    # data["symbol"] will be like SUZLON-BE or INFY-EQ
     for data in instrument_list:
-        if data["symbol"] == stock_symbol:
+        if data["symbol"].split("-")[0] == scriptid:
             return data["token"]
 
 
@@ -66,7 +66,7 @@ def historical_angel(symboltoken, fromdate, todate, obj):
             "todate": f"{todate} 15:30",
         }
         data = obj.getCandleData(historicParam)
-        if data['message'] != 'SUCCESS':
+        if data["message"] != "SUCCESS":
             print(data)
         return data
     except Exception as e:
