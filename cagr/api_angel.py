@@ -33,9 +33,8 @@ def instrumentList():
     ).json()
 
     # Filter instruments and save to the file
-    filtered_instruments = [instrument for instrument in instrument_list if instrument["symbol"].endswith("-EQ")]
-    filtered_instruments_be = [instrument for instrument in instrument_list if instrument["symbol"].endswith("-BE")]
-    filtered_instruments.extend(filtered_instruments_be)
+    filtered_instruments = [instrument for instrument in instrument_list if instrument["symbol"].endswith("-EQ") or instrument["symbol"].endswith("-BE")]
+    print(len(filtered_instruments))
 
     with open(instrument_data_file, "w") as file:
         json.dump(filtered_instruments, file)
