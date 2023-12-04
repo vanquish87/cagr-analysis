@@ -7,7 +7,7 @@ from utils import df_sort_n_index_reset, get_price
 
 
 def get_df_from_date_back_to_date_ahead(
-    scripts: list, start: date, date_back: date, date_ahead: date, obj: SmartConnect, instrument_list: list
+    scripts: list, start: date, date_back: date, date_ahead: date, obj: SmartConnect, instrument_dict: dict
 ) -> pd.DataFrame:
     """
     Previously took 621.72 Seconds for 501 Scripts
@@ -26,7 +26,7 @@ def get_df_from_date_back_to_date_ahead(
     for scriptid in scripts:
         print(f"AI analyzing {scripts.index(scriptid) + 1} of {len_scripts}: {scriptid}")
         # for cmp
-        data = getDataAPI(scriptid, date_back, date_ahead, obj, instrument_list)
+        data = getDataAPI(scriptid, date_back, date_ahead, obj, instrument_dict)
         try:
             df = pd.DataFrame(data)
             mp_ahead = df.iloc[-1, 4]

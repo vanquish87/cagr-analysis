@@ -37,11 +37,11 @@ def df_get_rolling_avg_of_return_ahead(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def get_market_open_dates(*, start: date, duration: int, obj: SmartConnect, instrument_list: list) -> list:
+def get_market_open_dates(*, start: date, duration: int, obj: SmartConnect, instrument_dict: dict) -> list:
     dates = []
     while start <= date.today():
         for _ in range(4):  # Repeat the check three times
-            data = getDataAPI("INFY", start, start, obj, instrument_list)
+            data = getDataAPI("INFY", start, start, obj, instrument_dict)
             if data:
                 dates.append(start)
                 break

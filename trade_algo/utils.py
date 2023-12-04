@@ -4,14 +4,14 @@ import sys
 sys.path.append("c:/jimmy/cagr-analysis")
 
 from datetime import date
-from cagr.api_angel import loginAngel, instrumentList, getDataAPI
+from cagr.api_angel import loginAngel, instrumentDist, getDataAPI
 import pandas as pd
 
 
 def get_EOD_date(start_date: date, date_back: date, scriptid: str) -> list:
     obj = loginAngel()
-    instrument_list = instrumentList()
-    data = getDataAPI(scriptid, date_back, start_date, obj, instrument_list)
+    instrument_dict = instrumentDist()
+    data = getDataAPI(scriptid, date_back, start_date, obj, instrument_dict)
     return data
 
 
