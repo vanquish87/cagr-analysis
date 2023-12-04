@@ -21,7 +21,7 @@ def loginAngel() -> SmartConnect:
 # This will help in smaller list to iterate hance faster execution
 # URL was taking a long time to load.. so to speed up we load from local file if its there
 # we need instrument_list only once O(1) via requests
-def instrumentDist(instrument_dict_file: json) -> dict:
+def instrumentDict(instrument_dict_file: json) -> dict:
     try:
         # Check if the file exists
         if os.path.exists(instrument_dict_file):

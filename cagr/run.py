@@ -2,7 +2,7 @@ from analytics_live import get_df_from_date_back_to_date_ahead
 from utils import get_market_open_dates
 from scripts import scripts
 from datetime import date, timedelta
-from api_angel import loginAngel, instrumentDist
+from api_angel import loginAngel, instrumentDict
 from utils import df_sort_n_index_reset, calculate_execution_time, df_get_rolling_avg_of_return_ahead, get_analytics
 
 
@@ -10,7 +10,7 @@ from utils import df_sort_n_index_reset, calculate_execution_time, df_get_rollin
 def main():
     obj = loginAngel()
     instrument_dict_file = "instrument_data.json"
-    instrument_dict = instrumentDist(instrument_dict_file)
+    instrument_dict = instrumentDict(instrument_dict_file)
 
     dates = get_market_open_dates(start=date(2023, 11, 30), duration=365, obj=obj, instrument_dict=instrument_dict)
     print(dates)
