@@ -51,12 +51,14 @@ def instrumentDict(instrument_dict_file: json) -> dict:
 
 
 # then we need a symboltoken with the help of scriptid
-# This is a search in instrument_list with O(n)
-# but with 1915 SCRIPTS down from 93661 :)
+# This is a search in instrument_dict with O(1)
+# but with 2121 SCRIPTS down from 93661 :)
 def scriptToken(scriptid: str, instrument_dict: dict) -> str:
-    for key, value in instrument_dict.items():
-        if key.split("-")[0] == scriptid:
-            return value["token"]
+    if scriptid + "-EQ" in instrument_dict:
+        return instrument_dict[scriptid + "-EQ"]["token"]
+    if scriptid + "-BE" in instrument_dict:
+        return instrument_dict[scriptid + "-BE"]["token"]
+    return "Script ID not found"
 
 
 # historical data

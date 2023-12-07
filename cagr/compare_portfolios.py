@@ -1,14 +1,14 @@
 aaa = """BSE
 SUZLON
 FACT
-ITI
-APARINDS
-MAZDOCK
-KALYANKJIL
-OLECTRA
 RECLTD
-IRFC
-WELCORP"""
+ITI
+KALYANKJIL
+MAZDOCK
+SJVN
+PFC
+PRESTIGE
+ANGELONE"""
 # print(set(aaa.split("\n")))
 # print(len(set(aaa.split("\n"))))
 
