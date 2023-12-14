@@ -58,7 +58,8 @@ def scriptToken(scriptid: str, instrument_dict: dict) -> str:
         return instrument_dict[scriptid + "-EQ"]["token"]
     if scriptid + "-BE" in instrument_dict:
         return instrument_dict[scriptid + "-BE"]["token"]
-    return "Script ID not found"
+
+    print("Script ID not found")
 
 
 # historical data
