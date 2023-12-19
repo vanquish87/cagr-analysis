@@ -1,9 +1,15 @@
+import sys
+
+# Add the absolute path to the project root
+sys.path.append("c:/jimmy/cagr-analysis")
+import pandas as pd
+
 # using this research model right now
 from datetime import timedelta, date
 import pandas as pd
 from typing import Optional
 from smartapi import SmartConnect
-from api_angel import getDataAPI
+from cagr.api_angel import getDataAPI
 import time
 import os
 
