@@ -1,4 +1,4 @@
-from datetime import timedelta, date
+from datetime import date
 from api_angel import getDataAPI
 import pandas as pd
 import time
