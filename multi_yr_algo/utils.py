@@ -1,10 +1,17 @@
+import os
 import sys
 
-# Add the absolute path to the project root
-sys.path.append("c:/jimmy/cagr-analysis")
+# Get the absolute path of the current script
+current_script_path = os.path.abspath(__file__)
+# Move one folder above
+project_root = os.path.dirname(os.path.dirname(current_script_path))
+
+# Add the absolute path to the project root to sys.path
+sys.path.append(project_root)
+
 import pandas as pd
 from datetime import timedelta
-from smartapi import SmartConnect
+from SmartApi import SmartConnect
 from cagr.api_angel import getDataAPI
 from models import AnalysisParameters
 

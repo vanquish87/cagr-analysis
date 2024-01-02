@@ -2,7 +2,7 @@ from datetime import date
 from api_angel import getDataAPI
 import pandas as pd
 import time
-from smartapi import SmartConnect
+from SmartApi import SmartConnect
 from utils import df_sort_n_index_reset, get_price
 
 

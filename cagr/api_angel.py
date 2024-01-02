@@ -1,5 +1,5 @@
 # package import statement
-from smartapi import SmartConnect
+from SmartApi import SmartConnect
 from decouple import config
 import pyotp, requests, json, os
 from datetime import date

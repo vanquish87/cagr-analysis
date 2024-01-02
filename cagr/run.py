@@ -12,7 +12,7 @@ def main():
     instrument_dict_file = "instrument_data.json"
     instrument_dict = instrumentDict(instrument_dict_file)
 
-    dates = get_market_open_dates(start=date(2023, 11, 30), duration=365, obj=obj, instrument_dict=instrument_dict)
+    dates = get_market_open_dates(start=date(2024, 1, 2), duration=365, obj=obj, instrument_dict=instrument_dict)
     print(dates)
 
     for start_date in dates:
