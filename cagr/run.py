@@ -7,9 +7,11 @@ from utils import df_sort_n_index_reset, calculate_execution_time, df_get_rollin
 
 
 @calculate_execution_time
-def main():
-    obj = loginAngel()
+def main() -> None:
+    folder_path = "research/1yr-9mnth-back"
     instrument_dict_file = "instrument_data.json"
+
+    obj = loginAngel()
     instrument_dict = instrumentDict(instrument_dict_file)
 
     dates = get_market_open_dates(start=date(2024, 1, 2), duration=365, obj=obj, instrument_dict=instrument_dict)
@@ -25,14 +27,15 @@ def main():
 
         df = df_get_rolling_avg_of_return_ahead(df)
 
-        df.to_excel(f"research/1yr-9mnth-back/stock-returns-1yr-{start_date}.xlsx")
+        df.to_excel(f"{folder_path}/stock-returns-1yr-{start_date}.xlsx")
 
         print(df)
 
+    # use this when researching multiple dates
+    if len(dates) > 1:
+        result_df = get_analytics(folder_path=folder_path, from_to=[5, 20])
+        result_df.to_excel(f"{folder_path}/aaaa.xlsx")
+        print(result_df)
+
 
 main()
-
-# # use this when researching multiple dates
-# result_df = get_analytics(folder_path="research/test/", from_to=[5, 20])
-# result_df.to_excel(f"research/test/aaaa.xlsx")
-# print(result_df)
