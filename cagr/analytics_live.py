@@ -69,11 +69,10 @@ def get_df_from_date_back_to_date_ahead(
 
             df_new = pd.concat([df_new, new_row], axis=0, ignore_index=True)
 
-            time.sleep(0.15)
-
         except Exception as e:
             print(f"API didn't fetch any data for {scriptid}: {e}")
-            time.sleep(0.15)
+
+        time.sleep(0.15)
 
     return df_new
 
