@@ -9,7 +9,6 @@ project_root = os.path.dirname(os.path.dirname(current_script_path))
 # Add the absolute path to the project root to sys.path
 sys.path.append(project_root)
 
-import pandas as pd
 # using this research model right now
 from datetime import timedelta, date
 import pandas as pd
@@ -17,7 +16,6 @@ from typing import Optional
 from SmartApi import SmartConnect
 from cagr.api_angel import getDataAPI
 import time
-import os
 
 
 def get_price(scriptid: list, date_obj: date, obj: SmartConnect, instrument_list: list) -> Optional[float]:
