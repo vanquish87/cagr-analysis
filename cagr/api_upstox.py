@@ -1,10 +1,31 @@
-import requests
-import csv
-import json
+import requests, json, os, gzip, time
 from scripts import scripts
-import time
 
-# https://upstox.com/developer/api-documentation/open-api
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import multiprocessing
+
+"""
+API Notes:
+1. Base URL: https://api-v2.upstox.com
+2. Historical candle endpoint: /historical-candle/{instrument_key}/{interval}/{to_date}/{from_date}
+3. Instrument data: https://assets.upstox.com/market-quote/instruments/exchange/NSE.json.gz
+4. Historical data for Day interval is limited to 1 year
+5. API expects dates in YYYY-MM-DD format
+6. Response is in JSON format
+
+Main Function Operation:
+1. Loads or creates NSE.json file containing instrument data
+2. Uses ThreadPoolExecutor for concurrent API requests
+3. Iterates through trading symbols (scripts)
+4. For each symbol:
+   a. Fetches instrument key
+   b. Retrieves EOD candles for specified date range
+5. Prints results as they complete (may be out of order due to threading)
+6. Measures and reports total execution time
+
+Docs: https://upstox.com/developer/api-documentation/open-api
+
+"""
 
 
 def calculate_execution_time(func):
@@ -19,51 +40,83 @@ def calculate_execution_time(func):
     return wrapper
 
 
-def csv_to_dict(csv_file_path: str) -> dict:
-    trading_symbol_map = {}
-    with open(csv_file_path, "r") as csv_file:
-        csv_reader = csv.DictReader(csv_file)
-        for row in csv_reader:
-            trading_symbol_map[row["tradingsymbol"]] = row["instrument_key"]
-
-    return trading_symbol_map
+def fetch_gzip_data_upstox() -> list:
+    response = requests.get("https://assets.upstox.com/market-quote/instruments/exchange/NSE.json.gz")
+    if response.status_code == 200:
+        return json.loads(gzip.decompress(response.content))
+    print(f"Failed to fetch data. Status code: {response.status_code}")
+    return []
 
 
-def get_instrument_key(trading_symbol: str, data_dict: dict) -> str:
-    if trading_symbol in data_dict:
-        return data_dict[trading_symbol]
+def get_eq_index_list(instrument_list: list) -> list:
+    return [ins for ins in instrument_list if ins["segment"] in ["NSE_EQ", "NSE_INDEX"]]
 
 
-@calculate_execution_time
+def create_json(json_file: str) -> list:
+    eq_index_list = get_eq_index_list(fetch_gzip_data_upstox())
+    with open(json_file, "w") as file:
+        json.dump(eq_index_list, file)
+    return eq_index_list
+
+
+def get_instrument_list(json_file: str) -> list:
+    try:
+        if os.path.exists(json_file):
+            with open(json_file, "r") as file:
+                return json.load(file)
+        return create_json(json_file)
+    except Exception as e:
+        print(f"Error getting NSE instrument list: {e}")
+        return []
+
+
+def get_instrument_key(trading_symbol: str, instruments: list) -> str:
+    return next(
+        (instrument["instrument_key"] for instrument in instruments if instrument["trading_symbol"] == trading_symbol),
+        None,
+    )
+
+
 def get_EOD_candles(instrument_key: str, interval: str, to_date: str, from_date: str) -> list:
     url = f"https://api-v2.upstox.com/historical-candle/{instrument_key}/{interval}/{to_date}/{from_date}"
+    headers = {"Accept": "application/json"}
 
-    payload = {}
-    headers = {"Api-Version": "2.0", "Accept": "application/json"}
-    response = requests.get(url, headers=headers, data=payload)
+    response = requests.get(url, headers=headers)
 
     if response.status_code == 200:
-        data = json.loads(response.text)
-        return data["data"]["candles"]
+        return response.json()["data"]["candles"]
     else:
         print(f"Error: {response.text}")
         return None
 
 
+def fetch_eod_candles(trading_symbol, instruments, interval, to_date, from_date):
+    instrument_key = get_instrument_key(trading_symbol, instruments)
+    if instrument_key:
+        stock_EOD_candles = get_EOD_candles(instrument_key, interval, to_date, from_date)
+        return trading_symbol, stock_EOD_candles
+    return trading_symbol, None
+
+
+@calculate_execution_time
 def main() -> None:
-    csv_file_path = r"NSE.csv"
-    trading_symbol_map = csv_to_dict(csv_file_path)
+    json_file = "NSE.json"
+    instruments = get_instrument_list(json_file)
 
-    for trading_symbol in scripts:
-        instrument_key = get_instrument_key(trading_symbol, trading_symbol_map)
-        interval = "day"
-        to_date = "2023-11-23"
-        from_date = "2023-11-20"
+    # Daily: Retrieve data for the past year, concluding on the endDate.
+    interval = "day"
+    to_date = "2024-08-13"
+    from_date = "2024-08-09"
 
-        if instrument_key:
-            stock_EOD_candles = get_EOD_candles(instrument_key, interval, to_date, from_date)
-            print(trading_symbol)
-            print(stock_EOD_candles)
+    with ThreadPoolExecutor(max_workers=multiprocessing.cpu_count()) as executor:
+        futures = [
+            executor.submit(fetch_eod_candles, symbol, instruments, interval, to_date, from_date) for symbol in scripts
+        ]
+
+        for future in as_completed(futures):
+            symbol, candles = future.result()
+            print(symbol)
+            print(candles)
 
 
 main()
