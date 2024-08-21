@@ -1,8 +1,9 @@
 import requests, json, os, gzip, time
 from scripts import scripts
 
-from concurrent.futures import ThreadPoolExecutor, as_completed
-import multiprocessing
+# from concurrent.futures import ThreadPoolExecutor, as_completed
+# import multiprocessing
+from typing import List, Tuple, Optional
 
 """
 API Notes:
@@ -70,15 +71,17 @@ def get_instrument_list(json_file: str) -> list:
         return []
 
 
-def get_instrument_key(trading_symbol: str, instruments: list) -> str:
+def get_instrument_key(scriptid: str, instruments: list) -> str:
     return next(
-        (instrument["instrument_key"] for instrument in instruments if instrument["trading_symbol"] == trading_symbol),
+        (instrument["instrument_key"] for instrument in instruments if instrument["trading_symbol"] == scriptid),
         None,
     )
 
 
-def get_EOD_candles(instrument_key: str, interval: str, to_date: str, from_date: str) -> list:
-    url = f"https://api-v2.upstox.com/historical-candle/{instrument_key}/{interval}/{to_date}/{from_date}"
+# Daily: Retrieve data for the past 1 year, concluding on the todate.
+# but seems like it works to any length of Day now like I tried from 206 - 2024 it worked!!
+def get_EOD_candles(instrument_key: str, interval: str, fromdate: str, todate: str) -> list:
+    url = f"https://api-v2.upstox.com/historical-candle/{instrument_key}/{interval}/{todate}/{fromdate}"
     headers = {"Accept": "application/json"}
 
     response = requests.get(url, headers=headers)
@@ -90,33 +93,44 @@ def get_EOD_candles(instrument_key: str, interval: str, to_date: str, from_date:
         return None
 
 
-def fetch_eod_candles(trading_symbol, instruments, interval, to_date, from_date):
-    instrument_key = get_instrument_key(trading_symbol, instruments)
-    if instrument_key:
-        stock_EOD_candles = get_EOD_candles(instrument_key, interval, to_date, from_date)
-        return trading_symbol, stock_EOD_candles
-    return trading_symbol, None
+def fetch_eod_candles(
+    scriptid: str, instruments: List[dict], interval: str, fromdate: str, todate: str
+) -> Tuple[str, Optional[list]]:
+    instrument_key = get_instrument_key(scriptid, instruments)
+
+    if not instrument_key:
+        print(f"Script ID '{scriptid}' not found.")
+        return scriptid, None
+
+    stock_EOD_candles = get_EOD_candles(instrument_key, interval, fromdate, todate)
+    return scriptid, stock_EOD_candles
 
 
-@calculate_execution_time
-def main() -> None:
-    json_file = "NSE.json"
-    instruments = get_instrument_list(json_file)
+# @calculate_execution_time
+# def main() -> None:
+#     json_file = "NSE.json"
+#     instruments = get_instrument_list(json_file)
 
-    # Daily: Retrieve data for the past year, concluding on the endDate.
-    interval = "day"
-    to_date = "2024-08-13"
-    from_date = "2024-08-09"
+#     # Daily: Retrieve data for the past year, concluding on the endDate.
+#     # but seems like it works to any length of Day now like I tried from 206 - 2024 it worked!!
+#     interval = "day"
+#     todate = "2024-08-13"
+#     fromdate = "2016-08-09"
 
-    with ThreadPoolExecutor(max_workers=multiprocessing.cpu_count()) as executor:
-        futures = [
-            executor.submit(fetch_eod_candles, symbol, instruments, interval, to_date, from_date) for symbol in scripts
-        ]
+#     with ThreadPoolExecutor(max_workers=multiprocessing.cpu_count()) as executor:
+#         futures = [
+#             executor.submit(fetch_eod_candles, symbol, instruments, interval, fromdate, todate) for symbol in scripts
+#         ]
 
-        for future in as_completed(futures):
-            symbol, candles = future.result()
-            print(symbol)
-            print(candles)
+#         for future in as_completed(futures):
+#             symbol, candles = future.result()
+#             if candles:
+#                 print(candles)
+#                 print(symbol)
+#                 print(candles[0])
+#                 print(candles[-1])
+
+#                 print(len(candles))
 
 
-main()
+# main()

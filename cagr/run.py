@@ -2,26 +2,35 @@ from analytics_live import get_df_from_date_back_to_date_ahead
 from utils import get_market_open_dates
 from scripts import scripts
 from datetime import date, timedelta
-from api_angel import loginAngel, instrumentDict
 from utils import df_sort_n_index_reset, calculate_execution_time, df_get_rolling_avg_of_return_ahead, get_analytics
+from api_adapter import Api, get_args_for_api
 
 
 @calculate_execution_time
 def main() -> None:
     folder_path = "research/1yr-9mnth-back"
-    instrument_dict_file = "instrument_data.json"
 
-    obj = loginAngel()
-    instrument_dict = instrumentDict(instrument_dict_file)
+    # need to test UPSTOX more on this
+    api = Api.ANGEL  # Insert API to use here
+    obj, instrument_dict, instruments = get_args_for_api(api)
 
-    dates = get_market_open_dates(start=date(2024, 1, 2), duration=365, obj=obj, instrument_dict=instrument_dict)
+    dates = get_market_open_dates(
+        start=date(2024, 8, 22),
+        duration=365,
+        obj=obj,
+        instrument_dict=instrument_dict,
+        api=api,
+        instruments=instruments,
+    )
     print(dates)
 
     for start_date in dates:
-        date_back = start_date - timedelta(days=30 * 9)
-        date_ahead = start_date + timedelta(days=365)
+        fromdate = start_date - timedelta(days=30 * 9)
+        todate = start_date + timedelta(days=365)
 
-        df = get_df_from_date_back_to_date_ahead(scripts, start_date, date_back, date_ahead, obj, instrument_dict)
+        df = get_df_from_date_back_to_date_ahead(
+            scripts, start_date, fromdate, todate, obj, instrument_dict, api, instruments
+        )
 
         df = df_sort_n_index_reset(df)
 

@@ -1,13 +1,20 @@
 from datetime import date
-from api_angel import getDataAPI
 import pandas as pd
 import time
 from SmartApi import SmartConnect
 from utils import df_sort_n_index_reset, get_price
+from api_adapter import adapter, Api
 
 
 def get_df_from_date_back_to_date_ahead(
-    scripts: list, start: date, date_back: date, date_ahead: date, obj: SmartConnect, instrument_dict: dict
+    scripts: list,
+    start: date,
+    fromdate: date,
+    todate: date,
+    obj: SmartConnect,
+    instrument_dict: dict,
+    api: Api,
+    instruments: list,
 ) -> pd.DataFrame:
     """
     Previously took 621.72 Seconds for 501 Scripts
@@ -25,8 +32,7 @@ def get_df_from_date_back_to_date_ahead(
 
     for scriptid in scripts:
         print(f"AI analyzing {scripts.index(scriptid) + 1} of {len_scripts}: {scriptid}")
-        # for cmp
-        data = getDataAPI(scriptid, date_back, date_ahead, obj, instrument_dict)
+        data = adapter(api, scriptid, fromdate, todate, obj, instrument_dict, instruments)
         try:
             df = pd.DataFrame(data)
             mp_ahead = df.iloc[-1, 4]
@@ -57,10 +63,10 @@ def get_df_from_date_back_to_date_ahead(
                     "CMP": [cmp],
                     "date": [start.strftime("%d-%m-%Y")],  # Format the date as 'dd-mm-yyyy'
                     "mp_back": [mp_back],
-                    "date_back": [date_back.strftime("%d-%m-%Y")],  # Format the date_back as 'dd-mm-yyyy'
+                    "date_back": [fromdate.strftime("%d-%m-%Y")],  # Format the date_back as 'dd-mm-yyyy'
                     "return_from_back": [return_from_back],
                     "mp_date_ahead": [mp_ahead],
-                    "date_ahead": [date_ahead.strftime("%d-%m-%Y")],  # Format the date_ahead as 'dd-mm-yyyy'
+                    "date_ahead": [todate.strftime("%d-%m-%Y")],  # Format the date_ahead as 'dd-mm-yyyy'
                     "return_ahead": [return_ahead],
                     "avg_30day_vol_crore": [avg_30day_vol_crore],
                     "median_30day_vol_crore": [median_30day_vol_crore],
@@ -72,7 +78,8 @@ def get_df_from_date_back_to_date_ahead(
         except Exception as e:
             print(f"API didn't fetch any data for {scriptid}: {e}")
 
-        time.sleep(0.15)
+        if api == Api.ANGEL:
+            time.sleep(0.15)
 
     return df_new
 

@@ -15,6 +15,7 @@ import pandas as pd
 from typing import Optional
 from SmartApi import SmartConnect
 from cagr.api_angel import getDataAPI
+from api_adapter import adapter, Api
 import time
 
 
@@ -47,11 +48,20 @@ def df_get_rolling_avg_of_return_ahead(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def get_market_open_dates(*, start: date, duration: int, obj: SmartConnect, instrument_dict: dict) -> list:
+def get_market_open_dates(
+    *,
+    start: date,
+    duration: int,
+    obj: SmartConnect,
+    instrument_dict: dict,
+    api: Api,
+    instruments: list,
+) -> list:
     dates = []
     while start <= date.today():
         for _ in range(4):  # Repeat the check three times
-            data = getDataAPI("INFY", start, start, obj, instrument_dict)
+
+            data = adapter(api, "INFY", start, start, obj, instrument_dict, instruments)
             if data:
                 dates.append(start)
                 break
