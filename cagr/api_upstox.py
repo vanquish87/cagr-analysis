@@ -49,18 +49,22 @@ def fetch_gzip_data_upstox() -> list:
     return []
 
 
-def get_eq_index_list(instrument_list: list) -> list:
-    return [ins for ins in instrument_list if ins["segment"] in ["NSE_EQ", "NSE_INDEX"]]
+def get_eq_index_dict(instrument_list: list) -> dict:
+    return {
+        instrument["trading_symbol"]: instrument
+        for instrument in instrument_list
+        if instrument["segment"] in ["NSE_EQ", "NSE_INDEX"]
+    }
 
 
-def create_json(json_file: str) -> list:
-    eq_index_list = get_eq_index_list(fetch_gzip_data_upstox())
+def create_json(json_file: str) -> dict:
+    eq_index_dict = get_eq_index_dict(fetch_gzip_data_upstox())
     with open(json_file, "w") as file:
-        json.dump(eq_index_list, file)
-    return eq_index_list
+        json.dump(eq_index_dict, file)
+    return eq_index_dict
 
 
-def get_instrument_list(json_file: str) -> list:
+def get_instrument_dict(json_file: str) -> list:
     try:
         if os.path.exists(json_file):
             with open(json_file, "r") as file:
@@ -71,11 +75,9 @@ def get_instrument_list(json_file: str) -> list:
         return []
 
 
-def get_instrument_key(scriptid: str, instruments: list) -> str:
-    return next(
-        (instrument["instrument_key"] for instrument in instruments if instrument["trading_symbol"] == scriptid),
-        None,
-    )
+def get_instrument_key(scriptid: str, instruments: dict) -> Optional[str]:
+    instrument = instruments.get(scriptid)
+    return instrument["instrument_key"] if instrument else None
 
 
 # Daily: Retrieve data for the past 1 year, concluding on the todate.
@@ -94,7 +96,7 @@ def get_EOD_candles(instrument_key: str, interval: str, fromdate: str, todate: s
 
 
 def fetch_eod_candles(
-    scriptid: str, instruments: List[dict], interval: str, fromdate: str, todate: str
+    scriptid: str, instruments: dict[dict], interval: str, fromdate: str, todate: str
 ) -> Tuple[str, Optional[list]]:
     instrument_key = get_instrument_key(scriptid, instruments)
 
@@ -104,6 +106,36 @@ def fetch_eod_candles(
 
     stock_EOD_candles = get_EOD_candles(instrument_key, interval, fromdate, todate)
     return scriptid, stock_EOD_candles
+
+
+# @calculate_execution_time
+# def main() -> None:
+#     json_file = "NSE.json"
+#     instruments = get_instrument_list(json_file)
+
+#     # Daily: Retrieve data for the past year, concluding on the endDate.
+#     # but seems like it works to any length of Day now like I tried from 206 - 2024 it worked!!
+#     interval = "day"
+#     todate = "2024-08-13"
+#     fromdate = "2016-08-09"
+
+#     with ThreadPoolExecutor(max_workers=multiprocessing.cpu_count()) as executor:
+#         futures = [
+#             executor.submit(fetch_eod_candles, symbol, instruments, interval, fromdate, todate) for symbol in scripts
+#         ]
+
+#         for future in as_completed(futures):
+#             symbol, candles = future.result()
+#             if candles:
+#                 print(candles)
+#                 print(symbol)
+#                 print(candles[0])
+#                 print(candles[-1])
+
+#                 print(len(candles))
+
+
+# main()
 
 
 # @calculate_execution_time

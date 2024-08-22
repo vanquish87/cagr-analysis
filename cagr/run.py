@@ -11,16 +11,11 @@ def main() -> None:
     folder_path = "research/1yr-9mnth-back"
 
     # need to test UPSTOX more on this
-    api = Api.ANGEL  # Insert API to use here
-    obj, instrument_dict, instruments = get_args_for_api(api)
+    api = Api.UPSTOX  # Insert API to use here
+    obj, instrument_dict = get_args_for_api(api)
 
     dates = get_market_open_dates(
-        start=date(2024, 8, 22),
-        duration=365,
-        obj=obj,
-        instrument_dict=instrument_dict,
-        api=api,
-        instruments=instruments,
+        start=date(2024, 8, 20), duration=365, obj=obj, instrument_dict=instrument_dict, api=api
     )
     print(dates)
 
@@ -28,9 +23,7 @@ def main() -> None:
         fromdate = start_date - timedelta(days=30 * 9)
         todate = start_date + timedelta(days=365)
 
-        df = get_df_from_date_back_to_date_ahead(
-            scripts, start_date, fromdate, todate, obj, instrument_dict, api, instruments
-        )
+        df = get_df_from_date_back_to_date_ahead(scripts, start_date, fromdate, todate, obj, instrument_dict, api)
 
         df = df_sort_n_index_reset(df)
 

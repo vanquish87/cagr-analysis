@@ -7,14 +7,7 @@ from api_adapter import adapter, Api
 
 
 def get_df_from_date_back_to_date_ahead(
-    scripts: list,
-    start: date,
-    fromdate: date,
-    todate: date,
-    obj: SmartConnect,
-    instrument_dict: dict,
-    api: Api,
-    instruments: list,
+    scripts: list, start: date, fromdate: date, todate: date, obj: SmartConnect, instrument_dict: dict, api: Api
 ) -> pd.DataFrame:
     """
     Previously took 621.72 Seconds for 501 Scripts
@@ -32,7 +25,7 @@ def get_df_from_date_back_to_date_ahead(
 
     for scriptid in scripts:
         print(f"AI analyzing {scripts.index(scriptid) + 1} of {len_scripts}: {scriptid}")
-        data = adapter(api, scriptid, fromdate, todate, obj, instrument_dict, instruments)
+        data = adapter(api, scriptid, fromdate, todate, obj, instrument_dict)
         try:
             df = pd.DataFrame(data)
             mp_ahead = df.iloc[-1, 4]

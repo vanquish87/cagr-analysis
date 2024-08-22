@@ -55,13 +55,12 @@ def get_market_open_dates(
     obj: SmartConnect,
     instrument_dict: dict,
     api: Api,
-    instruments: list,
 ) -> list:
     dates = []
     while start <= date.today():
         for _ in range(4):  # Repeat the check three times
 
-            data = adapter(api, "INFY", start, start, obj, instrument_dict, instruments)
+            data = adapter(api, "INFY", start, start, obj, instrument_dict)
             if data:
                 dates.append(start)
                 break
