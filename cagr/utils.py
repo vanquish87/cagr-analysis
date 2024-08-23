@@ -15,7 +15,8 @@ import pandas as pd
 from typing import Optional
 from SmartApi import SmartConnect
 from cagr.api_angel import getDataAPI
-from api_adapter import adapter, Api
+from api_adapter import adapter
+from models import Api
 import time
 
 

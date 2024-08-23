@@ -2,15 +2,9 @@ from api_upstox import fetch_eod_candles, get_instrument_dict
 from api_angel import getDataAPI
 from SmartApi import SmartConnect
 from api_angel import loginAngel, instrumentDict
-
-from enum import Enum
+from models import Api
 from datetime import date
 from typing import List, Tuple, Optional
-
-
-class Api(Enum):
-    UPSTOX = 1
-    ANGEL = 2
 
 
 # Adapter function to switch between APIs

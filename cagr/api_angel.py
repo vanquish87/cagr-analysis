@@ -11,8 +11,8 @@ def loginAngel() -> SmartConnect:
     ENABLE_TOTP = config("ENABLE_TOTP")
     totp = pyotp.TOTP(ENABLE_TOTP)
     totp_now = totp.now()
-
-    data = obj.generateSession(config("CLIENTCODE"), config("PASSWORD"), totp_now)
+    obj.generateSession(config("CLIENTCODE"), config("PASSWORD"), totp_now)
+    
     return obj
 
 

@@ -3,7 +3,7 @@ from scripts import scripts
 
 # from concurrent.futures import ThreadPoolExecutor, as_completed
 # import multiprocessing
-from typing import List, Tuple, Optional
+from typing import Tuple, Optional
 
 """
 API Notes:

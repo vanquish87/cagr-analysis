@@ -3,7 +3,8 @@ import pandas as pd
 import time
 from SmartApi import SmartConnect
 from utils import df_sort_n_index_reset, get_price
-from api_adapter import adapter, Api
+from api_adapter import adapter
+from models import Api
 
 
 def get_df_from_date_back_to_date_ahead(
