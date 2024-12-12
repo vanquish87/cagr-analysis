@@ -17,6 +17,8 @@ def main_process(modvar: ModVar) -> None:
     print(dates)
 
     for start_date in dates:
+        # change state of modvar for start, fromdate, todate
+        modvar.start = start_date
         df = get_df_from_date_back_to_date_ahead(
             scripts, start_date, modvar.fromdate, modvar.todate, obj, instrument_dict, modvar.api
         )
@@ -40,12 +42,12 @@ def main() -> None:
     folder_path = "research/1yr-9mnth-back"
 
     # need to test UPSTOX more on this
-    api = Api.UPSTOX  # Insert API to use here
-    start = date(2024, 8, 22)
+    api = Api.ANGEL  # Insert API to use here
+    start = date(2025, 1, 2)
     back_days = 30 * 9
     forward_days = 365
 
-    modvar = ModVar(api, folder_path, start, back_days, forward_days)
+    modvar = ModVar(api, folder_path, back_days, forward_days, start)
 
     main_process(modvar)
 
