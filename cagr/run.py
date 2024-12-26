@@ -1,6 +1,6 @@
 from analytics_live import get_df_from_date_back_to_date_ahead
 from utils import get_market_open_dates
-from scripts import scripts
+from process_scripts import get_target_scripts
 from datetime import date
 from utils import df_sort_n_index_reset, calculate_execution_time, df_get_rolling_avg_of_return_ahead, get_analytics
 from api_adapter import get_args_for_api
@@ -19,6 +19,8 @@ def main_process(modvar: ModVar) -> None:
     for start_date in dates:
         # change state of modvar for start, fromdate, todate
         modvar.start = start_date
+        scripts = get_target_scripts(start_date)
+
         df = get_df_from_date_back_to_date_ahead(
             scripts, start_date, modvar.fromdate, modvar.todate, obj, instrument_dict, modvar.api
         )
