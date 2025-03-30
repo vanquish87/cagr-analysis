@@ -1,5 +1,6 @@
 from datetime import date
 import pandas as pd
+import os
 
 
 def build_df(data: list, start: date, scriptid: str, fromdate: date, todate: date) -> pd.DataFrame:
@@ -45,3 +46,40 @@ def build_df(data: list, start: date, scriptid: str, fromdate: date, todate: dat
 
     except Exception as e:
         print(f"API didn't fetch any data for {scriptid}: {e}")
+
+
+def get_analytics(*, folder_path: str, from_to: list) -> pd.DataFrame:
+    # Initialize an empty DataFrame to store the results
+    result_df = pd.DataFrame()
+
+    # Iterate through each file in the folder
+    for file_name in os.listdir(folder_path):
+        if file_name.endswith(".xlsx"):
+            file_path = os.path.join(folder_path, file_name)
+
+            # Read the Excel file into a DataFrame
+            df = pd.read_excel(file_path)
+
+            # Extract relevant columns and create a new DataFrame
+            new_df = pd.DataFrame(
+                {
+                    "date": df["date"],
+                    "date_ahead": df["date_ahead"],
+                    "Duration": pd.to_datetime(df["date_ahead"], format="%d-%m-%Y")
+                    - pd.to_datetime(df["date"], format="%d-%m-%Y"),
+                    **{f"{i+1}": df["return_ahead_avg"].iloc[i] for i in range(from_to[0] - 1, from_to[1])},
+                }
+            )
+
+            # Concatenate the new DataFrame with the result_df
+            result_df = pd.concat([result_df, new_df], axis=0, ignore_index=True)
+
+    # Drop duplicate rows in case there are any
+    result_df = result_df.drop_duplicates()
+
+    # Reset the index number
+    result_df = result_df.reset_index(drop=True)
+    # Reset the index number and start from 1
+    result_df.index = result_df.index + 1
+
+    return result_df

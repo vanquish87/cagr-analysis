@@ -1,5 +1,6 @@
 from datetime import date
-from utils import calculate_execution_time, get_analytics
+from utils import calculate_execution_time
+from df_helper import get_analytics
 from models import Api, ModVar
 from analyzer import AngleAnalyzer, UpstoxAnalyzer
 
