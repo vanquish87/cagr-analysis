@@ -13,7 +13,9 @@ def main_process(modvar: ModVar) -> None:
         ai = UpstoxAnalyzer()
 
     obj, instrument_dict = ai.args_for_api()
-    dates = ai.get_market_open_dates(start=modvar.start, duration=modvar.forward_days, instrument_dict=instrument_dict, obj=obj)
+    dates = ai.get_market_open_dates(
+        start=modvar.start, duration=modvar.forward_days, instrument_dict=instrument_dict, obj=obj
+    )
     print(dates)
     for start_date in dates:
         # change state of modvar for start, fromdate, todate
@@ -42,8 +44,10 @@ def main() -> None:
     folder_path = "research/1yr-9mnth-back"
 
     # need to test UPSTOX more on this
-    api = Api.UPSTOX  # Insert API to use here
-    start = date(2025, 4, 1)
+    # Have to update instrument_data.json(ANGEL) and NSE.json(UPSTOX) time to time
+    # for SCRIPTID as well as ISINs
+    api = Api.ANGEL  # Insert API to use here
+    start = date(2026, 1, 11)
     back_days = 30 * 9
     forward_days = 365
 
