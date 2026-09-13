@@ -80,16 +80,38 @@ If pre-2008 accuracy ever matters, the fix is a proper constituent dataset
 (CRSP, Compustat, or one of the reconstructed GitHub datasets) - not more
 Wikipedia scraping.
 
-## Next steps
+## The US pipeline
 
-1. A `UsAnalyzer` implementing the same Protocol as `AngleAnalyzer` /
-   `UpstoxAnalyzer` (`args_for_api`, `get_market_open_dates`,
-   `get_df_from_date_back_to_date_ahead`, ...), with `get_target_scripts(date)`
-   = `sorted(constituents_on(date))`.
-2. Pick a US daily-candle source (yfinance is the obvious first try; Stooq as
-   fallback). Delisted names (LEH, TWTR, SIVB...) won't resolve there - expect
-   and tolerate per-ticker fetch failures like the India pipeline already does,
-   but count them per run so survivorship bias stays visible.
-3. CIK is already in `sp500_current.json` for current members if fundamentals
-   (SEC filings) enter the picture later - it identifies the filer, not the
-   security, which is why it's carried as metadata rather than used as the key.
+| File | What it is |
+|---|---|
+| `us_analyzer.py` | `UsAnalyzer(DefaultAnalyzer)` - same Protocol as the India analyzers. Universe from `constituents_on(date)` (BRK.B -> BRK-B for Yahoo), candles via yfinance batched 100 tickers at a time, split+dividend adjusted. |
+| `main_us.py` | Mirrors `cagr/main.py`: rank by 9-month return, expanding avg of the 1-yr-forward return, Excel per date; `get_analytics` here only reads `stock-returns-*.xlsx`, so a leftover `aaaa.xlsx` can't crash a rerun. |
+| `run.py` | Entry point. `python run.py` does yearly starts 2013 -> today (the trustworthy era). Options: `--start`, `--back`, `--forward`, `--max-dates`, `--limit-tickers`, `--folder`. |
+
+```
+python run.py --max-dates 1 --limit-tickers 10 --folder research/smoke   # smoke test
+python run.py --start 2019-01-10 --max-dates 1                          # one full date
+python run.py                                                           # full 2013->today sweep
+```
+
+Proven on 2019-01-10 (full 505-ticker universe, 202s): 442 fetched, and the
+resulting ranks check out against history (AMD #1 with +95.6% momentum then
++144% forward; AAPL's forward year +104.8%).
+
+### Survivorship bias - read this before trusting any backtest
+
+Yahoo drops price history at delisting, so every acquired/bankrupt member is
+unfetchable: 63 of 505 tickers (12.5%) failed for the 2019 universe (CELG,
+RTN, TWTR, ATVI, SIVB, STI, PXD...). These are disproportionately companies
+that *left* the index, so the computed forward returns skew optimistic.
+Every run writes `fetch-failures-<date>.txt` next to the Excel so the gap is
+on the record. The clean fix is paid survivorship-free data (Norgate, CRSP,
+EODHD); the Stooq fallback in `us_analyzer.py` is currently useless - Stooq
+put its CSV endpoint behind a JavaScript bot check (the code self-disables
+after 3 non-CSV replies and will start working again if they lift it).
+
+### Later, if fundamentals enter the picture
+
+CIK is already in `sp500_current.json` for current members - it identifies
+the SEC filer, not the security, which is why it's carried as metadata
+rather than used as the key.
