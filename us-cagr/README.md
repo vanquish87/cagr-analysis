@@ -12,6 +12,7 @@ map - the US equivalent of `cagr/isin.py`'s `isin_yearly` on the India side.
 | `sp500_changes.json` | The add/remove ledger (407 rows, 1976 to today) from [Historical components of the S&P 500](https://en.wikipedia.org/wiki/Historical_components_of_the_S%26P_500). |
 | `sp500.py` | Reconstruction engine + the API the analyzer will use. |
 | `sp500_snapshots.json` | **The snapshot map**: 308 dates, one at every membership change, each with the full sorted ticker list in effect ON that date. |
+| `test_snapshots.py` | Tests the map on 50 random dates: ledger consistency, hand-picked known facts, and a cross-check against the independent fja05680/sp500 dataset. |
 
 ## How it works
 
@@ -62,11 +63,15 @@ era (2000-2014), 504-505 in the multi-class years (GOOG/GOOGL, FOX/FOXA,
 NWS/NWSA, DISCA/DISCK, UA/UAA), 503 today. But the count alone overstates
 early-era quality:
 
-| Era | Verdict |
-|---|---|
-| 2013 -> today | Solid. Ledger density matches real index turnover (~20-25 changes/yr). Use freely. |
-| 2008 - 2012 | Good. Minor known gaps (e.g. BRK.B's 2010 entry and GM's 2009 exit are missing rows, IR's 2009 Ireland-removal gap). |
-| 2000 - 2007 | **Composition not trustworthy.** Wikipedia records only ~11 changes for 2000-2006 vs ~150 real ones, so these snapshots are basically the 2007 membership projected backwards. Counts look fine because missing adds and removes cancel out. |
+`test_snapshots.py` (50 random dates, seed 42) passes all internal ledger
+checks and all 39 hand-picked membership facts, and agrees with the
+independent fja05680/sp500 reconstruction as follows:
+
+| Era | Agreement (Jaccard) | Verdict |
+|---|---|---|
+| 2013 -> today | avg 99.1%, min 95.5% | Solid. Residual diffs are ticker-dialect choices and the two documented gaps below. Use freely. |
+| 2008 - 2012 | avg 92.0% | Good. Minor known gaps (e.g. BRK.B's 2010 entry and GM's 2009 exit are missing rows, IR's 2009 Ireland-removal gap). |
+| 2000 - 2007 | avg 57.7% | **Composition not trustworthy.** Wikipedia records only ~11 changes for 2000-2006 vs ~150 real ones, so these snapshots are basically the 2007 membership projected backwards. Counts look fine because missing adds and removes cancel out. |
 
 Remaining `--validate` inconsistencies (10) are benign: recycled tickers
 (AGN, T, MCK...), the UA/UAA share-class swap, and pre-2000 rows.
