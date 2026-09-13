@@ -1,0 +1,3025 @@
+{
+ "as_of": "2026-09-13",
+ "source": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+ "count": 503,
+ "constituents": [
+  {
+   "symbol": "MMM",
+   "security": "3M",
+   "cik": "0000066740",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "AOS",
+   "security": "A. O. Smith",
+   "cik": "0000091142",
+   "date_added": "2017-07-26"
+  },
+  {
+   "symbol": "ABT",
+   "security": "Abbott Laboratories",
+   "cik": "0000001800",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "ABBV",
+   "security": "AbbVie",
+   "cik": "0001551152",
+   "date_added": "2012-12-31"
+  },
+  {
+   "symbol": "ACN",
+   "security": "Accenture",
+   "cik": "0001467373",
+   "date_added": "2011-07-06"
+  },
+  {
+   "symbol": "ADBE",
+   "security": "Adobe Inc.",
+   "cik": "0000796343",
+   "date_added": "1997-05-05"
+  },
+  {
+   "symbol": "AMD",
+   "security": "Advanced Micro Devices",
+   "cik": "0000002488",
+   "date_added": "2017-03-20"
+  },
+  {
+   "symbol": "AES",
+   "security": "AES Corporation",
+   "cik": "0000874761",
+   "date_added": "1998-10-02"
+  },
+  {
+   "symbol": "AFL",
+   "security": "Aflac",
+   "cik": "0000004977",
+   "date_added": "1999-05-28"
+  },
+  {
+   "symbol": "A",
+   "security": "Agilent Technologies",
+   "cik": "0001090872",
+   "date_added": "2000-06-05"
+  },
+  {
+   "symbol": "APD",
+   "security": "Air Products",
+   "cik": "0000002969",
+   "date_added": "1985-04-30"
+  },
+  {
+   "symbol": "ABNB",
+   "security": "Airbnb",
+   "cik": "0001559720",
+   "date_added": "2023-09-18"
+  },
+  {
+   "symbol": "AKAM",
+   "security": "Akamai Technologies",
+   "cik": "0001086222",
+   "date_added": "2007-07-12"
+  },
+  {
+   "symbol": "ALB",
+   "security": "Albemarle Corporation",
+   "cik": "0000915913",
+   "date_added": "2016-07-01"
+  },
+  {
+   "symbol": "ARE",
+   "security": "Alexandria Real Estate Equities",
+   "cik": "0001035443",
+   "date_added": "2017-03-20"
+  },
+  {
+   "symbol": "ALGN",
+   "security": "Align Technology",
+   "cik": "0001097149",
+   "date_added": "2017-06-19"
+  },
+  {
+   "symbol": "ALLE",
+   "security": "Allegion",
+   "cik": "0001579241",
+   "date_added": "2013-12-02"
+  },
+  {
+   "symbol": "LNT",
+   "security": "Alliant Energy",
+   "cik": "0000352541",
+   "date_added": "2016-07-01"
+  },
+  {
+   "symbol": "ALL",
+   "security": "Allstate",
+   "cik": "0000899051",
+   "date_added": "1995-07-13"
+  },
+  {
+   "symbol": "GOOGL",
+   "security": "Alphabet Inc. (Class A)",
+   "cik": "0001652044",
+   "date_added": "2006-04-03"
+  },
+  {
+   "symbol": "GOOG",
+   "security": "Alphabet Inc. (Class C)",
+   "cik": "0001652044",
+   "date_added": "2014-04-03"
+  },
+  {
+   "symbol": "MO",
+   "security": "Altria",
+   "cik": "0000764180",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "AMZN",
+   "security": "Amazon",
+   "cik": "0001018724",
+   "date_added": "2005-11-18"
+  },
+  {
+   "symbol": "AMCR",
+   "security": "Amcor",
+   "cik": "0001748790",
+   "date_added": "2019-06-07"
+  },
+  {
+   "symbol": "AEE",
+   "security": "Ameren",
+   "cik": "0001002910",
+   "date_added": "1991-09-19"
+  },
+  {
+   "symbol": "AEP",
+   "security": "American Electric Power",
+   "cik": "0000004904",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "AXP",
+   "security": "American Express",
+   "cik": "0000004962",
+   "date_added": "1976-06-30"
+  },
+  {
+   "symbol": "AIG",
+   "security": "American International Group",
+   "cik": "0000005272",
+   "date_added": "1980-03-31"
+  },
+  {
+   "symbol": "AMT",
+   "security": "American Tower",
+   "cik": "0001053507",
+   "date_added": "2007-11-19"
+  },
+  {
+   "symbol": "AWK",
+   "security": "American Water Works",
+   "cik": "0001410636",
+   "date_added": "2016-03-04"
+  },
+  {
+   "symbol": "AMP",
+   "security": "Ameriprise Financial",
+   "cik": "0000820027",
+   "date_added": "2005-10-03"
+  },
+  {
+   "symbol": "AME",
+   "security": "Ametek",
+   "cik": "0001037868",
+   "date_added": "2013-09-23"
+  },
+  {
+   "symbol": "AMGN",
+   "security": "Amgen",
+   "cik": "0000318154",
+   "date_added": "1992-01-02"
+  },
+  {
+   "symbol": "APH",
+   "security": "Amphenol",
+   "cik": "0000820313",
+   "date_added": "2008-09-30"
+  },
+  {
+   "symbol": "ADI",
+   "security": "Analog Devices",
+   "cik": "0000006281",
+   "date_added": "1999-10-12"
+  },
+  {
+   "symbol": "AON",
+   "security": "Aon plc",
+   "cik": "0000315293",
+   "date_added": "1996-04-23"
+  },
+  {
+   "symbol": "APA",
+   "security": "APA Corporation",
+   "cik": "0001841666",
+   "date_added": "1997-07-28"
+  },
+  {
+   "symbol": "APO",
+   "security": "Apollo Global Management",
+   "cik": "0001858681",
+   "date_added": "2024-12-23"
+  },
+  {
+   "symbol": "AAPL",
+   "security": "Apple Inc.",
+   "cik": "0000320193",
+   "date_added": "1982-11-30"
+  },
+  {
+   "symbol": "AMAT",
+   "security": "Applied Materials",
+   "cik": "0000006951",
+   "date_added": "1995-03-16"
+  },
+  {
+   "symbol": "APP",
+   "security": "AppLovin",
+   "cik": "0001751008",
+   "date_added": "2025-09-22"
+  },
+  {
+   "symbol": "APTV",
+   "security": "Aptiv",
+   "cik": "0001521332",
+   "date_added": "2012-12-24"
+  },
+  {
+   "symbol": "ACGL",
+   "security": "Arch Capital Group",
+   "cik": "0000947484",
+   "date_added": "2022-11-01"
+  },
+  {
+   "symbol": "ADM",
+   "security": "Archer Daniels Midland",
+   "cik": "0000007084",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "ARES",
+   "security": "Ares Management",
+   "cik": "0001176948",
+   "date_added": "2025-12-11"
+  },
+  {
+   "symbol": "ANET",
+   "security": "Arista Networks",
+   "cik": "0001596532",
+   "date_added": "2018-08-28"
+  },
+  {
+   "symbol": "AJG",
+   "security": "Arthur J. Gallagher & Co.",
+   "cik": "0000354190",
+   "date_added": "2016-05-31"
+  },
+  {
+   "symbol": "AIZ",
+   "security": "Assurant",
+   "cik": "0001267238",
+   "date_added": "2007-04-10"
+  },
+  {
+   "symbol": "T",
+   "security": "AT&T",
+   "cik": "0000732717",
+   "date_added": "1983-11-30"
+  },
+  {
+   "symbol": "ATO",
+   "security": "Atmos Energy",
+   "cik": "0000731802",
+   "date_added": "2019-02-15"
+  },
+  {
+   "symbol": "ADSK",
+   "security": "Autodesk",
+   "cik": "0000769397",
+   "date_added": "1989-12-01"
+  },
+  {
+   "symbol": "ADP",
+   "security": "Automatic Data Processing",
+   "cik": "0000008670",
+   "date_added": "1981-03-31"
+  },
+  {
+   "symbol": "AZO",
+   "security": "AutoZone",
+   "cik": "0000866787",
+   "date_added": "1997-01-02"
+  },
+  {
+   "symbol": "AVY",
+   "security": "Avery Dennison",
+   "cik": "0000008818",
+   "date_added": "1987-12-31"
+  },
+  {
+   "symbol": "AXON",
+   "security": "Axon Enterprise",
+   "cik": "0001069183",
+   "date_added": "2023-05-04"
+  },
+  {
+   "symbol": "BKR",
+   "security": "Baker Hughes",
+   "cik": "0001701605",
+   "date_added": "2017-07-07"
+  },
+  {
+   "symbol": "BALL",
+   "security": "Ball Corporation",
+   "cik": "0000009389",
+   "date_added": "1984-10-31"
+  },
+  {
+   "symbol": "BAC",
+   "security": "Bank of America",
+   "cik": "0000070858",
+   "date_added": "1976-06-30"
+  },
+  {
+   "symbol": "BAX",
+   "security": "Baxter International",
+   "cik": "0000010456",
+   "date_added": "1972-09-30"
+  },
+  {
+   "symbol": "BDX",
+   "security": "Becton Dickinson",
+   "cik": "0000010795",
+   "date_added": "1972-09-30"
+  },
+  {
+   "symbol": "BRK.B",
+   "security": "Berkshire Hathaway",
+   "cik": "0001067983",
+   "date_added": "2010-02-16"
+  },
+  {
+   "symbol": "BBY",
+   "security": "Best Buy",
+   "cik": "0000764478",
+   "date_added": "1999-06-29"
+  },
+  {
+   "symbol": "TECH",
+   "security": "Bio-Techne",
+   "cik": "0000842023",
+   "date_added": "2021-08-30"
+  },
+  {
+   "symbol": "BIIB",
+   "security": "Biogen",
+   "cik": "0000875045",
+   "date_added": "2003-11-13"
+  },
+  {
+   "symbol": "BLK",
+   "security": "BlackRock",
+   "cik": "0002012383",
+   "date_added": "2011-04-04"
+  },
+  {
+   "symbol": "BX",
+   "security": "Blackstone Inc.",
+   "cik": "0001393818",
+   "date_added": "2023-09-18"
+  },
+  {
+   "symbol": "XYZ",
+   "security": "Block, Inc.",
+   "cik": "0001512673",
+   "date_added": "2025-07-23"
+  },
+  {
+   "symbol": "BNY",
+   "security": "BNY Mellon",
+   "cik": "0001390777",
+   "date_added": "1995-03-31"
+  },
+  {
+   "symbol": "BA",
+   "security": "Boeing",
+   "cik": "0000012927",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "BKNG",
+   "security": "Booking Holdings",
+   "cik": "0001075531",
+   "date_added": "2009-11-06"
+  },
+  {
+   "symbol": "BSX",
+   "security": "Boston Scientific",
+   "cik": "0000885725",
+   "date_added": "1995-02-24"
+  },
+  {
+   "symbol": "BMY",
+   "security": "Bristol Myers Squibb",
+   "cik": "0000014272",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "AVGO",
+   "security": "Broadcom",
+   "cik": "0001730168",
+   "date_added": "2014-05-08"
+  },
+  {
+   "symbol": "BR",
+   "security": "Broadridge Financial Solutions",
+   "cik": "0001383312",
+   "date_added": "2018-06-18"
+  },
+  {
+   "symbol": "BRO",
+   "security": "Brown & Brown",
+   "cik": "0000079282",
+   "date_added": "2021-09-20"
+  },
+  {
+   "symbol": "BF.B",
+   "security": "Brown\u2013Forman",
+   "cik": "0000014693",
+   "date_added": "1982-10-31"
+  },
+  {
+   "symbol": "BLDR",
+   "security": "Builders FirstSource",
+   "cik": "0001316835",
+   "date_added": "2023-12-18"
+  },
+  {
+   "symbol": "BG",
+   "security": "Bunge Global",
+   "cik": "0001996862",
+   "date_added": "2023-03-15"
+  },
+  {
+   "symbol": "BXP",
+   "security": "BXP, Inc.",
+   "cik": "0001037540",
+   "date_added": "2006-04-03"
+  },
+  {
+   "symbol": "CHRW",
+   "security": "C.H. Robinson",
+   "cik": "0001043277",
+   "date_added": "2007-03-02"
+  },
+  {
+   "symbol": "CDNS",
+   "security": "Cadence Design Systems",
+   "cik": "0000813672",
+   "date_added": "2017-09-18"
+  },
+  {
+   "symbol": "CPT",
+   "security": "Camden Property Trust",
+   "cik": "0000906345",
+   "date_added": "2022-04-04"
+  },
+  {
+   "symbol": "COF",
+   "security": "Capital One",
+   "cik": "0000927628",
+   "date_added": "1998-07-01"
+  },
+  {
+   "symbol": "CAH",
+   "security": "Cardinal Health",
+   "cik": "0000721371",
+   "date_added": "1997-05-27"
+  },
+  {
+   "symbol": "CCL",
+   "security": "Carnival Corporation",
+   "cik": "0000815097",
+   "date_added": "1998-12-22"
+  },
+  {
+   "symbol": "CARR",
+   "security": "Carrier Global",
+   "cik": "0001783180",
+   "date_added": "2020-04-03"
+  },
+  {
+   "symbol": "CVNA",
+   "security": "Carvana",
+   "cik": "0001690820",
+   "date_added": "2025-12-22"
+  },
+  {
+   "symbol": "CASY",
+   "security": "Casey's",
+   "cik": "0000726958",
+   "date_added": "2026-04-09"
+  },
+  {
+   "symbol": "CAT",
+   "security": "Caterpillar Inc.",
+   "cik": "0000018230",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "CBOE",
+   "security": "Cboe Global Markets",
+   "cik": "0001374310",
+   "date_added": "2017-03-01"
+  },
+  {
+   "symbol": "CBRE",
+   "security": "CBRE Group",
+   "cik": "0001138118",
+   "date_added": "2006-11-10"
+  },
+  {
+   "symbol": "CDW",
+   "security": "CDW Corporation",
+   "cik": "0001402057",
+   "date_added": "2019-09-23"
+  },
+  {
+   "symbol": "COR",
+   "security": "Cencora",
+   "cik": "0001140859",
+   "date_added": "2001-08-30"
+  },
+  {
+   "symbol": "CNC",
+   "security": "Centene Corporation",
+   "cik": "0001071739",
+   "date_added": "2016-03-30"
+  },
+  {
+   "symbol": "CNP",
+   "security": "CenterPoint Energy",
+   "cik": "0001130310",
+   "date_added": "1985-07-31"
+  },
+  {
+   "symbol": "CF",
+   "security": "CF Industries",
+   "cik": "0001324404",
+   "date_added": "2008-08-27"
+  },
+  {
+   "symbol": "CRL",
+   "security": "Charles River Laboratories",
+   "cik": "0001100682",
+   "date_added": "2021-05-14"
+  },
+  {
+   "symbol": "SCHW",
+   "security": "Charles Schwab Corporation",
+   "cik": "0000316709",
+   "date_added": "1997-06-02"
+  },
+  {
+   "symbol": "CHTR",
+   "security": "Charter Communications",
+   "cik": "0001091667",
+   "date_added": "2016-09-08"
+  },
+  {
+   "symbol": "CVX",
+   "security": "Chevron Corporation",
+   "cik": "0000093410",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "CMG",
+   "security": "Chipotle Mexican Grill",
+   "cik": "0001058090",
+   "date_added": "2011-04-28"
+  },
+  {
+   "symbol": "CB",
+   "security": "Chubb Limited",
+   "cik": "0000896159",
+   "date_added": "2010-07-15"
+  },
+  {
+   "symbol": "CHD",
+   "security": "Church & Dwight",
+   "cik": "0000313927",
+   "date_added": "2015-12-29"
+  },
+  {
+   "symbol": "CIEN",
+   "security": "Ciena",
+   "cik": "0000936395",
+   "date_added": "2026-02-09"
+  },
+  {
+   "symbol": "CI",
+   "security": "Cigna",
+   "cik": "0001739940",
+   "date_added": "1976-06-30"
+  },
+  {
+   "symbol": "CINF",
+   "security": "Cincinnati Financial",
+   "cik": "0000020286",
+   "date_added": "1997-12-18"
+  },
+  {
+   "symbol": "CTAS",
+   "security": "Cintas",
+   "cik": "0000723254",
+   "date_added": "2001-03-01"
+  },
+  {
+   "symbol": "CSCO",
+   "security": "Cisco",
+   "cik": "0000858877",
+   "date_added": "1993-12-01"
+  },
+  {
+   "symbol": "C",
+   "security": "Citigroup",
+   "cik": "0000831001",
+   "date_added": "1988-05-31"
+  },
+  {
+   "symbol": "CFG",
+   "security": "Citizens Financial Group",
+   "cik": "0000759944",
+   "date_added": "2016-01-29"
+  },
+  {
+   "symbol": "CLX",
+   "security": "Clorox",
+   "cik": "0000021076",
+   "date_added": "1969-03-31"
+  },
+  {
+   "symbol": "CME",
+   "security": "CME Group",
+   "cik": "0001156375",
+   "date_added": "2006-08-11"
+  },
+  {
+   "symbol": "CMS",
+   "security": "CMS Energy",
+   "cik": "0000811156",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "KO",
+   "security": "Coca-Cola Company (The)",
+   "cik": "0000021344",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "CTSH",
+   "security": "Cognizant",
+   "cik": "0001058290",
+   "date_added": "2006-11-17"
+  },
+  {
+   "symbol": "COHR",
+   "security": "Coherent Corp.",
+   "cik": "0000820318",
+   "date_added": "2026-03-23"
+  },
+  {
+   "symbol": "COIN",
+   "security": "Coinbase",
+   "cik": "0001679788",
+   "date_added": "2025-05-19"
+  },
+  {
+   "symbol": "CL",
+   "security": "Colgate-Palmolive",
+   "cik": "0000021665",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "CMCSA",
+   "security": "Comcast",
+   "cik": "0001166691",
+   "date_added": "2002-11-19"
+  },
+  {
+   "symbol": "FIX",
+   "security": "Comfort Systems USA",
+   "cik": "0001035983",
+   "date_added": "2025-12-22"
+  },
+  {
+   "symbol": "COP",
+   "security": "ConocoPhillips",
+   "cik": "0001163165",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "ED",
+   "security": "Consolidated Edison",
+   "cik": "0001047862",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "STZ",
+   "security": "Constellation Brands",
+   "cik": "0000016918",
+   "date_added": "2005-07-01"
+  },
+  {
+   "symbol": "CEG",
+   "security": "Constellation Energy",
+   "cik": "0001868275",
+   "date_added": "2022-02-02"
+  },
+  {
+   "symbol": "COO",
+   "security": "Cooper Companies (The)",
+   "cik": "0000711404",
+   "date_added": "2016-09-23"
+  },
+  {
+   "symbol": "CPRT",
+   "security": "Copart",
+   "cik": "0000900075",
+   "date_added": "2018-07-02"
+  },
+  {
+   "symbol": "GLW",
+   "security": "Corning Inc.",
+   "cik": "0000024741",
+   "date_added": "1995-02-27"
+  },
+  {
+   "symbol": "CPAY",
+   "security": "Corpay",
+   "cik": "0001175454",
+   "date_added": "2018-06-20"
+  },
+  {
+   "symbol": "CTVA",
+   "security": "Corteva",
+   "cik": "0001755672",
+   "date_added": "2019-06-03"
+  },
+  {
+   "symbol": "CSGP",
+   "security": "CoStar Group",
+   "cik": "0001057352",
+   "date_added": "2022-09-19"
+  },
+  {
+   "symbol": "COST",
+   "security": "Costco",
+   "cik": "0000909832",
+   "date_added": "1993-10-01"
+  },
+  {
+   "symbol": "CRH",
+   "security": "CRH plc",
+   "cik": "0000849395",
+   "date_added": "2025-12-22"
+  },
+  {
+   "symbol": "CRWD",
+   "security": "CrowdStrike",
+   "cik": "0001535527",
+   "date_added": "2024-06-24"
+  },
+  {
+   "symbol": "CCI",
+   "security": "Crown Castle",
+   "cik": "0001051470",
+   "date_added": "2012-03-14"
+  },
+  {
+   "symbol": "CSX",
+   "security": "CSX Corporation",
+   "cik": "0000277948",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "CMI",
+   "security": "Cummins",
+   "cik": "0000026172",
+   "date_added": "1965-03-31"
+  },
+  {
+   "symbol": "CVS",
+   "security": "CVS Health",
+   "cik": "0000064803",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "DHR",
+   "security": "Danaher Corporation",
+   "cik": "0000313616",
+   "date_added": "1998-11-18"
+  },
+  {
+   "symbol": "DRI",
+   "security": "Darden Restaurants",
+   "cik": "0000940944",
+   "date_added": "1995-05-31"
+  },
+  {
+   "symbol": "DDOG",
+   "security": "Datadog",
+   "cik": "0001561550",
+   "date_added": "2025-07-09"
+  },
+  {
+   "symbol": "DVA",
+   "security": "DaVita",
+   "cik": "0000927066",
+   "date_added": "2008-07-31"
+  },
+  {
+   "symbol": "DECK",
+   "security": "Deckers Brands",
+   "cik": "0000910521",
+   "date_added": "2024-03-18"
+  },
+  {
+   "symbol": "DE",
+   "security": "Deere & Company",
+   "cik": "0000315189",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "DELL",
+   "security": "Dell Technologies",
+   "cik": "0001571996",
+   "date_added": "2024-09-23"
+  },
+  {
+   "symbol": "DAL",
+   "security": "Delta Air Lines",
+   "cik": "0000027904",
+   "date_added": "2013-09-11"
+  },
+  {
+   "symbol": "DVN",
+   "security": "Devon Energy",
+   "cik": "0001090012",
+   "date_added": "2000-08-30"
+  },
+  {
+   "symbol": "DXCM",
+   "security": "Dexcom",
+   "cik": "0001093557",
+   "date_added": "2020-05-12"
+  },
+  {
+   "symbol": "FANG",
+   "security": "Diamondback Energy",
+   "cik": "0001539838",
+   "date_added": "2018-12-03"
+  },
+  {
+   "symbol": "DLR",
+   "security": "Digital Realty",
+   "cik": "0001297996",
+   "date_added": "2016-05-18"
+  },
+  {
+   "symbol": "DG",
+   "security": "Dollar General",
+   "cik": "0000029534",
+   "date_added": "2012-12-03"
+  },
+  {
+   "symbol": "DLTR",
+   "security": "Dollar Tree",
+   "cik": "0000935703",
+   "date_added": "2011-12-19"
+  },
+  {
+   "symbol": "D",
+   "security": "Dominion Energy",
+   "cik": "0000715957",
+   "date_added": "2016-11-30"
+  },
+  {
+   "symbol": "DPZ",
+   "security": "Domino's",
+   "cik": "0001286681",
+   "date_added": "2020-05-12"
+  },
+  {
+   "symbol": "DASH",
+   "security": "DoorDash",
+   "cik": "0001792789",
+   "date_added": "2025-03-24"
+  },
+  {
+   "symbol": "DOV",
+   "security": "Dover Corporation",
+   "cik": "0000029905",
+   "date_added": "1985-10-31"
+  },
+  {
+   "symbol": "DOW",
+   "security": "Dow Inc.",
+   "cik": "0001751788",
+   "date_added": "2019-04-01"
+  },
+  {
+   "symbol": "DHI",
+   "security": "D. R. Horton",
+   "cik": "0000882184",
+   "date_added": "2005-06-22"
+  },
+  {
+   "symbol": "DTE",
+   "security": "DTE Energy",
+   "cik": "0000936340",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "DUK",
+   "security": "Duke Energy",
+   "cik": "0001326160",
+   "date_added": "1976-06-30"
+  },
+  {
+   "symbol": "DD",
+   "security": "DuPont",
+   "cik": "0001666700",
+   "date_added": "2019-06-03"
+  },
+  {
+   "symbol": "ETN",
+   "security": "Eaton Corporation",
+   "cik": "0001551182",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "EBAY",
+   "security": "eBay Inc.",
+   "cik": "0001065088",
+   "date_added": "2002-07-22"
+  },
+  {
+   "symbol": "ECHO",
+   "security": "EchoStar",
+   "cik": "0001415404",
+   "date_added": "2026-03-23"
+  },
+  {
+   "symbol": "ECL",
+   "security": "Ecolab",
+   "cik": "0000031462",
+   "date_added": "1989-01-31"
+  },
+  {
+   "symbol": "EIX",
+   "security": "Edison International",
+   "cik": "0000827052",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "EW",
+   "security": "Edwards Lifesciences",
+   "cik": "0001099800",
+   "date_added": "2011-04-01"
+  },
+  {
+   "symbol": "ELV",
+   "security": "Elevance Health",
+   "cik": "0001156039",
+   "date_added": "2002-07-25"
+  },
+  {
+   "symbol": "EME",
+   "security": "Emcor",
+   "cik": "0000105634",
+   "date_added": "2025-09-22"
+  },
+  {
+   "symbol": "EMR",
+   "security": "Emerson Electric",
+   "cik": "0000032604",
+   "date_added": "1965-03-31"
+  },
+  {
+   "symbol": "ETR",
+   "security": "Entergy",
+   "cik": "0000065984",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "EOG",
+   "security": "EOG Resources",
+   "cik": "0000821189",
+   "date_added": "2000-11-02"
+  },
+  {
+   "symbol": "EQT",
+   "security": "EQT Corporation",
+   "cik": "0000033213",
+   "date_added": "2022-10-03"
+  },
+  {
+   "symbol": "EFX",
+   "security": "Equifax",
+   "cik": "0000033185",
+   "date_added": "1997-06-19"
+  },
+  {
+   "symbol": "EQIX",
+   "security": "Equinix",
+   "cik": "0001101239",
+   "date_added": "2015-03-20"
+  },
+  {
+   "symbol": "ERIE",
+   "security": "Erie Indemnity",
+   "cik": "0000922621",
+   "date_added": "2024-09-23"
+  },
+  {
+   "symbol": "ESS",
+   "security": "Essex Property Trust",
+   "cik": "0000920522",
+   "date_added": "2014-04-02"
+  },
+  {
+   "symbol": "EL",
+   "security": "Est\u00e9e Lauder Companies (The)",
+   "cik": "0001001250",
+   "date_added": "2006-01-05"
+  },
+  {
+   "symbol": "EG",
+   "security": "Everest Group",
+   "cik": "0001095073",
+   "date_added": "2017-06-19"
+  },
+  {
+   "symbol": "EVRG",
+   "security": "Evergy",
+   "cik": "0001711269",
+   "date_added": "2018-06-05"
+  },
+  {
+   "symbol": "ES",
+   "security": "Eversource Energy",
+   "cik": "0000072741",
+   "date_added": "2009-07-24"
+  },
+  {
+   "symbol": "EXC",
+   "security": "Exelon",
+   "cik": "0001109357",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "EXE",
+   "security": "Expand Energy",
+   "cik": "0000895126",
+   "date_added": "2025-03-24"
+  },
+  {
+   "symbol": "EXPE",
+   "security": "Expedia Group",
+   "cik": "0001324424",
+   "date_added": "2007-10-02"
+  },
+  {
+   "symbol": "EXPD",
+   "security": "Expeditors International",
+   "cik": "0000746515",
+   "date_added": "2007-10-10"
+  },
+  {
+   "symbol": "EXR",
+   "security": "Extra Space Storage",
+   "cik": "0001289490",
+   "date_added": "2016-01-19"
+  },
+  {
+   "symbol": "XOM",
+   "security": "ExxonMobil",
+   "cik": "0002115436",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "FFIV",
+   "security": "F5, Inc.",
+   "cik": "0001048695",
+   "date_added": "2010-12-20"
+  },
+  {
+   "symbol": "FDS",
+   "security": "FactSet",
+   "cik": "0001013237",
+   "date_added": "2021-12-20"
+  },
+  {
+   "symbol": "FICO",
+   "security": "Fair Isaac",
+   "cik": "0000814547",
+   "date_added": "2023-03-20"
+  },
+  {
+   "symbol": "FAST",
+   "security": "Fastenal",
+   "cik": "0000815556",
+   "date_added": "2008-09-15"
+  },
+  {
+   "symbol": "FRT",
+   "security": "Federal Realty Investment Trust",
+   "cik": "0000034903",
+   "date_added": "2016-02-01"
+  },
+  {
+   "symbol": "FDX",
+   "security": "FedEx",
+   "cik": "0001048911",
+   "date_added": "1980-12-31"
+  },
+  {
+   "symbol": "FDXF",
+   "security": "FedEx Freight",
+   "cik": "0002082247",
+   "date_added": "2026-06-01"
+  },
+  {
+   "symbol": "FERG",
+   "security": "Ferguson Enterprises",
+   "cik": "0002011641",
+   "date_added": "2026-08-05"
+  },
+  {
+   "symbol": "FIS",
+   "security": "Fidelity National Information Services",
+   "cik": "0001136893",
+   "date_added": "2006-11-10"
+  },
+  {
+   "symbol": "FITB",
+   "security": "Fifth Third Bancorp",
+   "cik": "0000035527",
+   "date_added": "1996-03-29"
+  },
+  {
+   "symbol": "FSLR",
+   "security": "First Solar",
+   "cik": "0001274494",
+   "date_added": "2022-12-19"
+  },
+  {
+   "symbol": "FE",
+   "security": "FirstEnergy",
+   "cik": "0001031296",
+   "date_added": "1997-11-28"
+  },
+  {
+   "symbol": "FISV",
+   "security": "Fiserv",
+   "cik": "0000798354",
+   "date_added": "2001-04-02"
+  },
+  {
+   "symbol": "FLEX",
+   "security": "Flex Ltd.",
+   "cik": "0000866374",
+   "date_added": "2026-06-22"
+  },
+  {
+   "symbol": "F",
+   "security": "Ford Motor Company",
+   "cik": "0000037996",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "FTNT",
+   "security": "Fortinet",
+   "cik": "0001262039",
+   "date_added": "2018-10-11"
+  },
+  {
+   "symbol": "FTV",
+   "security": "Fortive",
+   "cik": "0001659166",
+   "date_added": "2016-07-01"
+  },
+  {
+   "symbol": "FOXA",
+   "security": "Fox Corporation (Class A)",
+   "cik": "0001754301",
+   "date_added": "2019-03-19"
+  },
+  {
+   "symbol": "FOX",
+   "security": "Fox Corporation (Class B)",
+   "cik": "0001754301",
+   "date_added": "2019-03-19"
+  },
+  {
+   "symbol": "BEN",
+   "security": "Franklin Resources",
+   "cik": "0000038777",
+   "date_added": "1998-04-30"
+  },
+  {
+   "symbol": "FCX",
+   "security": "Freeport-McMoRan",
+   "cik": "0000831259",
+   "date_added": "2011-07-01"
+  },
+  {
+   "symbol": "GRMN",
+   "security": "Garmin",
+   "cik": "0001121788",
+   "date_added": "2012-12-12"
+  },
+  {
+   "symbol": "IT",
+   "security": "Gartner",
+   "cik": "0000749251",
+   "date_added": "2017-04-05"
+  },
+  {
+   "symbol": "GE",
+   "security": "GE Aerospace",
+   "cik": "0000040545",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "GEHC",
+   "security": "GE HealthCare",
+   "cik": "0001932393",
+   "date_added": "2023-01-04"
+  },
+  {
+   "symbol": "GEV",
+   "security": "GE Vernova",
+   "cik": "0001996810",
+   "date_added": "2024-04-02"
+  },
+  {
+   "symbol": "GEN",
+   "security": "Gen Digital",
+   "cik": "0000849399",
+   "date_added": "2003-03-25"
+  },
+  {
+   "symbol": "GNRC",
+   "security": "Generac",
+   "cik": "0001474735",
+   "date_added": "2021-03-22"
+  },
+  {
+   "symbol": "GD",
+   "security": "General Dynamics",
+   "cik": "0000040533",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "GIS",
+   "security": "General Mills",
+   "cik": "0000040704",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "GM",
+   "security": "General Motors",
+   "cik": "0001467858",
+   "date_added": "2013-06-06"
+  },
+  {
+   "symbol": "GPC",
+   "security": "Genuine Parts Company",
+   "cik": "0000040987",
+   "date_added": "1973-12-31"
+  },
+  {
+   "symbol": "GILD",
+   "security": "Gilead Sciences",
+   "cik": "0000882095",
+   "date_added": "2004-07-01"
+  },
+  {
+   "symbol": "GPN",
+   "security": "Global Payments",
+   "cik": "0001123360",
+   "date_added": "2016-04-25"
+  },
+  {
+   "symbol": "GL",
+   "security": "Globe Life",
+   "cik": "0000320335",
+   "date_added": "1989-04-30"
+  },
+  {
+   "symbol": "GDDY",
+   "security": "GoDaddy",
+   "cik": "0001609711",
+   "date_added": "2024-06-24"
+  },
+  {
+   "symbol": "GS",
+   "security": "Goldman Sachs",
+   "cik": "0000886982",
+   "date_added": "2002-07-22"
+  },
+  {
+   "symbol": "HAL",
+   "security": "Halliburton",
+   "cik": "0000045012",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "HIG",
+   "security": "Hartford (The)",
+   "cik": "0000874766",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "HAS",
+   "security": "Hasbro",
+   "cik": "0000046080",
+   "date_added": "1984-09-30"
+  },
+  {
+   "symbol": "HCA",
+   "security": "HCA Healthcare",
+   "cik": "0000860730",
+   "date_added": "2015-01-27"
+  },
+  {
+   "symbol": "DOC",
+   "security": "Healthpeak Properties",
+   "cik": "0000765880",
+   "date_added": "2008-03-31"
+  },
+  {
+   "symbol": "HSIC",
+   "security": "Henry Schein",
+   "cik": "0001000228",
+   "date_added": "2015-03-17"
+  },
+  {
+   "symbol": "HSY",
+   "security": "Hershey Company (The)",
+   "cik": "0000047111",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "HPE",
+   "security": "Hewlett Packard Enterprise",
+   "cik": "0001645590",
+   "date_added": "2015-11-02"
+  },
+  {
+   "symbol": "HLT",
+   "security": "Hilton Worldwide",
+   "cik": "0001585689",
+   "date_added": "2017-06-19"
+  },
+  {
+   "symbol": "HD",
+   "security": "Home Depot (The)",
+   "cik": "0000354950",
+   "date_added": "1988-03-31"
+  },
+  {
+   "symbol": "HONA",
+   "security": "Honeywell Aerospace",
+   "cik": "0002089271",
+   "date_added": "2026-06-29"
+  },
+  {
+   "symbol": "HON",
+   "security": "Honeywell Technologies",
+   "cik": "0000773840",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "HRL",
+   "security": "Hormel Foods",
+   "cik": "0000048465",
+   "date_added": "2009-03-04"
+  },
+  {
+   "symbol": "HST",
+   "security": "Host Hotels & Resorts",
+   "cik": "0001070750",
+   "date_added": "2007-03-20"
+  },
+  {
+   "symbol": "HWM",
+   "security": "Howmet Aerospace",
+   "cik": "0000004281",
+   "date_added": "2016-10-21"
+  },
+  {
+   "symbol": "HPQ",
+   "security": "HP Inc.",
+   "cik": "0000047217",
+   "date_added": "1974-12-31"
+  },
+  {
+   "symbol": "HUBB",
+   "security": "Hubbell Incorporated",
+   "cik": "0000048898",
+   "date_added": "2023-10-18"
+  },
+  {
+   "symbol": "HUM",
+   "security": "Humana",
+   "cik": "0000049071",
+   "date_added": "2012-12-10"
+  },
+  {
+   "symbol": "HBAN",
+   "security": "Huntington Bancshares",
+   "cik": "0000049196",
+   "date_added": "1997-08-28"
+  },
+  {
+   "symbol": "HII",
+   "security": "Huntington Ingalls Industries",
+   "cik": "0001501585",
+   "date_added": "2018-01-03"
+  },
+  {
+   "symbol": "IBM",
+   "security": "IBM",
+   "cik": "0000051143",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "IEX",
+   "security": "IDEX Corporation",
+   "cik": "0000832101",
+   "date_added": "2019-08-09"
+  },
+  {
+   "symbol": "IDXX",
+   "security": "Idexx Laboratories",
+   "cik": "0000874716",
+   "date_added": "2017-01-05"
+  },
+  {
+   "symbol": "ITW",
+   "security": "Illinois Tool Works",
+   "cik": "0000049826",
+   "date_added": "1986-02-28"
+  },
+  {
+   "symbol": "INCY",
+   "security": "Incyte",
+   "cik": "0000879169",
+   "date_added": "2017-02-28"
+  },
+  {
+   "symbol": "IR",
+   "security": "Ingersoll Rand",
+   "cik": "0001699150",
+   "date_added": "2020-03-03"
+  },
+  {
+   "symbol": "PODD",
+   "security": "Insulet Corporation",
+   "cik": "0001145197",
+   "date_added": "2023-03-15"
+  },
+  {
+   "symbol": "INTC",
+   "security": "Intel",
+   "cik": "0000050863",
+   "date_added": "1976-12-31"
+  },
+  {
+   "symbol": "IBKR",
+   "security": "Interactive Brokers",
+   "cik": "0001381197",
+   "date_added": "2025-08-28"
+  },
+  {
+   "symbol": "ICE",
+   "security": "Intercontinental Exchange",
+   "cik": "0001571949",
+   "date_added": "2007-09-26"
+  },
+  {
+   "symbol": "IFF",
+   "security": "International Flavors & Fragrances",
+   "cik": "0000051253",
+   "date_added": "1976-03-31"
+  },
+  {
+   "symbol": "IP",
+   "security": "International Paper",
+   "cik": "0000051434",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "INTU",
+   "security": "Intuit",
+   "cik": "0000896878",
+   "date_added": "2000-12-05"
+  },
+  {
+   "symbol": "ISRG",
+   "security": "Intuitive Surgical",
+   "cik": "0001035267",
+   "date_added": "2008-06-02"
+  },
+  {
+   "symbol": "IVZ",
+   "security": "Invesco",
+   "cik": "0000914208",
+   "date_added": "2008-08-21"
+  },
+  {
+   "symbol": "INVH",
+   "security": "Invitation Homes",
+   "cik": "0001687229",
+   "date_added": "2022-09-19"
+  },
+  {
+   "symbol": "IQV",
+   "security": "IQVIA",
+   "cik": "0001478242",
+   "date_added": "2017-08-29"
+  },
+  {
+   "symbol": "IRM",
+   "security": "Iron Mountain",
+   "cik": "0001020569",
+   "date_added": "2009-01-06"
+  },
+  {
+   "symbol": "JBHT",
+   "security": "J.B. Hunt",
+   "cik": "0000728535",
+   "date_added": "2015-07-01"
+  },
+  {
+   "symbol": "JBL",
+   "security": "Jabil",
+   "cik": "0000898293",
+   "date_added": "2023-12-18"
+  },
+  {
+   "symbol": "JKHY",
+   "security": "Jack Henry & Associates",
+   "cik": "0000779152",
+   "date_added": "2018-11-13"
+  },
+  {
+   "symbol": "J",
+   "security": "Jacobs Solutions",
+   "cik": "0000052988",
+   "date_added": "2007-10-26"
+  },
+  {
+   "symbol": "JNJ",
+   "security": "Johnson & Johnson",
+   "cik": "0000200406",
+   "date_added": "1973-06-30"
+  },
+  {
+   "symbol": "JCI",
+   "security": "Johnson Controls",
+   "cik": "0000833444",
+   "date_added": "2010-08-27"
+  },
+  {
+   "symbol": "JPM",
+   "security": "JPMorgan Chase",
+   "cik": "0000019617",
+   "date_added": "1975-06-30"
+  },
+  {
+   "symbol": "KVUE",
+   "security": "Kenvue",
+   "cik": "0001944048",
+   "date_added": "2023-08-25"
+  },
+  {
+   "symbol": "KDP",
+   "security": "Keurig Dr Pepper",
+   "cik": "0001418135",
+   "date_added": "2022-06-21"
+  },
+  {
+   "symbol": "KEY",
+   "security": "KeyCorp",
+   "cik": "0000091576",
+   "date_added": "1994-03-01"
+  },
+  {
+   "symbol": "KEYS",
+   "security": "Keysight Technologies",
+   "cik": "0001601046",
+   "date_added": "2018-11-06"
+  },
+  {
+   "symbol": "KMB",
+   "security": "Kimberly-Clark",
+   "cik": "0000055785",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "KIM",
+   "security": "Kimco Realty",
+   "cik": "0000879101",
+   "date_added": "2006-04-04"
+  },
+  {
+   "symbol": "KMI",
+   "security": "Kinder Morgan",
+   "cik": "0001506307",
+   "date_added": "2012-05-25"
+  },
+  {
+   "symbol": "KKR",
+   "security": "KKR & Co.",
+   "cik": "0001404912",
+   "date_added": "2024-06-24"
+  },
+  {
+   "symbol": "KLAC",
+   "security": "KLA Corporation",
+   "cik": "0000319201",
+   "date_added": "1997-09-30"
+  },
+  {
+   "symbol": "KHC",
+   "security": "Kraft Heinz",
+   "cik": "0001637459",
+   "date_added": "2015-07-06"
+  },
+  {
+   "symbol": "KR",
+   "security": "Kroger",
+   "cik": "0000056873",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "LHX",
+   "security": "L3Harris",
+   "cik": "0000202058",
+   "date_added": "2008-09-22"
+  },
+  {
+   "symbol": "LH",
+   "security": "Labcorp",
+   "cik": "0000920148",
+   "date_added": "2004-11-01"
+  },
+  {
+   "symbol": "LRCX",
+   "security": "Lam Research",
+   "cik": "0000707549",
+   "date_added": "2012-06-29"
+  },
+  {
+   "symbol": "LVS",
+   "security": "Las Vegas Sands",
+   "cik": "0001300514",
+   "date_added": "2019-10-03"
+  },
+  {
+   "symbol": "LDOS",
+   "security": "Leidos",
+   "cik": "0001336920",
+   "date_added": "2019-08-09"
+  },
+  {
+   "symbol": "LEN",
+   "security": "Lennar",
+   "cik": "0000920760",
+   "date_added": "2005-10-04"
+  },
+  {
+   "symbol": "LII",
+   "security": "Lennox International",
+   "cik": "0001069202",
+   "date_added": "2024-12-23"
+  },
+  {
+   "symbol": "LLY",
+   "security": "Lilly (Eli)",
+   "cik": "0000059478",
+   "date_added": "1970-12-31"
+  },
+  {
+   "symbol": "LIN",
+   "security": "Linde plc",
+   "cik": "0001707925",
+   "date_added": "1992-07-01"
+  },
+  {
+   "symbol": "LYV",
+   "security": "Live Nation Entertainment",
+   "cik": "0001335258",
+   "date_added": "2019-12-23"
+  },
+  {
+   "symbol": "LMT",
+   "security": "Lockheed Martin",
+   "cik": "0000936468",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "L",
+   "security": "Loews Corporation",
+   "cik": "0000060086",
+   "date_added": "1995-05-31"
+  },
+  {
+   "symbol": "LOW",
+   "security": "Lowe's",
+   "cik": "0000060667",
+   "date_added": "1984-02-29"
+  },
+  {
+   "symbol": "LULU",
+   "security": "Lululemon Athletica",
+   "cik": "0001397187",
+   "date_added": "2023-10-18"
+  },
+  {
+   "symbol": "LITE",
+   "security": "Lumentum",
+   "cik": "0001633978",
+   "date_added": "2026-03-23"
+  },
+  {
+   "symbol": "LYB",
+   "security": "LyondellBasell",
+   "cik": "0001489393",
+   "date_added": "2012-09-05"
+  },
+  {
+   "symbol": "MTB",
+   "security": "M&T Bank",
+   "cik": "0000036270",
+   "date_added": "2004-02-23"
+  },
+  {
+   "symbol": "MPC",
+   "security": "Marathon Petroleum",
+   "cik": "0001510295",
+   "date_added": "2011-07-01"
+  },
+  {
+   "symbol": "MAR",
+   "security": "Marriott International",
+   "cik": "0001048286",
+   "date_added": "1998-05-29"
+  },
+  {
+   "symbol": "MRSH",
+   "security": "Marsh McLennan",
+   "cik": "0000062709",
+   "date_added": "1987-08-31"
+  },
+  {
+   "symbol": "MLM",
+   "security": "Martin Marietta Materials",
+   "cik": "0000916076",
+   "date_added": "2014-07-02"
+  },
+  {
+   "symbol": "MRVL",
+   "security": "Marvell Technology",
+   "cik": "0001835632",
+   "date_added": "2026-06-22"
+  },
+  {
+   "symbol": "MAS",
+   "security": "Masco",
+   "cik": "0000062996",
+   "date_added": "1981-06-30"
+  },
+  {
+   "symbol": "MA",
+   "security": "Mastercard",
+   "cik": "0001141391",
+   "date_added": "2008-07-18"
+  },
+  {
+   "symbol": "MKC",
+   "security": "McCormick & Company",
+   "cik": "0000063754",
+   "date_added": "2003-03-20"
+  },
+  {
+   "symbol": "MCD",
+   "security": "McDonald's",
+   "cik": "0000063908",
+   "date_added": "1970-06-30"
+  },
+  {
+   "symbol": "MCK",
+   "security": "McKesson Corporation",
+   "cik": "0000927653",
+   "date_added": "1999-01-13"
+  },
+  {
+   "symbol": "MDT",
+   "security": "Medtronic",
+   "cik": "0001613103",
+   "date_added": "1986-10-31"
+  },
+  {
+   "symbol": "MRK",
+   "security": "Merck & Co.",
+   "cik": "0000310158",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "META",
+   "security": "Meta Platforms",
+   "cik": "0001326801",
+   "date_added": "2013-12-23"
+  },
+  {
+   "symbol": "MET",
+   "security": "MetLife",
+   "cik": "0001099219",
+   "date_added": "2000-12-11"
+  },
+  {
+   "symbol": "MTD",
+   "security": "Mettler Toledo",
+   "cik": "0001037646",
+   "date_added": "2016-09-06"
+  },
+  {
+   "symbol": "MGM",
+   "security": "MGM Resorts",
+   "cik": "0000789570",
+   "date_added": "2017-07-26"
+  },
+  {
+   "symbol": "MCHP",
+   "security": "Microchip Technology",
+   "cik": "0000827054",
+   "date_added": "2007-09-07"
+  },
+  {
+   "symbol": "MU",
+   "security": "Micron Technology",
+   "cik": "0000723125",
+   "date_added": "1994-09-27"
+  },
+  {
+   "symbol": "MSFT",
+   "security": "Microsoft",
+   "cik": "0000789019",
+   "date_added": "1994-06-01"
+  },
+  {
+   "symbol": "MAA",
+   "security": "Mid-America Apartment Communities",
+   "cik": "0000912595",
+   "date_added": "2016-12-02"
+  },
+  {
+   "symbol": "MRNA",
+   "security": "Moderna",
+   "cik": "0001682852",
+   "date_added": "2021-07-21"
+  },
+  {
+   "symbol": "TAP",
+   "security": "Molson Coors Beverage Company",
+   "cik": "0000024545",
+   "date_added": "1976-06-30"
+  },
+  {
+   "symbol": "MDLZ",
+   "security": "Mondelez International",
+   "cik": "0001103982",
+   "date_added": "2012-10-02"
+  },
+  {
+   "symbol": "MPWR",
+   "security": "Monolithic Power Systems",
+   "cik": "0001280452",
+   "date_added": "2021-02-12"
+  },
+  {
+   "symbol": "MNST",
+   "security": "Monster Beverage",
+   "cik": "0000865752",
+   "date_added": "2012-06-28"
+  },
+  {
+   "symbol": "MCO",
+   "security": "Moody's Corporation",
+   "cik": "0001059556",
+   "date_added": "1998-07-01"
+  },
+  {
+   "symbol": "MS",
+   "security": "Morgan Stanley",
+   "cik": "0000895421",
+   "date_added": "1993-07-29"
+  },
+  {
+   "symbol": "MOS",
+   "security": "Mosaic Company (The)",
+   "cik": "0001285785",
+   "date_added": "2011-09-26"
+  },
+  {
+   "symbol": "MSI",
+   "security": "Motorola Solutions",
+   "cik": "0000068505",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "MSCI",
+   "security": "MSCI",
+   "cik": "0001408198",
+   "date_added": "2018-04-04"
+  },
+  {
+   "symbol": "NDAQ",
+   "security": "Nasdaq, Inc.",
+   "cik": "0001120193",
+   "date_added": "2008-10-22"
+  },
+  {
+   "symbol": "NTAP",
+   "security": "NetApp",
+   "cik": "0001002047",
+   "date_added": "1999-06-25"
+  },
+  {
+   "symbol": "NFLX",
+   "security": "Netflix",
+   "cik": "0001065280",
+   "date_added": "2010-12-20"
+  },
+  {
+   "symbol": "NEM",
+   "security": "Newmont",
+   "cik": "0001164727",
+   "date_added": "1969-06-30"
+  },
+  {
+   "symbol": "NWSA",
+   "security": "News Corp (Class A)",
+   "cik": "0001564708",
+   "date_added": "2013-08-01"
+  },
+  {
+   "symbol": "NWS",
+   "security": "News Corp (Class B)",
+   "cik": "0001564708",
+   "date_added": "2015-09-18"
+  },
+  {
+   "symbol": "NEE",
+   "security": "NextEra Energy",
+   "cik": "0000753308",
+   "date_added": "1976-06-30"
+  },
+  {
+   "symbol": "NKE",
+   "security": "Nike, Inc.",
+   "cik": "0000320187",
+   "date_added": "1988-11-30"
+  },
+  {
+   "symbol": "NI",
+   "security": "NiSource",
+   "cik": "0001111711",
+   "date_added": "2000-11-02"
+  },
+  {
+   "symbol": "NDSN",
+   "security": "Nordson Corporation",
+   "cik": "0000072331",
+   "date_added": "2022-02-15"
+  },
+  {
+   "symbol": "NSC",
+   "security": "Norfolk Southern",
+   "cik": "0000702165",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "NTRS",
+   "security": "Northern Trust",
+   "cik": "0000073124",
+   "date_added": "1998-01-30"
+  },
+  {
+   "symbol": "NOC",
+   "security": "Northrop Grumman",
+   "cik": "0001133421",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "NCLH",
+   "security": "Norwegian Cruise Line Holdings",
+   "cik": "0001513761",
+   "date_added": "2017-10-13"
+  },
+  {
+   "symbol": "NRG",
+   "security": "NRG Energy",
+   "cik": "0001013871",
+   "date_added": "2010-01-29"
+  },
+  {
+   "symbol": "NUE",
+   "security": "Nucor",
+   "cik": "0000073309",
+   "date_added": "1985-04-30"
+  },
+  {
+   "symbol": "NVDA",
+   "security": "Nvidia",
+   "cik": "0001045810",
+   "date_added": "2001-11-30"
+  },
+  {
+   "symbol": "NVR",
+   "security": "NVR, Inc.",
+   "cik": "0000906163",
+   "date_added": "2019-09-26"
+  },
+  {
+   "symbol": "NXPI",
+   "security": "NXP Semiconductors",
+   "cik": "0001413447",
+   "date_added": "2021-03-22"
+  },
+  {
+   "symbol": "ORLY",
+   "security": "O'Reilly Automotive",
+   "cik": "0000898173",
+   "date_added": "2009-03-27"
+  },
+  {
+   "symbol": "OXY",
+   "security": "Occidental Petroleum",
+   "cik": "0000797468",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "ODFL",
+   "security": "Old Dominion",
+   "cik": "0000878927",
+   "date_added": "2019-12-09"
+  },
+  {
+   "symbol": "OMC",
+   "security": "Omnicom Group",
+   "cik": "0000029989",
+   "date_added": "1997-12-31"
+  },
+  {
+   "symbol": "ON",
+   "security": "ON Semiconductor",
+   "cik": "0001097864",
+   "date_added": "2022-06-21"
+  },
+  {
+   "symbol": "OKE",
+   "security": "Oneok",
+   "cik": "0001039684",
+   "date_added": "2010-03-15"
+  },
+  {
+   "symbol": "ORCL",
+   "security": "Oracle Corporation",
+   "cik": "0001341439",
+   "date_added": "1989-08-31"
+  },
+  {
+   "symbol": "OTIS",
+   "security": "Otis Worldwide",
+   "cik": "0001781335",
+   "date_added": "2020-04-03"
+  },
+  {
+   "symbol": "PCAR",
+   "security": "Paccar",
+   "cik": "0000075362",
+   "date_added": "1980-12-31"
+  },
+  {
+   "symbol": "PKG",
+   "security": "Packaging Corporation of America",
+   "cik": "0000075677",
+   "date_added": "2017-07-26"
+  },
+  {
+   "symbol": "PLTR",
+   "security": "Palantir Technologies",
+   "cik": "0001321655",
+   "date_added": "2024-09-23"
+  },
+  {
+   "symbol": "PANW",
+   "security": "Palo Alto Networks",
+   "cik": "0001327567",
+   "date_added": "2023-06-20"
+  },
+  {
+   "symbol": "PSKY",
+   "security": "Paramount Skydance Corporation",
+   "cik": "0002041610",
+   "date_added": "1994-09-30"
+  },
+  {
+   "symbol": "PH",
+   "security": "Parker Hannifin",
+   "cik": "0000076334",
+   "date_added": "1985-11-30"
+  },
+  {
+   "symbol": "PAYX",
+   "security": "Paychex",
+   "cik": "0000723531",
+   "date_added": "1998-10-01"
+  },
+  {
+   "symbol": "PYPL",
+   "security": "PayPal",
+   "cik": "0001633917",
+   "date_added": "2015-07-20"
+  },
+  {
+   "symbol": "PNR",
+   "security": "Pentair",
+   "cik": "0000077360",
+   "date_added": "2012-10-01"
+  },
+  {
+   "symbol": "PEP",
+   "security": "PepsiCo",
+   "cik": "0000077476",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "PFE",
+   "security": "Pfizer",
+   "cik": "0000078003",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "PCG",
+   "security": "PG&E Corporation",
+   "cik": "0001004980",
+   "date_added": "2022-10-03"
+  },
+  {
+   "symbol": "PM",
+   "security": "Philip Morris International",
+   "cik": "0001413329",
+   "date_added": "2008-03-31"
+  },
+  {
+   "symbol": "PSX",
+   "security": "Phillips 66",
+   "cik": "0001534701",
+   "date_added": "2012-05-01"
+  },
+  {
+   "symbol": "PNW",
+   "security": "Pinnacle West Capital",
+   "cik": "0000764622",
+   "date_added": "1999-10-04"
+  },
+  {
+   "symbol": "PNC",
+   "security": "PNC Financial Services",
+   "cik": "0000713676",
+   "date_added": "1988-04-30"
+  },
+  {
+   "symbol": "PPG",
+   "security": "PPG Industries",
+   "cik": "0000079879",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "PPL",
+   "security": "PPL Corporation",
+   "cik": "0000922224",
+   "date_added": "2001-10-01"
+  },
+  {
+   "symbol": "PFG",
+   "security": "Principal Financial Group",
+   "cik": "0001126328",
+   "date_added": "2002-07-22"
+  },
+  {
+   "symbol": "PG",
+   "security": "Procter & Gamble",
+   "cik": "0000080424",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "PGR",
+   "security": "Progressive Corporation",
+   "cik": "0000080661",
+   "date_added": "1997-08-04"
+  },
+  {
+   "symbol": "PLD",
+   "security": "Prologis",
+   "cik": "0001045609",
+   "date_added": "2003-07-17"
+  },
+  {
+   "symbol": "PRU",
+   "security": "Prudential Financial",
+   "cik": "0001137774",
+   "date_added": "2002-07-22"
+  },
+  {
+   "symbol": "PEG",
+   "security": "Public Service Enterprise Group",
+   "cik": "0000788784",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "PTC",
+   "security": "PTC Inc.",
+   "cik": "0000857005",
+   "date_added": "2021-04-20"
+  },
+  {
+   "symbol": "PSA",
+   "security": "Public Storage",
+   "cik": "0001393311",
+   "date_added": "2005-08-19"
+  },
+  {
+   "symbol": "PHM",
+   "security": "PulteGroup",
+   "cik": "0000822416",
+   "date_added": "1984-04-30"
+  },
+  {
+   "symbol": "PWR",
+   "security": "Quanta Services",
+   "cik": "0001050915",
+   "date_added": "2009-07-01"
+  },
+  {
+   "symbol": "QCOM",
+   "security": "Qualcomm",
+   "cik": "0000804328",
+   "date_added": "1999-07-22"
+  },
+  {
+   "symbol": "DGX",
+   "security": "Quest Diagnostics",
+   "cik": "0001022079",
+   "date_added": "2002-12-12"
+  },
+  {
+   "symbol": "Q",
+   "security": "Qnity Electronics",
+   "cik": "0002058873",
+   "date_added": "2025-11-03"
+  },
+  {
+   "symbol": "RL",
+   "security": "Ralph Lauren Corporation",
+   "cik": "0001037038",
+   "date_added": "2007-02-02"
+  },
+  {
+   "symbol": "RJF",
+   "security": "Raymond James Financial",
+   "cik": "0000720005",
+   "date_added": "2017-03-20"
+  },
+  {
+   "symbol": "RDDT",
+   "security": "Reddit",
+   "cik": "0001713445",
+   "date_added": "2026-08-18"
+  },
+  {
+   "symbol": "RTX",
+   "security": "RTX Corporation",
+   "cik": "0000101829",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "O",
+   "security": "Realty Income",
+   "cik": "0000726728",
+   "date_added": "2015-04-07"
+  },
+  {
+   "symbol": "REG",
+   "security": "Regency Centers",
+   "cik": "0000910606",
+   "date_added": "2017-03-02"
+  },
+  {
+   "symbol": "REGN",
+   "security": "Regeneron Pharmaceuticals",
+   "cik": "0000872589",
+   "date_added": "2013-05-01"
+  },
+  {
+   "symbol": "RF",
+   "security": "Regions Financial Corporation",
+   "cik": "0001281761",
+   "date_added": "1998-08-28"
+  },
+  {
+   "symbol": "RSG",
+   "security": "Republic Services",
+   "cik": "0001060391",
+   "date_added": "2008-12-05"
+  },
+  {
+   "symbol": "RMD",
+   "security": "ResMed|",
+   "cik": "0000943819",
+   "date_added": "2017-07-26"
+  },
+  {
+   "symbol": "RVTY",
+   "security": "Revvity",
+   "cik": "0000031791",
+   "date_added": "1985-05-31"
+  },
+  {
+   "symbol": "HOOD",
+   "security": "Robinhood Markets",
+   "cik": "0001783879",
+   "date_added": "2025-09-22"
+  },
+  {
+   "symbol": "ROK",
+   "security": "Rockwell Automation",
+   "cik": "0001024478",
+   "date_added": "2000-03-12"
+  },
+  {
+   "symbol": "ROL",
+   "security": "Rollins, Inc.",
+   "cik": "0000084839",
+   "date_added": "2018-10-01"
+  },
+  {
+   "symbol": "ROP",
+   "security": "Roper Technologies",
+   "cik": "0000882835",
+   "date_added": "2009-12-23"
+  },
+  {
+   "symbol": "ROST",
+   "security": "Ross Stores",
+   "cik": "0000745732",
+   "date_added": "2009-12-21"
+  },
+  {
+   "symbol": "RCL",
+   "security": "Royal Caribbean Group",
+   "cik": "0000884887",
+   "date_added": "2014-12-05"
+  },
+  {
+   "symbol": "SPGI",
+   "security": "S&P Global",
+   "cik": "0000064040",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "CRM",
+   "security": "Salesforce",
+   "cik": "0001108524",
+   "date_added": "2008-09-15"
+  },
+  {
+   "symbol": "SNDK",
+   "security": "Sandisk",
+   "cik": "0002023554",
+   "date_added": "2025-11-28"
+  },
+  {
+   "symbol": "SBAC",
+   "security": "SBA Communications",
+   "cik": "0001034054",
+   "date_added": "2017-09-01"
+  },
+  {
+   "symbol": "SLB",
+   "security": "Schlumberger",
+   "cik": "0000087347",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "STX",
+   "security": "Seagate Technology",
+   "cik": "0001137789",
+   "date_added": "2012-07-02"
+  },
+  {
+   "symbol": "SRE",
+   "security": "Sempra",
+   "cik": "0001032208",
+   "date_added": "2017-03-17"
+  },
+  {
+   "symbol": "NOW",
+   "security": "ServiceNow",
+   "cik": "0001373715",
+   "date_added": "2019-11-21"
+  },
+  {
+   "symbol": "SHW",
+   "security": "Sherwin-Williams",
+   "cik": "0000089800",
+   "date_added": "1964-06-30"
+  },
+  {
+   "symbol": "SPG",
+   "security": "Simon Property Group",
+   "cik": "0001063761",
+   "date_added": "2002-06-26"
+  },
+  {
+   "symbol": "SWKS",
+   "security": "Skyworks Solutions",
+   "cik": "0000004127",
+   "date_added": "2015-03-12"
+  },
+  {
+   "symbol": "SJM",
+   "security": "J.M. Smucker Company (The)",
+   "cik": "0000091419",
+   "date_added": "2008-11-06"
+  },
+  {
+   "symbol": "SW",
+   "security": "Smurfit Westrock",
+   "cik": "0002005951",
+   "date_added": "2024-07-08"
+  },
+  {
+   "symbol": "SNA",
+   "security": "Snap-on",
+   "cik": "0000091440",
+   "date_added": "1982-09-30"
+  },
+  {
+   "symbol": "SOLV",
+   "security": "Solventum",
+   "cik": "0001964738",
+   "date_added": "2024-04-01"
+  },
+  {
+   "symbol": "SO",
+   "security": "Southern Company",
+   "cik": "0000092122",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "LUV",
+   "security": "Southwest Airlines",
+   "cik": "0000092380",
+   "date_added": "1994-07-01"
+  },
+  {
+   "symbol": "SWK",
+   "security": "Stanley Black & Decker",
+   "cik": "0000093556",
+   "date_added": "1982-09-30"
+  },
+  {
+   "symbol": "SBUX",
+   "security": "Starbucks",
+   "cik": "0000829224",
+   "date_added": "2000-06-07"
+  },
+  {
+   "symbol": "STT",
+   "security": "State Street Corporation",
+   "cik": "0000093751",
+   "date_added": "2003-03-14"
+  },
+  {
+   "symbol": "STLD",
+   "security": "Steel Dynamics",
+   "cik": "0001022671",
+   "date_added": "2022-12-22"
+  },
+  {
+   "symbol": "STE",
+   "security": "Steris",
+   "cik": "0001757898",
+   "date_added": "2019-12-23"
+  },
+  {
+   "symbol": "SYK",
+   "security": "Stryker Corporation",
+   "cik": "0000310764",
+   "date_added": "2000-12-12"
+  },
+  {
+   "symbol": "SMCI",
+   "security": "Supermicro",
+   "cik": "0001375365",
+   "date_added": "2024-03-18"
+  },
+  {
+   "symbol": "SYF",
+   "security": "Synchrony Financial",
+   "cik": "0001601712",
+   "date_added": "2015-11-18"
+  },
+  {
+   "symbol": "SNPS",
+   "security": "Synopsys",
+   "cik": "0000883241",
+   "date_added": "2017-03-16"
+  },
+  {
+   "symbol": "SYY",
+   "security": "Sysco",
+   "cik": "0000096021",
+   "date_added": "1986-12-31"
+  },
+  {
+   "symbol": "TMUS",
+   "security": "T-Mobile US",
+   "cik": "0001283699",
+   "date_added": "2019-07-15"
+  },
+  {
+   "symbol": "TROW",
+   "security": "T. Rowe Price",
+   "cik": "0001113169",
+   "date_added": "2019-07-29"
+  },
+  {
+   "symbol": "TTWO",
+   "security": "Take-Two Interactive",
+   "cik": "0000946581",
+   "date_added": "2018-03-19"
+  },
+  {
+   "symbol": "TPR",
+   "security": "Tapestry, Inc.",
+   "cik": "0001116132",
+   "date_added": "2004-09-01"
+  },
+  {
+   "symbol": "TRGP",
+   "security": "Targa Resources",
+   "cik": "0001389170",
+   "date_added": "2022-10-12"
+  },
+  {
+   "symbol": "TGT",
+   "security": "Target Corporation",
+   "cik": "0000027419",
+   "date_added": "1976-12-31"
+  },
+  {
+   "symbol": "TEL",
+   "security": "TE Connectivity",
+   "cik": "0001385157",
+   "date_added": "2011-10-17"
+  },
+  {
+   "symbol": "TDY",
+   "security": "Teledyne Technologies",
+   "cik": "0001094285",
+   "date_added": "2020-06-22"
+  },
+  {
+   "symbol": "TER",
+   "security": "Teradyne",
+   "cik": "0000097210",
+   "date_added": "2020-09-21"
+  },
+  {
+   "symbol": "TSLA",
+   "security": "Tesla, Inc.",
+   "cik": "0001318605",
+   "date_added": "2020-12-21"
+  },
+  {
+   "symbol": "TXN",
+   "security": "Texas Instruments",
+   "cik": "0000097476",
+   "date_added": "2001-03-12"
+  },
+  {
+   "symbol": "TPL",
+   "security": "Texas Pacific Land Corporation",
+   "cik": "0001811074",
+   "date_added": "2024-11-26"
+  },
+  {
+   "symbol": "TXT",
+   "security": "Textron",
+   "cik": "0000217346",
+   "date_added": "1978-12-31"
+  },
+  {
+   "symbol": "TMO",
+   "security": "Thermo Fisher Scientific",
+   "cik": "0000097745",
+   "date_added": "2004-08-03"
+  },
+  {
+   "symbol": "TJX",
+   "security": "TJX Companies",
+   "cik": "0000109198",
+   "date_added": "1985-09-30"
+  },
+  {
+   "symbol": "TKO",
+   "security": "TKO Group Holdings",
+   "cik": "0001973266",
+   "date_added": "2025-03-24"
+  },
+  {
+   "symbol": "TTD",
+   "security": "Trade Desk (The)",
+   "cik": "0001671933",
+   "date_added": "2025-07-18"
+  },
+  {
+   "symbol": "TSCO",
+   "security": "Tractor Supply",
+   "cik": "0000916365",
+   "date_added": "2014-01-24"
+  },
+  {
+   "symbol": "TT",
+   "security": "Trane Technologies",
+   "cik": "0001466258",
+   "date_added": "2010-11-17"
+  },
+  {
+   "symbol": "TDG",
+   "security": "TransDigm Group",
+   "cik": "0001260221",
+   "date_added": "2016-06-03"
+  },
+  {
+   "symbol": "TRV",
+   "security": "Travelers Companies (The)",
+   "cik": "0000086312",
+   "date_added": "2002-08-21"
+  },
+  {
+   "symbol": "TRMB",
+   "security": "Trimble Inc.",
+   "cik": "0000864749",
+   "date_added": "2021-01-21"
+  },
+  {
+   "symbol": "TFC",
+   "security": "Truist Financial",
+   "cik": "0000092230",
+   "date_added": "1997-12-04"
+  },
+  {
+   "symbol": "TYL",
+   "security": "Tyler Technologies",
+   "cik": "0000860731",
+   "date_added": "2020-06-22"
+  },
+  {
+   "symbol": "TSN",
+   "security": "Tyson Foods",
+   "cik": "0000100493",
+   "date_added": "2005-08-10"
+  },
+  {
+   "symbol": "USB",
+   "security": "U.S. Bancorp",
+   "cik": "0000036104",
+   "date_added": "1999-11-01"
+  },
+  {
+   "symbol": "UBER",
+   "security": "Uber",
+   "cik": "0001543151",
+   "date_added": "2023-12-18"
+  },
+  {
+   "symbol": "UDR",
+   "security": "UDR, Inc.",
+   "cik": "0000074208",
+   "date_added": "2016-03-07"
+  },
+  {
+   "symbol": "ULTA",
+   "security": "Ulta Beauty",
+   "cik": "0001403568",
+   "date_added": "2016-04-18"
+  },
+  {
+   "symbol": "UNP",
+   "security": "Union Pacific Corporation",
+   "cik": "0000100885",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "UAL",
+   "security": "United Airlines Holdings",
+   "cik": "0000100517",
+   "date_added": "2015-09-03"
+  },
+  {
+   "symbol": "UPS",
+   "security": "United Parcel Service",
+   "cik": "0001090727",
+   "date_added": "2002-07-22"
+  },
+  {
+   "symbol": "URI",
+   "security": "United Rentals",
+   "cik": "0001067701",
+   "date_added": "2014-09-20"
+  },
+  {
+   "symbol": "UNH",
+   "security": "UnitedHealth Group",
+   "cik": "0000731766",
+   "date_added": "1994-07-01"
+  },
+  {
+   "symbol": "UHS",
+   "security": "Universal Health Services",
+   "cik": "0000352915",
+   "date_added": "2014-09-20"
+  },
+  {
+   "symbol": "VLO",
+   "security": "Valero Energy",
+   "cik": "0001035002",
+   "date_added": "2002-12-20"
+  },
+  {
+   "symbol": "VEEV",
+   "security": "Veeva Systems",
+   "cik": "0001393052",
+   "date_added": "2026-05-07"
+  },
+  {
+   "symbol": "VTR",
+   "security": "Ventas",
+   "cik": "0000740260",
+   "date_added": "2009-03-04"
+  },
+  {
+   "symbol": "VLTO",
+   "security": "Veralto",
+   "cik": "0001967680",
+   "date_added": "2023-10-02"
+  },
+  {
+   "symbol": "VRSN",
+   "security": "Verisign",
+   "cik": "0001014473",
+   "date_added": "2006-02-01"
+  },
+  {
+   "symbol": "VRSK",
+   "security": "Verisk Analytics",
+   "cik": "0001442145",
+   "date_added": "2015-10-08"
+  },
+  {
+   "symbol": "VZ",
+   "security": "Verizon",
+   "cik": "0000732712",
+   "date_added": "1983-11-30"
+  },
+  {
+   "symbol": "VRTX",
+   "security": "Vertex Pharmaceuticals",
+   "cik": "0000875320",
+   "date_added": "2013-09-23"
+  },
+  {
+   "symbol": "VRT",
+   "security": "Vertiv",
+   "cik": "0001674101",
+   "date_added": "2026-03-23"
+  },
+  {
+   "symbol": "VTRS",
+   "security": "Viatris",
+   "cik": "0001792044",
+   "date_added": "2004-04-23"
+  },
+  {
+   "symbol": "VICI",
+   "security": "Vici Properties",
+   "cik": "0001705696",
+   "date_added": "2022-06-08"
+  },
+  {
+   "symbol": "V",
+   "security": "Visa Inc.",
+   "cik": "0001403161",
+   "date_added": "2009-12-21"
+  },
+  {
+   "symbol": "VST",
+   "security": "Vistra Corp.",
+   "cik": "0001692819",
+   "date_added": "2024-05-08"
+  },
+  {
+   "symbol": "VMRK",
+   "security": "Vivmark Residential",
+   "cik": "0000906107",
+   "date_added": "2001-12-03"
+  },
+  {
+   "symbol": "VMC",
+   "security": "Vulcan Materials Company",
+   "cik": "0001396009",
+   "date_added": "1999-06-30"
+  },
+  {
+   "symbol": "WRB",
+   "security": "W. R. Berkley Corporation",
+   "cik": "0000011544",
+   "date_added": "2019-12-05"
+  },
+  {
+   "symbol": "GWW",
+   "security": "W. W. Grainger",
+   "cik": "0000277135",
+   "date_added": "1981-06-30"
+  },
+  {
+   "symbol": "WAB",
+   "security": "Wabtec",
+   "cik": "0000943452",
+   "date_added": "2019-02-27"
+  },
+  {
+   "symbol": "WMT",
+   "security": "Walmart",
+   "cik": "0000104169",
+   "date_added": "1982-08-31"
+  },
+  {
+   "symbol": "DIS",
+   "security": "Walt Disney Company (The)",
+   "cik": "0001744489",
+   "date_added": "1976-06-30"
+  },
+  {
+   "symbol": "WBD",
+   "security": "Warner Bros. Discovery",
+   "cik": "0001437107",
+   "date_added": "2022-04-11"
+  },
+  {
+   "symbol": "WM",
+   "security": "Waste Management",
+   "cik": "0000823768",
+   "date_added": "1998-08-31"
+  },
+  {
+   "symbol": "WAT",
+   "security": "Waters Corporation",
+   "cik": "0001000697",
+   "date_added": "2002-01-02"
+  },
+  {
+   "symbol": "WEC",
+   "security": "WEC Energy Group",
+   "cik": "0000783325",
+   "date_added": "2008-10-31"
+  },
+  {
+   "symbol": "WFC",
+   "security": "Wells Fargo",
+   "cik": "0000072971",
+   "date_added": "1976-06-30"
+  },
+  {
+   "symbol": "WELL",
+   "security": "Welltower",
+   "cik": "0000766704",
+   "date_added": "2009-01-30"
+  },
+  {
+   "symbol": "WST",
+   "security": "West Pharmaceutical Services",
+   "cik": "0000105770",
+   "date_added": "2020-05-22"
+  },
+  {
+   "symbol": "WDC",
+   "security": "Western Digital",
+   "cik": "0000106040",
+   "date_added": "2009-07-01"
+  },
+  {
+   "symbol": "WY",
+   "security": "Weyerhaeuser",
+   "cik": "0000106535",
+   "date_added": "1979-10-01"
+  },
+  {
+   "symbol": "WSM",
+   "security": "Williams-Sonoma, Inc.",
+   "cik": "0000719955",
+   "date_added": "2025-03-24"
+  },
+  {
+   "symbol": "WMB",
+   "security": "Williams Companies",
+   "cik": "0000107263",
+   "date_added": "1975-03-31"
+  },
+  {
+   "symbol": "WTW",
+   "security": "Willis Towers Watson",
+   "cik": "0001140536",
+   "date_added": "2016-01-05"
+  },
+  {
+   "symbol": "WDAY",
+   "security": "Workday, Inc.",
+   "cik": "0001327811",
+   "date_added": "2024-12-23"
+  },
+  {
+   "symbol": "WYNN",
+   "security": "Wynn Resorts",
+   "cik": "0001174922",
+   "date_added": "2008-11-14"
+  },
+  {
+   "symbol": "XEL",
+   "security": "Xcel Energy",
+   "cik": "0000072903",
+   "date_added": "1957-03-04"
+  },
+  {
+   "symbol": "XYL",
+   "security": "Xylem Inc.",
+   "cik": "0001524472",
+   "date_added": "2011-11-01"
+  },
+  {
+   "symbol": "YUM",
+   "security": "Yum! Brands",
+   "cik": "0001041061",
+   "date_added": "1997-10-06"
+  },
+  {
+   "symbol": "ZBRA",
+   "security": "Zebra Technologies",
+   "cik": "0000877212",
+   "date_added": "2019-12-23"
+  },
+  {
+   "symbol": "ZBH",
+   "security": "Zimmer Biomet",
+   "cik": "0001136869",
+   "date_added": "2001-08-07"
+  },
+  {
+   "symbol": "ZTS",
+   "security": "Zoetis",
+   "cik": "0001555280",
+   "date_added": "2013-06-21"
+  }
+ ]
+}

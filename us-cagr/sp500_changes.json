@@ -1,0 +1,3263 @@
+{
+ "fetched": "2026-09-13",
+ "source": "https://en.wikipedia.org/wiki/Historical_components_of_the_S%26P_500",
+ "count": 407,
+ "changes": [
+  {
+   "date": "2026-08-18",
+   "added": "RDDT",
+   "added_name": "Reddit",
+   "removed": "AVB",
+   "removed_name": "AvalonBay Communities",
+   "reason": "Equity Residential (now Vivmark Residential) acquired AvalonBay Communities."
+  },
+  {
+   "date": "2026-08-05",
+   "added": "FERG",
+   "added_name": "Ferguson Enterprises",
+   "removed": "EA",
+   "removed_name": "Electronic Arts",
+   "reason": "An investor consortium comprising Saudi Arabia's Public Investment Fund (PIF), Silver Lake, and Affinity Partners acquired Electronic Arts."
+  },
+  {
+   "date": "2026-06-30",
+   "added": null,
+   "added_name": null,
+   "removed": "CAG",
+   "removed_name": "Conagra Brands",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2026-06-29",
+   "added": "HONA",
+   "added_name": "Honeywell Aerospace",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Honeywell completed the corporate spin-off of Honeywell Aerospace."
+  },
+  {
+   "date": "2026-06-22",
+   "added": "MRVL",
+   "added_name": "Marvell Technology",
+   "removed": "POOL",
+   "removed_name": "Pool Corporation",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2026-06-22",
+   "added": "FLEX",
+   "added_name": "Flex Ltd.",
+   "removed": "CPB",
+   "removed_name": "Campbell's",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2026-06-02",
+   "added": null,
+   "added_name": null,
+   "removed": "EPAM",
+   "removed_name": "EPAM Systems",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2026-06-01",
+   "added": "FDXF",
+   "added_name": "FedEx Freight",
+   "removed": null,
+   "removed_name": null,
+   "reason": "FedEx Corp. completed the corporate spin-off of FedEx Freight Holding."
+  },
+  {
+   "date": "2026-05-07",
+   "added": "VEEV",
+   "added_name": "Veeva Systems",
+   "removed": "CTRA",
+   "removed_name": "Coterra Energy",
+   "reason": "Devon Energy acquired Coterra Energy."
+  },
+  {
+   "date": "2026-04-09",
+   "added": "CASY",
+   "added_name": "Casey's",
+   "removed": "HOLX",
+   "removed_name": "Hologic",
+   "reason": "Blackstone Inc. and TPG Inc. acquired Hologic."
+  },
+  {
+   "date": "2026-03-23",
+   "added": "VRT",
+   "added_name": "Vertiv",
+   "removed": "MTCH",
+   "removed_name": "Match Group",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2026-03-23",
+   "added": "SATS",
+   "added_name": "EchoStar",
+   "removed": "PAYC",
+   "removed_name": "Paycom",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2026-03-23",
+   "added": "LITE",
+   "added_name": "Lumentum",
+   "removed": "MOH",
+   "removed_name": "Molina Healthcare",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2026-03-23",
+   "added": "COHR",
+   "added_name": "Coherent Corp.",
+   "removed": "LW",
+   "removed_name": "Lamb Weston",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2026-02-09",
+   "added": "CIEN",
+   "added_name": "Ciena",
+   "removed": "DAY",
+   "removed_name": "Dayforce",
+   "reason": "Thoma Bravo L.P. acquired Dayforce."
+  },
+  {
+   "date": "2025-12-22",
+   "added": "FIX",
+   "added_name": "Comfort Systems USA",
+   "removed": "MHK",
+   "removed_name": "Mohawk Industries",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2025-12-22",
+   "added": "CVNA",
+   "added_name": "Carvana",
+   "removed": "SOLS",
+   "removed_name": "Solstice Advanced Materials",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2025-12-22",
+   "added": "CRH",
+   "added_name": "CRH",
+   "removed": "LKQ",
+   "removed_name": "LKQ Corporation",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2025-12-11",
+   "added": "ARES",
+   "added_name": "Ares Management",
+   "removed": "K",
+   "removed_name": "Kellanova",
+   "reason": "Mars Inc. acquired Kellanova."
+  },
+  {
+   "date": "2025-11-28",
+   "added": "SNDK",
+   "added_name": "Sandisk",
+   "removed": "IPG",
+   "removed_name": "Interpublic Group",
+   "reason": "Omnicom Group acquired (The) Interpublic Group."
+  },
+  {
+   "date": "2025-11-04",
+   "added": null,
+   "added_name": null,
+   "removed": "EMN",
+   "removed_name": "Eastman Chemical Co.",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2025-11-03",
+   "added": "Q",
+   "added_name": "Qnity Electronics",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Dupont completed the corporate spin-off of Qnity Electronics."
+  },
+  {
+   "date": "2025-10-31",
+   "added": null,
+   "added_name": null,
+   "removed": "KMX",
+   "removed_name": "CarMax",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2025-10-30",
+   "added": "SOLS",
+   "added_name": "Solstice Advanced Materials",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Honeywell International completed the corporate spin-off of Solstice Advanced Materials."
+  },
+  {
+   "date": "2025-09-22",
+   "added": "HOOD",
+   "added_name": "Robinhood Markets",
+   "removed": "CZR",
+   "removed_name": "Caesars Entertainment",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2025-09-22",
+   "added": "EME",
+   "added_name": "Emcor",
+   "removed": "ENPH",
+   "removed_name": "Enphase Energy",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2025-09-22",
+   "added": "APP",
+   "added_name": "AppLovin",
+   "removed": "MKTX",
+   "removed_name": "MarketAxess",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2025-08-28",
+   "added": "IBKR",
+   "added_name": "Interactive Brokers",
+   "removed": "WBA",
+   "removed_name": "Walgreens Boots Alliance",
+   "reason": "Sycamore Partners acquired Walgreen Boots Alliance."
+  },
+  {
+   "date": "2025-07-23",
+   "added": "XYZ",
+   "added_name": "Block, Inc.",
+   "removed": "HES",
+   "removed_name": "Hess Corporation",
+   "reason": "Chevron acquired Hess."
+  },
+  {
+   "date": "2025-07-18",
+   "added": "TTD",
+   "added_name": "Trade Desk (The)",
+   "removed": "ANSS",
+   "removed_name": "Ansys",
+   "reason": "Synopsys acquired Ansys."
+  },
+  {
+   "date": "2025-07-09",
+   "added": "DDOG",
+   "added_name": "Datadog",
+   "removed": "JNPR",
+   "removed_name": "Juniper Networks",
+   "reason": "Hewlett Packard Enterprise acquired Juniper Networks."
+  },
+  {
+   "date": "2025-05-19",
+   "added": "COIN",
+   "added_name": "Coinbase",
+   "removed": "DFS",
+   "removed_name": "Discover Financial",
+   "reason": "Capital One acquired Discover Financial."
+  },
+  {
+   "date": "2025-03-24",
+   "added": "WSM",
+   "added_name": "Williams-Sonoma, Inc.",
+   "removed": "CE",
+   "removed_name": "Celanese",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2025-03-24",
+   "added": "TKO",
+   "added_name": "TKO Group Holdings",
+   "removed": "TFX",
+   "removed_name": "Teleflex",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2025-03-24",
+   "added": "EXE",
+   "added_name": "Expand Energy",
+   "removed": "FMC",
+   "removed_name": "FMC Corporation",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2025-03-24",
+   "added": "DASH",
+   "added_name": "DoorDash",
+   "removed": "BWA",
+   "removed_name": "BorgWarner",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2024-12-23",
+   "added": "WDAY",
+   "added_name": "Workday, Inc.",
+   "removed": "AMTM",
+   "removed_name": "Amentum",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2024-12-23",
+   "added": "LII",
+   "added_name": "Lennox International",
+   "removed": "CTLT",
+   "removed_name": "Catalent",
+   "reason": "Novo Holdings A/S acquired Catalent."
+  },
+  {
+   "date": "2024-12-23",
+   "added": "APO",
+   "added_name": "Apollo Global Management",
+   "removed": "QRVO",
+   "removed_name": "Qorvo",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2024-11-26",
+   "added": "TPL",
+   "added_name": "Texas Pacific Land Corporation",
+   "removed": "MRO",
+   "removed_name": "Marathon Oil",
+   "reason": "ConocoPhillips acquired Marathon Oil."
+  },
+  {
+   "date": "2024-10-01",
+   "added": null,
+   "added_name": null,
+   "removed": "BBWI",
+   "removed_name": "Bath & Body Works, Inc.",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2024-09-30",
+   "added": "AMTM",
+   "added_name": "Amentum",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Jacobs Solutions completed the corporate spin-off of its Critical Mission Solutions and Cyber Intelligence business, which merged with private Amentum to create newly publicly traded Amentum Holdings."
+  },
+  {
+   "date": "2024-09-23",
+   "added": "PLTR",
+   "added_name": "Palantir Technologies",
+   "removed": "AAL",
+   "removed_name": "American Airlines Group",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2024-09-23",
+   "added": "ERIE",
+   "added_name": "Erie Indemnity",
+   "removed": "BIO",
+   "removed_name": "Bio-Rad Laboratories",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2024-09-23",
+   "added": "DELL",
+   "added_name": "Dell Technologies",
+   "removed": "ETSY",
+   "removed_name": "Etsy",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2024-06-24",
+   "added": "KKR",
+   "added_name": "KKR",
+   "removed": "RHI",
+   "removed_name": "Robert Half",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2024-06-24",
+   "added": "GDDY",
+   "added_name": "GoDaddy",
+   "removed": "ILMN",
+   "removed_name": "Illumina, Inc.",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2024-06-24",
+   "added": "CRWD",
+   "added_name": "CrowdStrike",
+   "removed": "CMA",
+   "removed_name": "Comerica",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2024-05-08",
+   "added": "VST",
+   "added_name": "Vistra",
+   "removed": "PXD",
+   "removed_name": "Pioneer Natural Resources",
+   "reason": "ExxonMobil acquired Pioneer Natural Resources."
+  },
+  {
+   "date": "2024-04-03",
+   "added": null,
+   "added_name": null,
+   "removed": "XRAY",
+   "removed_name": "Dentsply Sirona",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2024-04-03",
+   "added": null,
+   "added_name": null,
+   "removed": "VFC",
+   "removed_name": "VF Corporation",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2024-04-02",
+   "added": "GEV",
+   "added_name": "GE Vernova",
+   "removed": null,
+   "removed_name": null,
+   "reason": "General Electric completed the corporate spin-off of GE Vernova."
+  },
+  {
+   "date": "2024-04-01",
+   "added": "SOLV",
+   "added_name": "Solventum",
+   "removed": null,
+   "removed_name": null,
+   "reason": "3M completed the corporate spin-off of Solventum."
+  },
+  {
+   "date": "2024-03-25",
+   "added": "CPAY",
+   "added_name": "Corpay |",
+   "removed": "FLT",
+   "removed_name": "FLEETCOR Technologies",
+   "reason": "FLEETCOR Technologies changed its name to Corpay."
+  },
+  {
+   "date": "2024-03-18",
+   "added": "SMCI",
+   "added_name": "Supermicro",
+   "removed": "WHR",
+   "removed_name": "Whirlpool Corporation",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2024-03-18",
+   "added": "DECK",
+   "added_name": "Deckers Brands",
+   "removed": "ZION",
+   "removed_name": "Zions Bancorporation",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2024-02-01",
+   "added": "DAY",
+   "added_name": "Dayforce",
+   "removed": "CDAY",
+   "removed_name": "Ceridian",
+   "reason": "Ceridian changed its ticker symbol from CDAY to DAY."
+  },
+  {
+   "date": "2023-12-18",
+   "added": "UBER",
+   "added_name": "Uber",
+   "removed": "SEE",
+   "removed_name": "Sealed Air",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2023-12-18",
+   "added": "JBL",
+   "added_name": "Jabil",
+   "removed": "ALK",
+   "removed_name": "Alaska Air Group",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2023-12-18",
+   "added": "BLDR",
+   "added_name": "Builders FirstSource",
+   "removed": "SEDG",
+   "removed_name": "SolarEdge",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2023-10-18",
+   "added": "LULU",
+   "added_name": "Lululemon Athletica",
+   "removed": "ATVI",
+   "removed_name": "Activision Blizzard",
+   "reason": "Acquisition of Activision Blizzard by Microsoft."
+  },
+  {
+   "date": "2023-10-18",
+   "added": "HUBB",
+   "added_name": "Hubbell",
+   "removed": "OGN",
+   "removed_name": "Organon & Co.",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2023-10-03",
+   "added": null,
+   "added_name": null,
+   "removed": "DXC",
+   "removed_name": "DXC Technology",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2023-10-02",
+   "added": "VLTO",
+   "added_name": "Veralto",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Danaher Corporation completed the corporate spin-off of Veralto."
+  },
+  {
+   "date": "2023-09-18",
+   "added": "BX",
+   "added_name": "Blackstone",
+   "removed": "LNC",
+   "removed_name": "Lincoln National Corporation",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2023-09-18",
+   "added": "ABNB",
+   "added_name": "Airbnb",
+   "removed": "NWL",
+   "removed_name": "Newell Brands",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2023-08-25",
+   "added": "KVUE",
+   "added_name": "Kenvue",
+   "removed": "AAP",
+   "removed_name": "Advance Auto Parts",
+   "reason": "Johnson & Johnson offered to exchange the shares of Kenvue held for shares of Johnson & Johnson in a split-off exchange offer."
+  },
+  {
+   "date": "2023-06-20",
+   "added": "PANW",
+   "added_name": "Palo Alto Networks",
+   "removed": "DISH",
+   "removed_name": "Dish Network",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2023-05-04",
+   "added": "AXON",
+   "added_name": "Axon Enterprise",
+   "removed": "FRC",
+   "removed_name": "First Republic Bank",
+   "reason": "The Federal Deposit Insurance Corporation (FDIC) placed First Republic Bank into receivership."
+  },
+  {
+   "date": "2023-03-20",
+   "added": "FICO",
+   "added_name": "Fair Isaac",
+   "removed": "LUMN",
+   "removed_name": "Lumen Technologies",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2023-03-15",
+   "added": "PODD",
+   "added_name": "Insulet",
+   "removed": "SIVB",
+   "removed_name": "SVB Financial Group",
+   "reason": "The FDIC placed SVB's main subsidiary, Silicon Valley Bank, into receivership."
+  },
+  {
+   "date": "2023-03-15",
+   "added": "BG",
+   "added_name": "Bunge Global",
+   "removed": "SBNY",
+   "removed_name": "Signature Bank",
+   "reason": "The FDIC placed Signature Bank into FDIC Receivership."
+  },
+  {
+   "date": "2023-01-05",
+   "added": null,
+   "added_name": null,
+   "removed": "VNO",
+   "removed_name": "Vornado Realty Trust",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2023-01-04",
+   "added": "GEHC",
+   "added_name": "GE HealthCare",
+   "removed": null,
+   "removed_name": null,
+   "reason": "General Electric completed the corporate spin-off of GE HealthCare."
+  },
+  {
+   "date": "2022-12-22",
+   "added": "STLD",
+   "added_name": "Steel Dynamics",
+   "removed": "ABMD",
+   "removed_name": "Abiomed",
+   "reason": "Johnson & Johnson acquired Abiomed."
+  },
+  {
+   "date": "2022-12-19",
+   "added": "FSLR",
+   "added_name": "First Solar",
+   "removed": "FBHS",
+   "removed_name": "Fortune Brands Home & Security",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2022-12-19",
+   "added": null,
+   "added_name": null,
+   "removed": "MBC",
+   "removed_name": "MasterBrand",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2022-12-15",
+   "added": "MBC",
+   "added_name": "MasterBrand",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Fortune Brands Home & Security completed the corporate spin-off of MasterBrand."
+  },
+  {
+   "date": "2022-11-01",
+   "added": "ACGL",
+   "added_name": "Arch Capital Group",
+   "removed": "TWTR",
+   "removed_name": "Twitter",
+   "reason": "Elon Musk acquired Twitter."
+  },
+  {
+   "date": "2022-10-12",
+   "added": "TRGP",
+   "added_name": "Targa Resources",
+   "removed": "NLSN",
+   "removed_name": "Nielsen Holdings",
+   "reason": "Elliott Investment Management acquired Nielsen Holdings."
+  },
+  {
+   "date": "2022-10-03",
+   "added": "PCG",
+   "added_name": "PG&E",
+   "removed": "CTXS",
+   "removed_name": "Citrix Systems",
+   "reason": "Vista Equity Partners acquired Citrix Systems."
+  },
+  {
+   "date": "2022-10-03",
+   "added": "EQT",
+   "added_name": "EQT Corporation",
+   "removed": "DRE",
+   "removed_name": "Duke Realty",
+   "reason": "Prologis acquired Duke Realty."
+  },
+  {
+   "date": "2022-09-19",
+   "added": "INVH",
+   "added_name": "Invitation Homes",
+   "removed": "PENN",
+   "removed_name": "Penn Entertainment",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2022-09-19",
+   "added": "CSGP",
+   "added_name": "CoStar Group",
+   "removed": "PVH",
+   "removed_name": "PVH",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2022-06-21",
+   "added": "ON",
+   "added_name": "ON Semiconductor",
+   "removed": "IPGP",
+   "removed_name": "IPG Photonics",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2022-06-21",
+   "added": "KDP",
+   "added_name": "Keurig Dr Pepper",
+   "removed": "UAA",
+   "removed_name": "Under Armour (Class A)",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2022-06-21",
+   "added": null,
+   "added_name": null,
+   "removed": "UA",
+   "removed_name": "Under Armour (Class C)",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2022-06-08",
+   "added": "VICI",
+   "added_name": "Vici Properties",
+   "removed": "CERN",
+   "removed_name": "Cerner",
+   "reason": "Oracle acquired Cerner."
+  },
+  {
+   "date": "2022-04-11",
+   "added": "WBD",
+   "added_name": "Warner Bros. Discovery",
+   "removed": "DISCA",
+   "removed_name": "Discovery, Inc.",
+   "reason": "WarnerMedia and Discovery merged to create Warner Bros. Discovery."
+  },
+  {
+   "date": "2022-04-11",
+   "added": null,
+   "added_name": null,
+   "removed": "DISCK",
+   "removed_name": "Discovery, Inc.",
+   "reason": "WarnerMedia and Discovery merged to create Warner Bros. Discovery."
+  },
+  {
+   "date": "2022-04-04",
+   "added": "CPT",
+   "added_name": "Camden Property Trust",
+   "removed": "PBCT",
+   "removed_name": "People's United Financial",
+   "reason": "M&T Bank acquired People's United Financial."
+  },
+  {
+   "date": "2022-03-02",
+   "added": "MOH",
+   "added_name": "Molina Healthcare",
+   "removed": "INFO",
+   "removed_name": "IHS Markit",
+   "reason": "S&P Global acquired IHS Markit."
+  },
+  {
+   "date": "2022-02-15",
+   "added": "NDSN",
+   "added_name": "Nordson Corporation",
+   "removed": "XLNX",
+   "removed_name": "Xilinx",
+   "reason": "Advanced Micro Devices acquired Xilinx."
+  },
+  {
+   "date": "2022-02-03",
+   "added": null,
+   "added_name": null,
+   "removed": "GPS",
+   "removed_name": "Gap",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2022-02-02",
+   "added": "CEG",
+   "added_name": "Constellation Energy",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Exelon completed the corporate spin-off of Constellation Energy."
+  },
+  {
+   "date": "2022-01-10",
+   "added": "WTW",
+   "added_name": "Willis Towers Watson",
+   "removed": "WLTW",
+   "removed_name": "Willis Towers Watson",
+   "reason": "Willis Towers Watson changed its ticker symbol from WLTW to WTW."
+  },
+  {
+   "date": "2021-12-20",
+   "added": "SEDG",
+   "added_name": "SolarEdge",
+   "removed": "HBI",
+   "removed_name": "Hanesbrands",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2021-12-20",
+   "added": "SBNY",
+   "added_name": "Signature Bank",
+   "removed": "LEG",
+   "removed_name": "Leggett & Platt",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2021-12-20",
+   "added": "FDS",
+   "added_name": "FactSet",
+   "removed": "WU",
+   "removed_name": "Western Union",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2021-12-14",
+   "added": "EPAM",
+   "added_name": "EPAM Systems",
+   "removed": "KSU",
+   "removed_name": "Kansas City Southern",
+   "reason": "Canadian Pacific acquired Kansas City Southern."
+  },
+  {
+   "date": "2021-09-20",
+   "added": "MTCH",
+   "added_name": "Match Group",
+   "removed": "PRGO",
+   "removed_name": "Perrigo",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2021-09-20",
+   "added": "CDAY",
+   "added_name": "Ceridian",
+   "removed": "UNM",
+   "removed_name": "Unum",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2021-09-20",
+   "added": "BRO",
+   "added_name": "Brown & Brown",
+   "removed": "NOV",
+   "removed_name": "Nov",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2021-08-30",
+   "added": "TECH",
+   "added_name": "Bio-Techne",
+   "removed": "MXIM",
+   "removed_name": "Maxim Integrated",
+   "reason": "Analog Devices acquired Maxim Integrated Products."
+  },
+  {
+   "date": "2021-07-21",
+   "added": "MRNA",
+   "added_name": "Moderna",
+   "removed": "ALXN",
+   "removed_name": "Alexion Pharmaceuticals",
+   "reason": "AstraZeneca acquired Alexion Pharmaceuticals."
+  },
+  {
+   "date": "2021-06-04",
+   "added": null,
+   "added_name": null,
+   "removed": "HFC",
+   "removed_name": "HollyFrontier",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2021-06-03",
+   "added": "OGN",
+   "added_name": "Organon & Co.",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Merck completed the corporate spin-off of Organon."
+  },
+  {
+   "date": "2021-05-14",
+   "added": "CRL",
+   "added_name": "Charles River Laboratories",
+   "removed": "FLIR",
+   "removed_name": "FLIR Systems",
+   "reason": "Teledyne Technologies acquired FLIR Systems."
+  },
+  {
+   "date": "2021-04-20",
+   "added": "PTC",
+   "added_name": "PTC",
+   "removed": "VAR",
+   "removed_name": "Varian Medical Systems",
+   "reason": "Siemens Healthineers acquired Varian Medical Systems."
+  },
+  {
+   "date": "2021-03-22",
+   "added": "PENN",
+   "added_name": "Penn National Gaming",
+   "removed": "SLG",
+   "removed_name": "SL Green Realty",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2021-03-22",
+   "added": "NXPI",
+   "added_name": "NXP",
+   "removed": "FLS",
+   "removed_name": "Flowserve",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2021-03-22",
+   "added": "GNRC",
+   "added_name": "Generac Holdings",
+   "removed": "XRX",
+   "removed_name": "Xerox",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2021-03-22",
+   "added": "CZR",
+   "added_name": "Caesars Entertainment",
+   "removed": "VNT",
+   "removed_name": "Vontier",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2021-02-12",
+   "added": "MPWR",
+   "added_name": "Monolithic Power Systems",
+   "removed": "FTI",
+   "removed_name": "TechnipFMC",
+   "reason": "Corporate spin-off of Technip Energies."
+  },
+  {
+   "date": "2021-01-21",
+   "added": "TRMB",
+   "added_name": "Trimble",
+   "removed": "CXO",
+   "removed_name": "Concho Resources",
+   "reason": "ConocoPhillips acquired Concho Resources."
+  },
+  {
+   "date": "2021-01-07",
+   "added": "ENPH",
+   "added_name": "Enphase Energy",
+   "removed": "TIF",
+   "removed_name": "Tiffany & Co",
+   "reason": "LVMH Moet Hennessy-Louis Vuitton SE acquired Tiffany & Co."
+  },
+  {
+   "date": "2020-12-21",
+   "added": "TSLA",
+   "added_name": "Tesla",
+   "removed": "AIV",
+   "removed_name": "Aimco",
+   "reason": "Aimco completed the corporate spin-off of Apartment Income REIT."
+  },
+  {
+   "date": "2020-10-12",
+   "added": null,
+   "added_name": null,
+   "removed": "NBL",
+   "removed_name": "Noble Energy",
+   "reason": "Chevron acquired Noble Energy."
+  },
+  {
+   "date": "2020-10-09",
+   "added": "VNT",
+   "added_name": "Vontier",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Fortive completed the corporate spin-off of Vontier."
+  },
+  {
+   "date": "2020-10-07",
+   "added": "POOL",
+   "added_name": "Pool Corporation",
+   "removed": "ETFC",
+   "removed_name": "E-Trade",
+   "reason": "Morgan Stanley acquired E*Trade."
+  },
+  {
+   "date": "2020-09-21",
+   "added": "TER",
+   "added_name": "Teradyne",
+   "removed": "COTY",
+   "removed_name": "Coty",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2020-09-21",
+   "added": "ETSY",
+   "added_name": "Etsy",
+   "removed": "HRB",
+   "removed_name": "H&R Block",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2020-09-21",
+   "added": "CTLT",
+   "added_name": "Catalent",
+   "removed": "KSS",
+   "removed_name": "Kohl's",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2020-06-22",
+   "added": "TYL",
+   "added_name": "Tyler Technologies",
+   "removed": "JWN",
+   "removed_name": "Nordstrom",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2020-06-22",
+   "added": "TDY",
+   "added_name": "Teledyne",
+   "removed": "HOG",
+   "removed_name": "Harley-Davidson",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2020-06-22",
+   "added": "BIO",
+   "added_name": "Bio-Rad Laboratories",
+   "removed": "ADS",
+   "removed_name": "Alliance Data Systems",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2020-05-22",
+   "added": "WST",
+   "added_name": "West Pharmaceutical Services",
+   "removed": "HP",
+   "removed_name": "Helmerich & Payne",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2020-05-12",
+   "added": "DXCM",
+   "added_name": "Dexcom",
+   "removed": "AGN",
+   "removed_name": "Allergan",
+   "reason": "Allergan was acquired by AbbVie."
+  },
+  {
+   "date": "2020-05-12",
+   "added": "DPZ",
+   "added_name": "Domino's Pizza",
+   "removed": "CPRI",
+   "removed_name": "Capri Holdings",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2020-04-06",
+   "added": null,
+   "added_name": null,
+   "removed": "RTN",
+   "removed_name": "Raytheon Company",
+   "reason": "United Technologies corporate spin-off of Otis and Carrier and acquired Raytheon Company."
+  },
+  {
+   "date": "2020-04-06",
+   "added": null,
+   "added_name": null,
+   "removed": "M",
+   "removed_name": "Macy's",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2020-04-03",
+   "added": "OTIS",
+   "added_name": "Otis Worldwide",
+   "removed": null,
+   "removed_name": null,
+   "reason": "United Technologies corporate spin-off of Otis and Carrier and acquired Raytheon Company."
+  },
+  {
+   "date": "2020-04-03",
+   "added": "CARR",
+   "added_name": "Carrier",
+   "removed": null,
+   "removed_name": null,
+   "reason": "United Technologies completed the corporate spin-off of Otis and Carrier and acquired Raytheon Company."
+  },
+  {
+   "date": "2020-04-01",
+   "added": "HWM",
+   "added_name": "Howmet Aerospace",
+   "removed": "ARNC",
+   "removed_name": "Arconic",
+   "reason": "Arconic separated into 2 companies - Howmet remained in the index."
+  },
+  {
+   "date": "2020-03-02",
+   "added": "IR",
+   "added_name": "Ingersoll Rand",
+   "removed": "XEC",
+   "removed_name": "Cimarex Energy",
+   "reason": "Gardner Denver acquired Ingersoll Rand's industrial businesses then changed its name to the \"new\" Ingersoll Rand Inc."
+  },
+  {
+   "date": "2020-01-28",
+   "added": "PAYC",
+   "added_name": "Paycom",
+   "removed": "WCG",
+   "removed_name": "WellCare",
+   "reason": "Centene acquired Wellcare."
+  },
+  {
+   "date": "2019-12-23",
+   "added": "ZBRA",
+   "added_name": "Zebra Technologies",
+   "removed": "TRIP",
+   "removed_name": "TripAdvisor",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2019-12-23",
+   "added": "STE",
+   "added_name": "Steris",
+   "removed": "MAC",
+   "removed_name": "Macerich",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2019-12-23",
+   "added": "LYV",
+   "added_name": "Live Nation Entertainment",
+   "removed": "AMG",
+   "removed_name": "Affiliated Managers Group",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2019-12-09",
+   "added": "ODFL",
+   "added_name": "Old Dominion Freight Line",
+   "removed": "STI",
+   "removed_name": "SunTrust Banks",
+   "reason": "BB&T acquired SunTrust to form Truist Financial."
+  },
+  {
+   "date": "2019-12-05",
+   "added": "WRB",
+   "added_name": "W. R. Berkley Corporation",
+   "removed": "VIAB",
+   "removed_name": "Viacom",
+   "reason": "CBS acquired Viacom to form ViacomCBS."
+  },
+  {
+   "date": "2019-11-21",
+   "added": "NOW",
+   "added_name": "ServiceNow",
+   "removed": "CELG",
+   "removed_name": "Celgene",
+   "reason": "Bristol-Myers Squibb acquired Celgene."
+  },
+  {
+   "date": "2019-10-03",
+   "added": "LVS",
+   "added_name": "Las Vegas Sands",
+   "removed": "NKTR",
+   "removed_name": "Nektar Therapeutics",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2019-09-26",
+   "added": "NVR",
+   "added_name": "NVR",
+   "removed": "JEF",
+   "removed_name": "Jefferies Financial Group",
+   "reason": "SPB completed the corporate spin-off of Jefferies Financial Group."
+  },
+  {
+   "date": "2019-09-23",
+   "added": "CDW",
+   "added_name": "CDW",
+   "removed": "TSS",
+   "removed_name": "TSYS",
+   "reason": "Global Payments acquired TSS."
+  },
+  {
+   "date": "2019-08-09",
+   "added": "LDOS",
+   "added_name": "Leidos",
+   "removed": "APC",
+   "removed_name": "Anadarko Petroleum",
+   "reason": "Occidental Petroleum acquired Anadarko Petroleum."
+  },
+  {
+   "date": "2019-08-09",
+   "added": "IEX",
+   "added_name": "IDEX Corporation",
+   "removed": "FL",
+   "removed_name": "Foot Locker",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2019-07-15",
+   "added": "TMUS",
+   "added_name": "T-Mobile US",
+   "removed": "RHT",
+   "removed_name": "Red Hat",
+   "reason": "IBM acquired Red Hat."
+  },
+  {
+   "date": "2019-07-01",
+   "added": "MKTX",
+   "added_name": "MarketAxess",
+   "removed": "LLL",
+   "removed_name": "L3 Technologies",
+   "reason": "L3 was acquired by Harris Corporation."
+  },
+  {
+   "date": "2019-06-11",
+   "added": "AMCR",
+   "added_name": "Amcor",
+   "removed": "BMS",
+   "removed_name": "Bemis",
+   "reason": "BMS changed to AMCR post merger with Amcor; subsequently renamed to Amcor."
+  },
+  {
+   "date": "2019-06-07",
+   "added": "BMS",
+   "added_name": "Bemis",
+   "removed": "MAT",
+   "removed_name": "Mattel",
+   "reason": "Merger of Bemis and Amcor; Bemis was the surviving entity."
+  },
+  {
+   "date": "2019-06-03",
+   "added": "DD",
+   "added_name": "DuPont",
+   "removed": "DWDP",
+   "removed_name": "DuPont",
+   "reason": "DWDP changed to DD after spinning off Corteva."
+  },
+  {
+   "date": "2019-06-03",
+   "added": "CTVA",
+   "added_name": "Corteva",
+   "removed": "FLR",
+   "removed_name": "Fluor Corporation",
+   "reason": "DowDuPont completed the corporate spin-off of Corteva."
+  },
+  {
+   "date": "2019-04-02",
+   "added": "DOW",
+   "added_name": "Dow",
+   "removed": "BHF",
+   "removed_name": "Brighthouse Financial",
+   "reason": "DowDuPont completed the corporate spin-off of Dow Inc."
+  },
+  {
+   "date": "2019-03-19",
+   "added": "FOXA",
+   "added_name": "Fox Corporation",
+   "removed": "FOXA",
+   "removed_name": "21st Century Fox",
+   "reason": "21st Century Fox merged with Disney and some parts spun off as Fox Corporation."
+  },
+  {
+   "date": "2019-03-19",
+   "added": "FOX",
+   "added_name": "Fox Corporation",
+   "removed": "FOX",
+   "removed_name": "21st Century Fox",
+   "reason": "21st Century Fox merged with Disney and some parts spun off as Fox Corporation."
+  },
+  {
+   "date": "2019-02-27",
+   "added": "WAB",
+   "added_name": "Wabtec",
+   "removed": "GT",
+   "removed_name": "The Goodyear Tire & Rubber Company",
+   "reason": "Wabtec acquired GE transportation business"
+  },
+  {
+   "date": "2019-02-15",
+   "added": "ATO",
+   "added_name": "Atmos Energy",
+   "removed": "NFX",
+   "removed_name": "Newfield Exploration",
+   "reason": "Encana acquired Newfield Exploration."
+  },
+  {
+   "date": "2019-01-18",
+   "added": "TFX",
+   "added_name": "Teleflex",
+   "removed": "PCG",
+   "removed_name": "Pacific Gas & Electric Company",
+   "reason": "Pacific Gas & Electric Company filed for bankruptcy."
+  },
+  {
+   "date": "2019-01-02",
+   "added": "FRC",
+   "added_name": "First Republic Bank",
+   "removed": "SCG",
+   "removed_name": "SCANA",
+   "reason": "Dominion Energy acquired SCANA."
+  },
+  {
+   "date": "2018-12-24",
+   "added": "CE",
+   "added_name": "Celanese",
+   "removed": "ESRX",
+   "removed_name": "Express Scripts",
+   "reason": "Cigna acquired Express Scripts."
+  },
+  {
+   "date": "2018-12-03",
+   "added": "MXIM",
+   "added_name": "Maxim Integrated",
+   "removed": "AET",
+   "removed_name": "Aetna",
+   "reason": "CVS acquired Aetna."
+  },
+  {
+   "date": "2018-12-03",
+   "added": "LW",
+   "added_name": "Lamb Weston",
+   "removed": "COL",
+   "removed_name": "Rockwell Collins",
+   "reason": "UTX acquired Rockwell Collins."
+  },
+  {
+   "date": "2018-12-03",
+   "added": "FANG",
+   "added_name": "Diamondback Energy",
+   "removed": "SRCL",
+   "removed_name": "Stericycle",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2018-11-13",
+   "added": "JKHY",
+   "added_name": "Jack Henry & Associates",
+   "removed": "EQT",
+   "removed_name": "EQT Corporation",
+   "reason": "EQT completed the corporate spin-off of ETRN."
+  },
+  {
+   "date": "2018-11-06",
+   "added": "KEYS",
+   "added_name": "Keysight",
+   "removed": "CA",
+   "removed_name": "CA Technologies",
+   "reason": "CA was acquired by Broadcom."
+  },
+  {
+   "date": "2018-10-11",
+   "added": "FTNT",
+   "added_name": "Fortinet",
+   "removed": "EVHC",
+   "removed_name": "Envision Healthcare",
+   "reason": "EVHC was acquired by KKR."
+  },
+  {
+   "date": "2018-10-01",
+   "added": "ROL",
+   "added_name": "Rollins",
+   "removed": "ANDV",
+   "removed_name": "Andeavor",
+   "reason": "ANDV was acquired by Marathon Petroleum."
+  },
+  {
+   "date": "2018-09-14",
+   "added": "WCG",
+   "added_name": "WellCare",
+   "removed": "XL",
+   "removed_name": "XL Group",
+   "reason": "XL was acquired by Axa."
+  },
+  {
+   "date": "2018-08-28",
+   "added": "ANET",
+   "added_name": "Arista Networks",
+   "removed": "GGP",
+   "removed_name": "GGP Inc.",
+   "reason": "GGP was acquired by Brookfield Property Partners."
+  },
+  {
+   "date": "2018-07-02",
+   "added": "CPRT",
+   "added_name": "Copart",
+   "removed": "DPS",
+   "removed_name": "Dr Pepper Snapple Group",
+   "reason": "DPS was acquired by Keurig Green Mountain."
+  },
+  {
+   "date": "2018-06-20",
+   "added": "FLT",
+   "added_name": "FleetCor Technologies",
+   "removed": "TWX",
+   "removed_name": "Time Warner",
+   "reason": "AT&T acquired Time Warner."
+  },
+  {
+   "date": "2018-06-18",
+   "added": "HFC",
+   "added_name": "HollyFrontier",
+   "removed": "AYI",
+   "removed_name": "Acuity Brands",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2018-06-18",
+   "added": "BR",
+   "added_name": "Broadridge Financial Solutions",
+   "removed": "RRC",
+   "removed_name": "Range Resources",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2018-06-07",
+   "added": "TWTR",
+   "added_name": "Twitter",
+   "removed": "MON",
+   "removed_name": "Monsanto",
+   "reason": "Bayer acquired Monsanto."
+  },
+  {
+   "date": "2018-06-05",
+   "added": "EVRG",
+   "added_name": "Evergy",
+   "removed": "NAVI",
+   "removed_name": "Navient",
+   "reason": "Westar Energy acquired Great Plains Energy and changed name to Evergy."
+  },
+  {
+   "date": "2018-05-31",
+   "added": "ABMD",
+   "added_name": "Abiomed",
+   "removed": "WYN",
+   "removed_name": "Wyndham Worldwide",
+   "reason": "Wyndham Worldwide completed the corporate spin-off of Wyndham Hotels & Resorts."
+  },
+  {
+   "date": "2018-04-04",
+   "added": "MSCI",
+   "added_name": "MSCI",
+   "removed": "CSRA",
+   "removed_name": "CSRA",
+   "reason": "General Dynamics acquired CSRA."
+  },
+  {
+   "date": "2018-03-19",
+   "added": "TTWO",
+   "added_name": "Take-Two Interactive",
+   "removed": "SIG",
+   "removed_name": "Signet Jewelers",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2018-03-19",
+   "added": "SIVB",
+   "added_name": "SVB Financial Group",
+   "removed": "PDCO",
+   "removed_name": "Patterson Companies",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2018-03-19",
+   "added": "NKTR",
+   "added_name": "Nektar Therapeutics",
+   "removed": "CHK",
+   "removed_name": "Chesapeake Energy",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2018-03-07",
+   "added": "IPGP",
+   "added_name": "IPG Photonics",
+   "removed": "SNI",
+   "removed_name": "Scripps Networks Interactive",
+   "reason": "Discovery Communications acquired Scripps Networks Interactive."
+  },
+  {
+   "date": "2018-01-03",
+   "added": "HII",
+   "added_name": "Huntington Ingalls Industries",
+   "removed": "BCR",
+   "removed_name": "CR Bard",
+   "reason": "Becton Dickinson acquired CR Bard."
+  },
+  {
+   "date": "2017-11-15",
+   "added": "IQV",
+   "added_name": "IQVIA",
+   "removed": "Q",
+   "removed_name": "QuintilesIMS",
+   "reason": "QuintilesIMS changed its name to IQVIA and ticker symbol from Q to IQV."
+  },
+  {
+   "date": "2017-10-13",
+   "added": "NCLH",
+   "added_name": "Norwegian Cruise Line Holdings",
+   "removed": "LVLT",
+   "removed_name": "Level 3 Communications",
+   "reason": "CenturyLink acquired Level 3 Communications."
+  },
+  {
+   "date": "2017-09-18",
+   "added": "CDNS",
+   "added_name": "Cadence Design Systems",
+   "removed": "SPLS",
+   "removed_name": "Staples",
+   "reason": "Sycamore Partners acquired Staples."
+  },
+  {
+   "date": "2017-09-01",
+   "added": "SBAC",
+   "added_name": "SBA Communications",
+   "removed": "DD",
+   "removed_name": "DuPont",
+   "reason": "The Dow Chemical Company acquired DuPont."
+  },
+  {
+   "date": "2017-09-01",
+   "added": "DWDP",
+   "added_name": "DuPont",
+   "removed": "DOW",
+   "removed_name": "Dow Chemical Company",
+   "reason": "The Dow Chemical Company renamed to DowDuPont Inc."
+  },
+  {
+   "date": "2017-08-29",
+   "added": "Q",
+   "added_name": "QuintilesIMS",
+   "removed": "WFM",
+   "removed_name": "Whole Foods Market",
+   "reason": "Amazon acquired Whole Foods Market."
+  },
+  {
+   "date": "2017-08-08",
+   "added": "BHF",
+   "added_name": "Brighthouse Financial",
+   "removed": "AN",
+   "removed_name": "AutoNation",
+   "reason": "MetLife completed the corporate spin-off of Brighthouse Financial."
+  },
+  {
+   "date": "2017-07-26",
+   "added": "RMD",
+   "added_name": "ResMed",
+   "removed": "MNK",
+   "removed_name": "Mallinckrodt",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2017-07-26",
+   "added": "PKG",
+   "added_name": "Packaging Corporation of America",
+   "removed": "MUR",
+   "removed_name": "Murphy Oil",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2017-07-26",
+   "added": "MGM",
+   "added_name": "MGM Resorts International",
+   "removed": "RAI",
+   "removed_name": "Reynolds American",
+   "reason": "British American Tobacco (NYSE MKT:BTI) acquired Reynolds American."
+  },
+  {
+   "date": "2017-07-26",
+   "added": "DRE",
+   "added_name": "Duke Realty",
+   "removed": "RIG",
+   "removed_name": "Transocean",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2017-07-26",
+   "added": "AOS",
+   "added_name": "A. O. Smith",
+   "removed": "BBBY",
+   "removed_name": "Bed Bath & Beyond",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2017-07-07",
+   "added": "BKR",
+   "added_name": "Baker Hughes",
+   "removed": "BHI",
+   "removed_name": "Baker Hughes",
+   "reason": "Baker Hughes merged with GE Oil & Gas to form a new company."
+  },
+  {
+   "date": "2017-06-19",
+   "added": "RE",
+   "added_name": "Everest Re",
+   "removed": "MJN",
+   "removed_name": "Mead Johnson",
+   "reason": "Reckitt Benckiser acquired Mead Johnson Nutrition."
+  },
+  {
+   "date": "2017-06-19",
+   "added": "HLT",
+   "added_name": "Hilton",
+   "removed": "YHOO",
+   "removed_name": "Yahoo!",
+   "reason": "Verizon acquired Yahoo operations; remainder of Yahoo became Altaba."
+  },
+  {
+   "date": "2017-06-19",
+   "added": "ANSS",
+   "added_name": "Ansys",
+   "removed": "R",
+   "removed_name": "Ryder System",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2017-06-19",
+   "added": "ALGN",
+   "added_name": "Align Technology",
+   "removed": "TDC",
+   "removed_name": "Teradata",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2017-06-02",
+   "added": "INFO",
+   "added_name": "IHS Markit",
+   "removed": "TGNA",
+   "removed_name": "Tegna",
+   "reason": "TGNA completed the corporate spin-off of Cars.com."
+  },
+  {
+   "date": "2017-04-05",
+   "added": "IT",
+   "added_name": "Gartner",
+   "removed": "DNB",
+   "removed_name": "Dun & Bradstreet",
+   "reason": "Gartner acquired CEB."
+  },
+  {
+   "date": "2017-04-04",
+   "added": "DXC",
+   "added_name": "DXC Technology",
+   "removed": "SWN",
+   "removed_name": "Southwestern Energy",
+   "reason": "HPE completed the corporate spin-off of Everett, merged with CSC to form DXC Technology."
+  },
+  {
+   "date": "2017-03-20",
+   "added": "RJF",
+   "added_name": "Raymond James Financial",
+   "removed": "FTR",
+   "removed_name": "Frontier Communications",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2017-03-20",
+   "added": "ARE",
+   "added_name": "Alexandria Real Estate Equities",
+   "removed": "FSLR",
+   "removed_name": "First Solar",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2017-03-20",
+   "added": "AMD",
+   "added_name": "Advanced Micro Devices",
+   "removed": "URBN",
+   "removed_name": "Urban Outfitters",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2017-03-16",
+   "added": "SNPS",
+   "added_name": "Synopsys",
+   "removed": "HAR",
+   "removed_name": "Harman International",
+   "reason": "Samsung Electronics acquired Harman International Industries."
+  },
+  {
+   "date": "2017-03-13",
+   "added": "DISH",
+   "added_name": "Dish Network",
+   "removed": "LLTC",
+   "removed_name": "Linear Technology",
+   "reason": "Analog Devices acquired Linear Technology."
+  },
+  {
+   "date": "2017-03-02",
+   "added": "REG",
+   "added_name": "Regency Centers",
+   "removed": "ENDP",
+   "removed_name": "Endo International",
+   "reason": "Regency Centers acquired EQY."
+  },
+  {
+   "date": "2017-03-01",
+   "added": "CBOE",
+   "added_name": "Cboe Holdings",
+   "removed": "PBI",
+   "removed_name": "Pitney Bowes",
+   "reason": "CBOE acquired BATS."
+  },
+  {
+   "date": "2017-02-28",
+   "added": "INCY",
+   "added_name": "Incyte",
+   "removed": "SE",
+   "removed_name": "Spectra Energy",
+   "reason": "SE was acquired by ENB"
+  },
+  {
+   "date": "2017-01-05",
+   "added": "IDXX",
+   "added_name": "Idexx Laboratories",
+   "removed": "STJ",
+   "removed_name": "St Jude Medical",
+   "reason": "Abbott Laboratories acquired St. Jude Medical."
+  },
+  {
+   "date": "2016-12-02",
+   "added": "MAA",
+   "added_name": "Mid-America Apartments",
+   "removed": "OI",
+   "removed_name": "Owens-Illinois",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2016-12-02",
+   "added": "EVHC",
+   "added_name": "Envision Healthcare",
+   "removed": "LM",
+   "removed_name": "Legg Mason",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2016-11-01",
+   "added": "ARNC",
+   "added_name": "Arconic",
+   "removed": "AA",
+   "removed_name": "Alcoa",
+   "reason": "Alcoa completed the corporate spin-off off Arconic."
+  },
+  {
+   "date": "2016-09-30",
+   "added": "COTY",
+   "added_name": "Coty",
+   "removed": "DO",
+   "removed_name": "Diamond Offshore Drilling",
+   "reason": "Siris Capital Group acquired Polycom."
+  },
+  {
+   "date": "2016-09-22",
+   "added": "COO",
+   "added_name": "The Cooper Companies",
+   "removed": "HOT",
+   "removed_name": "Starwood Hotels and Resorts",
+   "reason": "MAR acquired Starwood Hotels"
+  },
+  {
+   "date": "2016-09-08",
+   "added": "CHTR",
+   "added_name": "Charter Communications",
+   "removed": "EMC",
+   "removed_name": "EMC Corporation",
+   "reason": "Dell acquired EMC."
+  },
+  {
+   "date": "2016-09-06",
+   "added": "MTD",
+   "added_name": "Mettler Toledo",
+   "removed": "TYC",
+   "removed_name": "Tyco International",
+   "reason": "TYC acquired JCI and retained JCI ticker."
+  },
+  {
+   "date": "2016-07-05",
+   "added": "FTV",
+   "added_name": "Fortive Corp",
+   "removed": "CPGX",
+   "removed_name": "Columbia Pipeline Group",
+   "reason": "CPGX was acquired by TRP."
+  },
+  {
+   "date": "2016-07-01",
+   "added": "LNT",
+   "added_name": "Alliant Energy Corp",
+   "removed": "GAS",
+   "removed_name": "AGL Resources",
+   "reason": "AGL Resources was acquired by Southern Company."
+  },
+  {
+   "date": "2016-07-01",
+   "added": "ALB",
+   "added_name": "Albemarle Corporation",
+   "removed": "TE",
+   "removed_name": "TECO Energy",
+   "reason": "TECO Energy was acquired by EMA."
+  },
+  {
+   "date": "2016-06-22",
+   "added": "FBHS",
+   "added_name": "Fortune Brands Home & Security",
+   "removed": "CVC",
+   "removed_name": "Cablevision Systems",
+   "reason": "Cablevision Systems was acquired by Altice."
+  },
+  {
+   "date": "2016-06-03",
+   "added": "TDG",
+   "added_name": "TransDigm Group",
+   "removed": "BXLT",
+   "removed_name": "Baxalta",
+   "reason": "SHPG acquired Baxalta."
+  },
+  {
+   "date": "2016-05-31",
+   "added": "AJG",
+   "added_name": "Arthur J. Gallagher & Co.",
+   "removed": "CCE",
+   "removed_name": "Coca-Cola Enterprises",
+   "reason": "Coca-Cola Enterprises merged with European bottlers."
+  },
+  {
+   "date": "2016-05-23",
+   "added": "LKQ",
+   "added_name": "LKQ Corporation",
+   "removed": "ARG",
+   "removed_name": "Airgas",
+   "reason": "Airgas was acquired by Air Liquide."
+  },
+  {
+   "date": "2016-05-18",
+   "added": "DLR",
+   "added_name": "Digital Realty",
+   "removed": "TWC",
+   "removed_name": "Time Warner Cable",
+   "reason": "Time Warner Cable was acquired by Charter."
+  },
+  {
+   "date": "2016-05-13",
+   "added": "ALK",
+   "added_name": "Alaska Air Group",
+   "removed": "SNDK",
+   "removed_name": "SanDisk",
+   "reason": "Sandisk was acquired by Western Digital."
+  },
+  {
+   "date": "2016-05-03",
+   "added": "AYI",
+   "added_name": "Acuity Brands",
+   "removed": "ADT",
+   "removed_name": "ADT",
+   "reason": "ADT was acquired by Apollo."
+  },
+  {
+   "date": "2016-04-25",
+   "added": "GPN",
+   "added_name": "Global Payments",
+   "removed": "GME",
+   "removed_name": "GameStop",
+   "reason": "Global Payments acquired Heartland Payment Systems."
+  },
+  {
+   "date": "2016-04-18",
+   "added": "ULTA",
+   "added_name": "Ulta Beauty",
+   "removed": "THC",
+   "removed_name": "Tenet Healthcare",
+   "reason": null
+  },
+  {
+   "date": "2016-04-08",
+   "added": "UA",
+   "added_name": "Under Armour (Class C)",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Under Armour distribution of second class of stock."
+  },
+  {
+   "date": "2016-04-04",
+   "added": "FL",
+   "added_name": "Foot Locker",
+   "removed": "CAM",
+   "removed_name": "Cameron International",
+   "reason": "Schlumberger acquired Cameron."
+  },
+  {
+   "date": "2016-03-30",
+   "added": "HOLX",
+   "added_name": "Hologic",
+   "removed": "POM",
+   "removed_name": "Pepco Holdings",
+   "reason": "Exelon acquired Pepco."
+  },
+  {
+   "date": "2016-03-30",
+   "added": "CNC",
+   "added_name": "Centene Corporation",
+   "removed": "ESV",
+   "removed_name": "Ensco",
+   "reason": "Centene acquired Health Net."
+  },
+  {
+   "date": "2016-03-07",
+   "added": "UDR",
+   "added_name": "UDR",
+   "removed": "GMCR",
+   "removed_name": "Keurig Green Mountain",
+   "reason": "JAB Holding Company acquired Keurig Green Mountain."
+  },
+  {
+   "date": "2016-03-04",
+   "added": "AWK",
+   "added_name": "American Water Works",
+   "removed": "CNX",
+   "removed_name": "Consol Energy",
+   "reason": null
+  },
+  {
+   "date": "2016-02-22",
+   "added": "CXO",
+   "added_name": "Concho Resources",
+   "removed": "PCL",
+   "removed_name": "Plum Creek Timber",
+   "reason": "Weyerhaeuser acquired Plum Creek Timber."
+  },
+  {
+   "date": "2016-02-01",
+   "added": "FRT",
+   "added_name": "Federal Realty Investment Trust",
+   "removed": "BRCM",
+   "removed_name": "Broadcom Corporation",
+   "reason": null
+  },
+  {
+   "date": "2016-02-01",
+   "added": "CFG",
+   "added_name": "Citizens",
+   "removed": "PCP",
+   "removed_name": "Precision Castparts Corporation",
+   "reason": null
+  },
+  {
+   "date": "2016-01-19",
+   "added": "EXR",
+   "added_name": "Extra Space Storage",
+   "removed": "ACE",
+   "removed_name": "Chubb",
+   "reason": "ACE Ltd acquired Chubb and retained the CB ticker."
+  },
+  {
+   "date": "2016-01-05",
+   "added": "WLTW",
+   "added_name": "Willis Towers Watson",
+   "removed": "FOSL",
+   "removed_name": "Fossil Group",
+   "reason": "Willis Holdings merged with Towers Watson and was renamed Willis Towers Watson."
+  },
+  {
+   "date": "2015-12-29",
+   "added": "CHD",
+   "added_name": "Church & Dwight",
+   "removed": "ALTR",
+   "removed_name": "Altera",
+   "reason": "Altera was acquired by Intel."
+  },
+  {
+   "date": "2015-12-15",
+   "added": null,
+   "added_name": null,
+   "removed": "CMCSK",
+   "removed_name": "Comcast Series K",
+   "reason": "CMCSK shares were no longer listed."
+  },
+  {
+   "date": "2015-12-01",
+   "added": "CSRA",
+   "added_name": "CSRA",
+   "removed": "CSC",
+   "removed_name": "Computer Sciences Corporation",
+   "reason": "CSC completed the corporate spin-off off CSRA."
+  },
+  {
+   "date": "2015-11-19",
+   "added": "ILMN",
+   "added_name": "Illumina",
+   "removed": "SIAL",
+   "removed_name": "Sigma-Aldrich",
+   "reason": "Sigma-Aldrich was acquired by Merck KGaA."
+  },
+  {
+   "date": "2015-11-18",
+   "added": "SYF",
+   "added_name": "Synchrony Financial",
+   "removed": "GNW",
+   "removed_name": "Genworth Financial",
+   "reason": "GE completed the corporate spin-off of Synchrony Financial."
+  },
+  {
+   "date": "2015-11-02",
+   "added": "HPE",
+   "added_name": "Hewlett Packard Enterprise",
+   "removed": "HCBK",
+   "removed_name": "Hudson City Bancorp",
+   "reason": "HPQ completed the corporate spin-off of Hewlett Packard Enterprise."
+  },
+  {
+   "date": "2015-10-07",
+   "added": "VRSK",
+   "added_name": "Verisk Analytics",
+   "removed": "JOY",
+   "removed_name": "Joy Global",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2015-09-18",
+   "added": "NWS",
+   "added_name": "News Corporation Class B",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Share class methodology change."
+  },
+  {
+   "date": "2015-09-18",
+   "added": "FOX",
+   "added_name": "Twenty-First Century Fox Class B",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Share class methodology change."
+  },
+  {
+   "date": "2015-09-18",
+   "added": "CMCSK",
+   "added_name": "Comcast Class K Special",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Share class methodology change."
+  },
+  {
+   "date": "2015-09-02",
+   "added": "UAL",
+   "added_name": "United Continental Holdings",
+   "removed": "HSP",
+   "removed_name": "Hospira",
+   "reason": "Hospira was acquired."
+  },
+  {
+   "date": "2015-08-28",
+   "added": "ATVI",
+   "added_name": "Activision Blizzard",
+   "removed": "PLL",
+   "removed_name": "Pall Corporation",
+   "reason": "Pall was acquired."
+  },
+  {
+   "date": "2015-07-29",
+   "added": "SIG",
+   "added_name": "Signet Jewelers",
+   "removed": "DTV",
+   "removed_name": "DirecTV",
+   "reason": "DirecTV was acquired by AT&T."
+  },
+  {
+   "date": "2015-07-20",
+   "added": "PYPL",
+   "added_name": "PayPal",
+   "removed": "NE",
+   "removed_name": "Noble Corporation",
+   "reason": "eBay completed the corporate spin-off of PayPal."
+  },
+  {
+   "date": "2015-07-08",
+   "added": "AAP",
+   "added_name": "Advance Auto Parts",
+   "removed": "FDO",
+   "removed_name": "Family Dollar",
+   "reason": "Family Dollar was acquired."
+  },
+  {
+   "date": "2015-07-06",
+   "added": "KHC",
+   "added_name": "Kraft Heinz",
+   "removed": "KRFT",
+   "removed_name": "Kraft Foods",
+   "reason": "Kraft merged with Heinz."
+  },
+  {
+   "date": "2015-07-02",
+   "added": "CPGX",
+   "added_name": "Columbia Pipeline Group",
+   "removed": "ATI",
+   "removed_name": "Allegheny Technologies",
+   "reason": "Spin off of Columbia Pipeline."
+  },
+  {
+   "date": "2015-07-01",
+   "added": "JBHT",
+   "added_name": "J.B. Hunt",
+   "removed": "TEG",
+   "removed_name": "Integrys Energy Group",
+   "reason": "Integrys was acquired."
+  },
+  {
+   "date": "2015-07-01",
+   "added": "BXLT",
+   "added_name": "Baxalta",
+   "removed": "QEP",
+   "removed_name": "QEP Resources",
+   "reason": "Baxter completed the corporate spin-off of Baxalta."
+  },
+  {
+   "date": "2015-06-11",
+   "added": "QRVO",
+   "added_name": "Qorvo",
+   "removed": "LO",
+   "removed_name": "Lorillard Tobacco Company",
+   "reason": "Lorillard was acquired."
+  },
+  {
+   "date": "2015-04-07",
+   "added": "O",
+   "added_name": "Realty Income Corporation",
+   "removed": "WIN",
+   "removed_name": "Windstream Communications",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2015-03-23",
+   "added": "SLG",
+   "added_name": "SL Green Realty",
+   "removed": "NBR",
+   "removed_name": "Nabors Industries",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2015-03-23",
+   "added": "HBI",
+   "added_name": "Hanesbrands",
+   "removed": "AVP",
+   "removed_name": "Avon Products",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2015-03-23",
+   "added": "EQIX",
+   "added_name": "Equinix",
+   "removed": "DNR",
+   "removed_name": "Denbury Resources",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2015-03-23",
+   "added": "AAL",
+   "added_name": "American Airlines Group",
+   "removed": "AGN",
+   "removed_name": "Allergan",
+   "reason": "Allergan was acquired by Actavis (and changed its name to Allergan)."
+  },
+  {
+   "date": "2015-03-18",
+   "added": "HSIC",
+   "added_name": "Henry Schein",
+   "removed": "CFN",
+   "removed_name": "Carefusion",
+   "reason": "Carefusion was acquired by Becton Dickinson."
+  },
+  {
+   "date": "2015-03-12",
+   "added": "SWKS",
+   "added_name": "Skyworks",
+   "removed": "PETM",
+   "removed_name": "PetSmart",
+   "reason": "PetSmart was acquired by private equity consortium."
+  },
+  {
+   "date": "2015-01-27",
+   "added": "HCA",
+   "added_name": "HCA Holdings",
+   "removed": "SWY",
+   "removed_name": "Safeway",
+   "reason": "Safeway was acquired by a private equity consortium."
+  },
+  {
+   "date": "2015-01-27",
+   "added": "ENDP",
+   "added_name": "Endo International",
+   "removed": "COV",
+   "removed_name": "Covidien",
+   "reason": "Covidien was acquired by Medtronic."
+  },
+  {
+   "date": "2014-12-05",
+   "added": "RCL",
+   "added_name": "Royal Caribbean Cruises",
+   "removed": "BMS",
+   "removed_name": "Bemis Company",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2014-11-05",
+   "added": "LVLT",
+   "added_name": "Level 3 Communications",
+   "removed": "JBL",
+   "removed_name": "Jabil Circuit",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2014-09-20",
+   "added": "URI",
+   "added_name": "United Rentals",
+   "removed": "BTU",
+   "removed_name": "Peabody Energy",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2014-09-20",
+   "added": "UHS",
+   "added_name": "Universal Health Services",
+   "removed": "GHC",
+   "removed_name": "Graham Holdings",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2014-08-18",
+   "added": "MNK",
+   "added_name": "Mallinckrodt",
+   "removed": "RDC",
+   "removed_name": "Rowan Companies",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2014-08-06",
+   "added": "DISCK",
+   "added_name": "Discovery Communications",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Class C share distribution."
+  },
+  {
+   "date": "2014-07-02",
+   "added": "MLM",
+   "added_name": "Martin Marietta",
+   "removed": "X",
+   "removed_name": "United States Steel",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2014-07-01",
+   "added": "AMG",
+   "added_name": "Affiliated Managers Group",
+   "removed": "FRX",
+   "removed_name": "Forest Laboratories",
+   "reason": "Actavis acquired Forest Laboratories."
+  },
+  {
+   "date": "2014-06-20",
+   "added": "XEC",
+   "added_name": "Cimarex Energy",
+   "removed": "IGT",
+   "removed_name": "International Game Technology",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2014-05-08",
+   "added": "AVGO",
+   "added_name": "Avago Technologies",
+   "removed": "LSI",
+   "removed_name": "LSI Corporation",
+   "reason": "Avago acquired LSI."
+  },
+  {
+   "date": "2014-05-01",
+   "added": "UA",
+   "added_name": "Under Armour",
+   "removed": "BEAM",
+   "removed_name": "Suntory Global Spirits",
+   "reason": "Beam was acquired by Suntory."
+  },
+  {
+   "date": "2014-05-01",
+   "added": "NAVI",
+   "added_name": "Navient",
+   "removed": "SLM",
+   "removed_name": "SLM Corporation",
+   "reason": "SLM completed the corporate spin-off of Navient."
+  },
+  {
+   "date": "2014-04-03",
+   "added": "GOOGL",
+   "added_name": "Google",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Google Class C share distribution."
+  },
+  {
+   "date": "2014-04-02",
+   "added": "ESS",
+   "added_name": "Essex Property Trust",
+   "removed": "CLF",
+   "removed_name": "Cliffs Natural Resources",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2014-03-21",
+   "added": "GMCR",
+   "added_name": "Keurig Green Mountain",
+   "removed": "WPX",
+   "removed_name": "WPX Energy",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2014-01-24",
+   "added": "TSCO",
+   "added_name": "Tractor Supply",
+   "removed": "LIFE",
+   "removed_name": "Life Technologies",
+   "reason": "Life Technologies was acquired by Thermo Fisher Scientific."
+  },
+  {
+   "date": "2013-12-23",
+   "added": "MHK",
+   "added_name": "Mohawk Industries",
+   "removed": "JDSU",
+   "removed_name": "JDS Uniphase",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2013-12-23",
+   "added": "FB",
+   "added_name": "Facebook",
+   "removed": "TER",
+   "removed_name": "Teradyne",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2013-12-23",
+   "added": "ADS",
+   "added_name": "Alliance Data Systems",
+   "removed": "ANF",
+   "removed_name": "Abercrombie & Fitch",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2013-12-10",
+   "added": "GGP",
+   "added_name": "General Growth Properties",
+   "removed": "MOLX",
+   "removed_name": "Molex",
+   "reason": "MOLX was acquired by Koch Industries."
+  },
+  {
+   "date": "2013-12-02",
+   "added": "ALLE",
+   "added_name": "Allegion",
+   "removed": "JCP",
+   "removed_name": "JCPenney",
+   "reason": "Ingersoll Rand completed the corporate spin-off of Allegion."
+  },
+  {
+   "date": "2013-11-13",
+   "added": "KORS",
+   "added_name": "Michael Kors",
+   "removed": "NYX",
+   "removed_name": "NYSE Euronext",
+   "reason": "ICE Exchange acquired NYSE Euronext."
+  },
+  {
+   "date": "2013-10-29",
+   "added": "RIG",
+   "added_name": "Transocean",
+   "removed": "DELL",
+   "removed_name": "Dell",
+   "reason": "Founder Michael Dell and Silver Lake Partners acquired Dell."
+  },
+  {
+   "date": "2013-09-20",
+   "added": "VRTX",
+   "added_name": "Vertex Pharmaceuticals",
+   "removed": "AMD",
+   "removed_name": "Advanced Micro Devices",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2013-09-20",
+   "added": "AME",
+   "added_name": "Ametek",
+   "removed": "SAI",
+   "removed_name": "SAIC",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2013-09-10",
+   "added": "DAL",
+   "added_name": "Delta Air Lines",
+   "removed": "BMC",
+   "removed_name": "BMC Software",
+   "reason": "BMC was acquired by a consortium."
+  },
+  {
+   "date": "2013-07-08",
+   "added": "NLSN",
+   "added_name": "Nielsen Holdings",
+   "removed": "S",
+   "removed_name": "Sprint Nextel",
+   "reason": "Softbank consortium purchase resulted in public float below 50%."
+  },
+  {
+   "date": "2013-07-01",
+   "added": "NWSA",
+   "added_name": "21st Century Fox",
+   "removed": "APOL",
+   "removed_name": "Apollo Education Group",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2013-06-21",
+   "added": "ZTS",
+   "added_name": "Zoetis",
+   "removed": "FHN",
+   "removed_name": "First Horizon",
+   "reason": "Pfizer completed the corporate spin-off of Zoetis."
+  },
+  {
+   "date": "2013-06-06",
+   "added": "GM",
+   "added_name": "General Motors",
+   "removed": "HNZ",
+   "removed_name": "Heinz",
+   "reason": "HNZ was acquired by a consortium."
+  },
+  {
+   "date": "2013-05-23",
+   "added": "KSU",
+   "added_name": "Kansas City Southern",
+   "removed": "DF",
+   "removed_name": "Dean Foods",
+   "reason": "DF was too small after spinoff of White Wave Foods."
+  },
+  {
+   "date": "2013-05-08",
+   "added": "MAC",
+   "added_name": "Macerich",
+   "removed": "CVH",
+   "removed_name": "Coventry Health Care",
+   "reason": "CVH was acquired by Aetna."
+  },
+  {
+   "date": "2013-04-30",
+   "added": "REGN",
+   "added_name": "Regeneron Pharmaceuticals",
+   "removed": "PCS",
+   "removed_name": "MetroPCS",
+   "reason": "A majority of MetroPCS was acquired by T-Mobile."
+  },
+  {
+   "date": "2013-02-15",
+   "added": "PVH",
+   "added_name": "PVH",
+   "removed": "BIG",
+   "removed_name": "Big Lots",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2013-01-02",
+   "added": "ABBV",
+   "added_name": "AbbVie",
+   "removed": "FII",
+   "removed_name": "Federated Investors",
+   "reason": "Abbott Labs completed the corporate spin-off of AbbVie."
+  },
+  {
+   "date": "2012-12-21",
+   "added": "DLPH",
+   "added_name": "Delphi Automotive",
+   "removed": "TIE",
+   "removed_name": "Titanium Metals",
+   "reason": "TIE was acquired by Precision Cast Parts."
+  },
+  {
+   "date": "2012-12-11",
+   "added": "GRMN",
+   "added_name": "Garmin",
+   "removed": "RRD",
+   "removed_name": "RR Donnelley",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2012-12-03",
+   "added": "DG",
+   "added_name": "Dollar General",
+   "removed": "CBE",
+   "removed_name": "Cooper Industries",
+   "reason": "Cooper was acquired by Eaton Corp. (ETN)"
+  },
+  {
+   "date": "2012-10-10",
+   "added": "PETM",
+   "added_name": "PetSmart",
+   "removed": "SUN",
+   "removed_name": "Sunoco",
+   "reason": "Sunoco was acquired by Energy Transfer Partners (ETP)"
+  },
+  {
+   "date": "2012-10-02",
+   "added": "MDLZ",
+   "added_name": "Mondelez",
+   "removed": "KFT",
+   "removed_name": "Kraft Foods",
+   "reason": "Old Kraft Foods was renamed Mondelez."
+  },
+  {
+   "date": "2012-10-02",
+   "added": "KRFT",
+   "added_name": "Kraft Foods",
+   "removed": "ANR",
+   "removed_name": "Alpha Natural Resources",
+   "reason": "Kraft split into two companies."
+  },
+  {
+   "date": "2012-10-01",
+   "added": "PNR",
+   "added_name": "Pentair",
+   "removed": "DV",
+   "removed_name": "DeVry",
+   "reason": "Tyco spin-off merged with Pentair."
+  },
+  {
+   "date": "2012-10-01",
+   "added": "ADT",
+   "added_name": "ADT",
+   "removed": "LXK",
+   "removed_name": "Lexmark",
+   "reason": "Tyco completed the corporate spin-off of ADT."
+  },
+  {
+   "date": "2012-09-05",
+   "added": "LYB",
+   "added_name": "LyondellBasell",
+   "removed": "SHLD",
+   "removed_name": "Sears Holdings",
+   "reason": "SHLD below public float threshold."
+  },
+  {
+   "date": "2012-07-31",
+   "added": "ESV",
+   "added_name": "Ensco plc",
+   "removed": "GR",
+   "removed_name": "Goodrich Corporation",
+   "reason": "Goodrich was acquired by United Technologies."
+  },
+  {
+   "date": "2012-07-02",
+   "added": "STX",
+   "added_name": "Seagate Technology",
+   "removed": "PGN",
+   "removed_name": "Progress Energy",
+   "reason": "Progress Energy was acquired by Duke Energy."
+  },
+  {
+   "date": "2012-06-29",
+   "added": "MNST",
+   "added_name": "Monster Beverage",
+   "removed": "SLE",
+   "removed_name": "Sara Lee Corporation",
+   "reason": "Split up of Sara Lee."
+  },
+  {
+   "date": "2012-06-05",
+   "added": "LRCX",
+   "added_name": "Lam Research",
+   "removed": "NVLS",
+   "removed_name": "Novellus Systems",
+   "reason": "Novellus Systems was acquired by Lam Research."
+  },
+  {
+   "date": "2012-05-21",
+   "added": "ALXN",
+   "added_name": "Alexion Pharmaceuticals",
+   "removed": "MMI",
+   "removed_name": "Motorola Mobility",
+   "reason": "Motorola Mobility was acquired by Google."
+  },
+  {
+   "date": "2012-05-17",
+   "added": "KMI",
+   "added_name": "Kinder Morgan",
+   "removed": "EP",
+   "removed_name": "El Paso Corporation",
+   "reason": "El Paso was acquired by Kinder Morgan."
+  },
+  {
+   "date": "2012-04-23",
+   "added": "PSX",
+   "added_name": "Phillips 66",
+   "removed": "SVU",
+   "removed_name": "Supervalu",
+   "reason": "ConocoPhillips completed the corporate spin-off of Phillips 66."
+  },
+  {
+   "date": "2012-04-03",
+   "added": "FOSL",
+   "added_name": "Fossil Group",
+   "removed": "MHS",
+   "removed_name": "Medco Health Solutions",
+   "reason": "Medco was acquired by Express Scripts."
+  },
+  {
+   "date": "2012-03-13",
+   "added": "CCI",
+   "added_name": "Crown Castle",
+   "removed": "CEG",
+   "removed_name": "Constellation Energy Group",
+   "reason": "Constellation was acquired by Exelon"
+  },
+  {
+   "date": "2011-12-31",
+   "added": "WPX",
+   "added_name": "WPX Energy",
+   "removed": "CPWR",
+   "removed_name": "Compuware",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2011-12-20",
+   "added": "TRIP",
+   "added_name": "TripAdvisor",
+   "removed": "TLAB",
+   "removed_name": "Tellabs",
+   "reason": "Expedia completed the corporate spin-off of TripAdvisor."
+  },
+  {
+   "date": "2011-12-16",
+   "added": "PRGO",
+   "added_name": "Perrigo",
+   "removed": "MWW",
+   "removed_name": "Monster Worldwide",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2011-12-16",
+   "added": "DLTR",
+   "added_name": "Dollar Tree",
+   "removed": "WFR",
+   "removed_name": "MEMC Electronic Materials",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2011-12-16",
+   "added": "BWA",
+   "added_name": "BorgWarner",
+   "removed": "AKS",
+   "removed_name": "AK Steel",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2011-12-12",
+   "added": "GAS",
+   "added_name": "AGL Resources.",
+   "removed": "GAS",
+   "removed_name": "Nicor Gas",
+   "reason": "Nicor was acquired by AGL, which retained the GAS ticker."
+  },
+  {
+   "date": "2011-11-18",
+   "added": "CBE",
+   "added_name": "Cooper Industries",
+   "removed": "JNS",
+   "removed_name": "Janus Capital Group",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2011-10-31",
+   "added": "XYL",
+   "added_name": "Xylem",
+   "removed": "ITT",
+   "removed_name": "ITT",
+   "reason": "ITT Corp. completed the corporate spin-off of Xylem."
+  },
+  {
+   "date": "2011-10-14",
+   "added": "TEL",
+   "added_name": "TE Connectivity",
+   "removed": "CEPH",
+   "removed_name": "Cephalon",
+   "reason": "Cephalon was acquired by Teva Pharmaceutical Industries."
+  },
+  {
+   "date": "2011-09-23",
+   "added": "MOS",
+   "added_name": "The Mosaic Company",
+   "removed": "NSM",
+   "removed_name": "National Semiconductor",
+   "reason": "National Semi was acquired by Texas Instruments."
+  },
+  {
+   "date": "2011-07-05",
+   "added": "ACN",
+   "added_name": "Accenture",
+   "removed": "MI",
+   "removed_name": "Marshall & Ilsley",
+   "reason": "Marshall & Ilsley was acquired by Bank of Montreal."
+  },
+  {
+   "date": "2011-06-30",
+   "added": "MPC",
+   "added_name": "Marathon Oil",
+   "removed": "RSH",
+   "removed_name": "RadioShack",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2011-06-01",
+   "added": "ANR",
+   "added_name": "Alpha Natural Resources",
+   "removed": "MEE",
+   "removed_name": "Massey Energy",
+   "reason": "Alpha Natural Resources acquired Massey Energy."
+  },
+  {
+   "date": "2011-04-27",
+   "added": "CMG",
+   "added_name": "Chipotle Mexican Grill",
+   "removed": "NOVL",
+   "removed_name": "Novell",
+   "reason": "Novell was acquired by private equity firms."
+  },
+  {
+   "date": "2011-04-01",
+   "added": "BLK",
+   "added_name": "BlackRock",
+   "removed": "GENZ",
+   "removed_name": "Genzyme",
+   "reason": "Genzyme was acquired by Sanofi Aventis."
+  },
+  {
+   "date": "2011-03-31",
+   "added": "EW",
+   "added_name": "Edwards Lifesciences",
+   "removed": "Q",
+   "removed_name": "Qwest Communications",
+   "reason": "Qwest was acquired by CenturyLink."
+  },
+  {
+   "date": "2011-02-28",
+   "added": "COV",
+   "added_name": "Covidien",
+   "removed": "MFE",
+   "removed_name": "McAfee",
+   "reason": "McAfee was acquired by Intel."
+  },
+  {
+   "date": "2011-02-25",
+   "added": "JOYG",
+   "added_name": "Joy Global",
+   "removed": "AYE",
+   "removed_name": "Allegheny Energy",
+   "reason": "Alleghany was acquired by First Energy."
+  },
+  {
+   "date": "2011-01-03",
+   "added": "MMI",
+   "added_name": "Motorola Mobility",
+   "removed": "MDP",
+   "removed_name": "Meredith Corp",
+   "reason": "Motorola completed the corporate spin-off of Motorola Mobility."
+  },
+  {
+   "date": "2010-12-17",
+   "added": "NFX",
+   "added_name": "Newfield Exploration",
+   "removed": "NYT",
+   "removed_name": "The New York Times Company",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2010-12-17",
+   "added": "NFLX",
+   "added_name": "Netflix",
+   "removed": "ODP",
+   "removed_name": "Office Depot",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2010-12-17",
+   "added": "FFIV",
+   "added_name": "F5 Networks",
+   "removed": "EK",
+   "removed_name": "Eastman Kodak",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2010-12-17",
+   "added": "CVC",
+   "added_name": "Cablevision",
+   "removed": "KG",
+   "removed_name": "King Pharmaceuticals",
+   "reason": "King was acquired by Pfizer."
+  },
+  {
+   "date": "2010-11-17",
+   "added": "IR",
+   "added_name": "Ingersoll-Rand",
+   "removed": "PTV",
+   "removed_name": "Pactiv",
+   "reason": "Reynolds Group Holdings acquired Pactiv."
+  },
+  {
+   "date": "2010-08-26",
+   "added": "TYC",
+   "added_name": "Tyco International",
+   "removed": "SII",
+   "removed_name": "Smith International",
+   "reason": "Smith was acquired by Schlumberger."
+  },
+  {
+   "date": "2010-07-14",
+   "added": "CB",
+   "added_name": "Chubb",
+   "removed": "MIL",
+   "removed_name": "Millipore",
+   "reason": "Millipore was acquired by Merck KGaA."
+  },
+  {
+   "date": "2010-06-30",
+   "added": "QEP",
+   "added_name": "QEP Resources",
+   "removed": "STR",
+   "removed_name": "Questar",
+   "reason": "Company split. QEP retained, but ticker changed."
+  },
+  {
+   "date": "2010-06-28",
+   "added": "KMX",
+   "added_name": "CarMax",
+   "removed": "XTO",
+   "removed_name": "XTO Energy",
+   "reason": "XTO was acquired by ExxonMobil."
+  },
+  {
+   "date": "2010-04-29",
+   "added": "CERN",
+   "added_name": "Cerner",
+   "removed": "BJS",
+   "removed_name": "BJ Services",
+   "reason": "BJ Services was acquired by Baker Hughes."
+  },
+  {
+   "date": "2010-02-26",
+   "added": "HP",
+   "added_name": "Helmerich & Payne",
+   "removed": "RX",
+   "removed_name": "IMS Health",
+   "reason": "IMS was acquired by affiliates of TPG Capital"
+  },
+  {
+   "date": "2009-12-18",
+   "added": "V",
+   "added_name": "Visa",
+   "removed": "CIEN",
+   "removed_name": "Ciena",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2009-12-18",
+   "added": "SAI",
+   "added_name": "SAIC",
+   "removed": "CVG",
+   "removed_name": "Convergys",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2009-12-18",
+   "added": "ROST",
+   "added_name": "Ross Stores",
+   "removed": "MBI",
+   "removed_name": "MBIA",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2009-12-18",
+   "added": "MJN",
+   "added_name": "Mead Johnson Nutrition",
+   "removed": "DYN",
+   "removed_name": "Dynegy",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2009-12-18",
+   "added": "CLF",
+   "added_name": "Cliffs Natural Resources",
+   "removed": "KBH",
+   "removed_name": "KB Home",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2009-11-03",
+   "added": "PCLN",
+   "added_name": "Priceline.com",
+   "removed": "SGP",
+   "removed_name": "Schering-Plough",
+   "reason": "Schering-Plough was acquired by Merck & Co."
+  },
+  {
+   "date": "2009-09-28",
+   "added": "ARG",
+   "added_name": "Airgas",
+   "removed": "CBE",
+   "removed_name": "Cooper Industries",
+   "reason": "Cooper redomesticated to Ireland."
+  },
+  {
+   "date": "2009-08-19",
+   "added": "FMC",
+   "added_name": "FMC Corporation",
+   "removed": "CTX",
+   "removed_name": "Centex Corp.",
+   "reason": "Centex was acquired by Pulte Homes."
+  },
+  {
+   "date": "2009-06-29",
+   "added": "PCS",
+   "added_name": "MetroPCS",
+   "removed": null,
+   "removed_name": null,
+   "reason": null
+  },
+  {
+   "date": "2009-06-25",
+   "added": null,
+   "added_name": null,
+   "removed": "TEL",
+   "removed_name": "TE Connectivity",
+   "reason": "Tyco Electronics was removed because it was reincorporating in Switzerland, making it ineligible for inclusion."
+  },
+  {
+   "date": "2009-06-05",
+   "added": "FTI",
+   "added_name": "FMC Technologies",
+   "removed": "COV",
+   "removed_name": "Covidien",
+   "reason": "Covidien moved its place of incorporation to Ireland, making it ineligible for inclusion in the index."
+  },
+  {
+   "date": "2009-03-03",
+   "added": "VTR",
+   "added_name": "Ventas",
+   "removed": "JNY",
+   "removed_name": "Jones Apparel Group",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2009-03-03",
+   "added": "HRL",
+   "added_name": "Hormel Foods",
+   "removed": "ACAS",
+   "removed_name": "American Capital",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2008-12-31",
+   "added": "OI",
+   "added_name": "Owens-Illinois",
+   "removed": "WB",
+   "removed_name": "Wachovia Bank",
+   "reason": "Wachovia Bank was acquired by Wells Fargo."
+  },
+  {
+   "date": "2008-09-16",
+   "added": "HRS",
+   "added_name": "Harris Corporation",
+   "removed": "LEH",
+   "removed_name": "Lehman Brothers",
+   "reason": "Lehman Brothers filed for bankruptcy."
+  },
+  {
+   "date": "2008-09-12",
+   "added": "FAST",
+   "added_name": "Fastenal",
+   "removed": "FNM",
+   "removed_name": "Fannie Mae",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2008-09-12",
+   "added": "CRM",
+   "added_name": "Salesforce",
+   "removed": "FRE",
+   "removed_name": "Freddie Mac",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2008-07-01",
+   "added": "AKS",
+   "added_name": "AK Steel",
+   "removed": "CFC",
+   "removed_name": "Countrywide Financial Corp",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2008-06-23",
+   "added": "MEE",
+   "added_name": "Massey Energy",
+   "removed": "OMX",
+   "removed_name": "OfficeMax",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2008-06-23",
+   "added": "COG",
+   "added_name": "Cabot Oil & Gas",
+   "removed": "BC",
+   "removed_name": "Brunswick",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2008-06-10",
+   "added": "LO",
+   "added_name": "Lorillard Tobacco Company",
+   "removed": "ABK",
+   "removed_name": "Ambac Financial",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2007-12-20",
+   "added": "RRC",
+   "added_name": "Range Resources",
+   "removed": "TRB",
+   "removed_name": "Tribune Media",
+   "reason": "Tribune was acquired."
+  },
+  {
+   "date": "2007-12-13",
+   "added": "GME",
+   "added_name": "GameStop",
+   "removed": "DJ",
+   "removed_name": "Dow Jones",
+   "reason": "Dow Jones was acquired by News Corporation."
+  },
+  {
+   "date": "2007-10-26",
+   "added": "JEC",
+   "added_name": "Jacobs Engineering Group",
+   "removed": "AV",
+   "removed_name": "Avaya",
+   "reason": "Avaya was acquired."
+  },
+  {
+   "date": "2007-10-02",
+   "added": "EXPE",
+   "added_name": "Expedia",
+   "removed": "SLR",
+   "removed_name": "Solectron",
+   "reason": "Solectron was acquired by Flextronics."
+  },
+  {
+   "date": "2007-10-01",
+   "added": "TDC",
+   "added_name": "Teradata",
+   "removed": "NCR",
+   "removed_name": "NCR Corporation",
+   "reason": "NCR Corporation completed the corporate spin-off of Teradata."
+  },
+  {
+   "date": "2007-09-27",
+   "added": "TSO",
+   "added_name": "Tesoro Corporation",
+   "removed": "MXIM",
+   "removed_name": "Maxim Integrated Products",
+   "reason": "MXIM was delisted from NASDAQ exchange."
+  },
+  {
+   "date": "2007-09-26",
+   "added": "ICE",
+   "added_name": "Intercontinental Exchange",
+   "removed": "FDC",
+   "removed_name": "First Data",
+   "reason": "FDC was acquired by KKR."
+  },
+  {
+   "date": "2007-08-24",
+   "added": "LUK",
+   "added_name": "Leucadia National",
+   "removed": "KSE",
+   "removed_name": "KeySpan",
+   "reason": "KeySpan was acquired by National Grid plc."
+  },
+  {
+   "date": "2007-07-02",
+   "added": "DFS",
+   "added_name": "Discover Financial",
+   "removed": "ADCT",
+   "removed_name": "ADC Telecommunications",
+   "reason": "Discover Financial Services was listed on New York Stock Exchange."
+  },
+  {
+   "date": "2007-03-30",
+   "added": "KFT",
+   "added_name": "Kraft Foods",
+   "removed": "TSG",
+   "removed_name": "Sabre Corporation",
+   "reason": "Sabre was acquired."
+  },
+  {
+   "date": "2007-01-10",
+   "added": "AVB",
+   "added_name": "AvalonBay Communities",
+   "removed": "SBL",
+   "removed_name": "Symbol Technologies",
+   "reason": "Symbol Technologies was acquired by Motorola."
+  },
+  {
+   "date": "2006-06-02",
+   "added": "JNPR",
+   "added_name": "Juniper Networks",
+   "removed": "ABS",
+   "removed_name": "Albertsons",
+   "reason": "Albertsons was acquired by SuperValu and CVS Corp."
+  },
+  {
+   "date": "2005-11-18",
+   "added": "AMZN",
+   "added_name": "Amazon",
+   "removed": "T",
+   "removed_name": "AT&T Corporation",
+   "reason": "AT&T Corp. was acquired by SBC Communications"
+  },
+  {
+   "date": "2005-07-01",
+   "added": "STZ",
+   "added_name": "Constellation Brands",
+   "removed": "GLK",
+   "removed_name": "Great Lakes Chemical",
+   "reason": "Great Lakes Chemical was acquired by Crompton Corp."
+  },
+  {
+   "date": "2003-09-25",
+   "added": "ESRX",
+   "added_name": "Express Scripts",
+   "removed": "QTRN",
+   "removed_name": "Quintiles Transnational",
+   "reason": "Acquired."
+  },
+  {
+   "date": "2000-12-05",
+   "added": "SBL",
+   "added_name": "Symbol Technologies",
+   "removed": "OI",
+   "removed_name": "Owens-Illinois",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2000-12-05",
+   "added": "INTU",
+   "added_name": "Intuit",
+   "removed": "BS",
+   "removed_name": "Bethlehem Steel",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2000-12-05",
+   "added": "AYE",
+   "added_name": "Allegheny Energy",
+   "removed": "GRA",
+   "removed_name": "WR Grace",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2000-12-05",
+   "added": "ABK",
+   "added_name": "Ambac Financial",
+   "removed": "CCK",
+   "removed_name": "Crown Holdings",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2000-07-27",
+   "added": "JDSU",
+   "added_name": "JDS Uniphase",
+   "removed": "RAD",
+   "removed_name": "Rite Aid",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "2000-06-12",
+   "added": "CVG",
+   "added_name": "Convergys",
+   "removed": "TMC",
+   "removed_name": "Times Mirror",
+   "reason": "Tribune Co. acquired Times Mirror."
+  },
+  {
+   "date": "2000-06-07",
+   "added": "SBUX",
+   "added_name": "Starbucks",
+   "removed": "SMS",
+   "removed_name": "Shared Medical Systems",
+   "reason": "Siemens AG acquired Shared Medical Systems."
+  },
+  {
+   "date": "1999-12-08",
+   "added": "YHOO",
+   "added_name": "Yahoo!",
+   "removed": "LDW",
+   "removed_name": "Laidlaw",
+   "reason": "Market capitalization changes."
+  },
+  {
+   "date": "1999-06-09",
+   "added": "WLP",
+   "added_name": "Wellpoint",
+   "removed": "HPH",
+   "removed_name": "Harnischfeger Industries",
+   "reason": "Harnischfeger filed for bankruptcy."
+  },
+  {
+   "date": "1999-04-12",
+   "added": "ACT",
+   "added_name": "Actavis",
+   "removed": null,
+   "removed_name": null,
+   "reason": "Actavis plc was added to the S&P 500."
+  },
+  {
+   "date": "1998-12-11",
+   "added": "FSR",
+   "added_name": "Firstar",
+   "removed": "AN",
+   "removed_name": "Amoco",
+   "reason": "BP purchased Amoco."
+  },
+  {
+   "date": "1998-12-11",
+   "added": "CPWR",
+   "added_name": "Compuware",
+   "removed": "SUN",
+   "removed_name": "SunAmerica",
+   "reason": "AIG acquired SunAmerica."
+  },
+  {
+   "date": "1998-12-11",
+   "added": "CCL",
+   "added_name": "Carnival Corporation",
+   "removed": "GRN",
+   "removed_name": "General Re",
+   "reason": "Berkshire Hathaway acquired General Re."
+  },
+  {
+   "date": "1997-06-17",
+   "added": "CCR",
+   "added_name": "Countrywide Credit Industries",
+   "removed": "USL",
+   "removed_name": "USLife",
+   "reason": "AIG acquired USLife."
+  },
+  {
+   "date": "1994-09-30",
+   "added": "NCC",
+   "added_name": "National City",
+   "removed": "MCK",
+   "removed_name": "McKesson",
+   "reason": "McKesson sold PCS Health Services to Eli Lilly."
+  },
+  {
+   "date": "1976-07-01",
+   "added": "DIS",
+   "added_name": "The Walt Disney Company",
+   "removed": "AYE",
+   "removed_name": "Allegheny Energy",
+   "reason": "S&P 500 reorganized to have fewer industrials and utilities, and more financial companies to add \"new strength and breadth\"."
+  },
+  {
+   "date": "1976-07-01",
+   "added": "BUD",
+   "added_name": "Anheuser Busch",
+   "removed": "HNG",
+   "removed_name": "Houston Natural Gas",
+   "reason": "S&P 500 reorganized to have fewer industrials and utilities, and more financial companies to add \"new strength and breadth\"."
+  }
+ ]
+}
